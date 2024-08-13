@@ -4,7 +4,7 @@ import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/compon
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import {FaGithub} from "react-icons/fa";
-import {useState} from "react";
+import {useTab} from "@/context/TabContext";
 
 interface ContentTopBarProps {
     isScrollEqualToScreenHeight: boolean;
@@ -13,7 +13,7 @@ interface ContentTopBarProps {
 
 const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarProps) => {
 
-    const [defaultTab, setDefaultTab] = useState<string>()
+    const {activeTab} = useTab()
 
     return (
         <div
@@ -22,28 +22,22 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
                 <div className="flex lg:hidden space-x-1">
                     <Button
                         variant="ghost"
-                        className={`${defaultTab === "about" ? `bg-muted` : ``} h-fit w-fit rounded`}
-                        onClick={() => {
-                            setDefaultTab("about")
-                            handleTab("about")
-                        }}
+                        className={`${activeTab === "about" ? `bg-muted` : ``} h-fit w-fit rounded duration-300`}
+                        onClick={() => handleTab("about")}
                     >
-                        <span className="text-xl tracking-wider font-bold">About</span>
+                        <span className="text-md tracking-wider font-bold">About</span>
                     </Button>
 
                     <Button
                         variant="ghost"
-                        className={`${defaultTab === "project" ? `bg-muted` : ``} h-fit w-fit rounded`}
-                        onClick={() => {
-                            setDefaultTab("project")
-                            handleTab("project")
-                        }}
+                        className={`${activeTab === "project" ? `bg-muted` : ``} h-fit w-fit rounded duration-300`}
+                        onClick={() => handleTab("project")}
                     >
-                        <span className="text-xl tracking-wider font-bold">Project</span>
+                        <span className="text-md tracking-wider font-bold">Project</span>
                     </Button>
                 </div>
 
-                <div className="flex space-x-1">
+                <div className="flex">
                     <TooltipProvider>
                         <Tooltip delayDuration={100}>
                             <TooltipTrigger asChild>
@@ -56,7 +50,7 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <FaGithub className="w-7 h-7 my-1"/>
+                                        <FaGithub className="w-6 h-6 lg:w-7 lg:h-7 my-1"/>
                                     </Link>
                                 </Button>
                             </TooltipTrigger>
@@ -84,7 +78,7 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
                                     >
                                         <img
                                             src="/memocode_white.png"
-                                            className="w-7 h-8 mt-1"
+                                            className="w-6 h-7 lg:w-7 lg:h-8 mt-1"
                                             alt="memocode_icon"/>
                                     </Link>
                                 </Button>

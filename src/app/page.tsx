@@ -18,13 +18,14 @@ const Home = () => {
                     </video>
 
                     <div className="absolute top-[340px] flex flex-col justify-center items-center">
-                        <div className="text-[20px] text-muted animate__animated animate__fadeIn">
+                        <div className="text-[14px] sm:text-[16px] lg:text-[20px] text-muted animate__animated animate__fadeIn">
                             비 온 뒤의 땅이 단단해지듯
                         </div>
-                        <div className="text-[20px] text-muted animate__animated animate__fadeIn">
+                        <div className="text-[14px] sm:text-[16px] lg:text-[20px] text-muted animate__animated animate__fadeIn">
                             도전과 실패를 바탕으로 견고한 성과를 만들어내는
                         </div>
-                        <div className="text-[60px] font-bold text-background animate__animated animate__fadeInUp">
+                        <div
+                            className="text-[25px] sm:text-[40px] lg:text-[60px] font-bold text-background animate__animated animate__fadeInUp">
                             프론트엔드 개발자 김유림입니다.
                         </div>
                     </div>

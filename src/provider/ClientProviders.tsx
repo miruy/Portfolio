@@ -3,6 +3,7 @@
 import React, {ReactNode} from 'react';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import {ModalProvider} from '@/context/ModalContext';
+import {TabProvider} from "@/context/TabContext";
 
 interface ClientProvidersProps {
     children: ReactNode;
@@ -23,9 +24,11 @@ const ClientProviders = ({children}: ClientProvidersProps) => {
 
     return (
         <QueryClientProvider client={queryClient}>
-            <ModalProvider>
-                {children}
-            </ModalProvider>
+            <TabProvider>
+                <ModalProvider>
+                    {children}
+                </ModalProvider>
+            </TabProvider>
         </QueryClientProvider>
     )
 
