@@ -48,96 +48,15 @@
     }
 }
 
-.spotlight_kim {
-    color: hsl(var(--background));
-    animation: spotlight_kim 3s infinite 0.4s;
+.animate-slide-up {
+    animation: slide-up 1.5s ease-out forwards;
 }
 
-.spotlight_yu {
-    color: hsl(var(--background));
-    animation: spotlight_yu 3s infinite 0.5s;
-}
-
-.spotlight_rim {
-    color: hsl(var(--background));
-    animation: spotlight_rim 3s infinite 0.7s;
-}
-
-@keyframes spotlight_kim {
+@keyframes slide-up {
     0% {
-        color: hsl(var(--background));
-    }
-    10% {
-        color: hsl(var(--background));
-    }
-    25% {
-        color: hsl(var(--foreground));
-    }
-    50% {
-        color: hsl(var(--background));
+        transform: translateY(100%);
     }
     100% {
-        color: hsl(var(--background));
-    }
-}
-
-@keyframes spotlight_yu {
-    0% {
-        color: hsl(var(--background));
-    }
-    20% {
-        color: hsl(var(--background));
-    }
-    40% {
-        color: hsl(var(--foreground));
-    }
-    60% {
-        color: hsl(var(--background));
-    }
-    100% {
-        color: hsl(var(--background));
-    }
-}
-
-@keyframes spotlight_rim {
-    0% {
-        color: hsl(var(--background));
-    }
-    20% {
-        color: hsl(var(--background));
-    }
-    50% {
-        color: hsl(var(--foreground));
-    }
-    65% {
-        color: hsl(var(--background));
-    }
-    100% {
-        color: hsl(var(--background));
-    }
-}
-
-.spotlight::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: 140%;
-    transform: translateX(-50%);
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, transparent 70%);
-    border-radius: 50%;
-    filter: blur(20px);
-    animation: spotlight 3s infinite 0.5s;
-    pointer-events: none;
-}
-
-@keyframes spotlight {
-    0% {
-        left: -50%;
-    }
-
-    100% {
-        right: 140%;
+        transform: translateY(0);
     }
 }

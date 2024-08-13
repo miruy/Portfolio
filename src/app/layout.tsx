@@ -24,7 +24,7 @@ export default function RootLayout({
         <html lang="en">
         <body
             className={cn(
-                'min-h-screen flex flex-1 mx-auto bg-background font-sans overflow-x-hidden',
+                'h-screen flex flex-col mx-auto bg-background font-sans overflow-x-hidden',
                 fontSans.variable
             )}
         >
