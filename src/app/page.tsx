@@ -5,8 +5,6 @@ import 'animate.css';
 import {BiChevronsDown} from "react-icons/bi";
 import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
 import {Button} from "@/components/ui/button";
-import Link from "next/link";
-import {FaGithub} from "react-icons/fa";
 
 const Home = () => {
 

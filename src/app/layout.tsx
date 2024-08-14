@@ -11,7 +11,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-    title: "portfolio_yurim",
+    title: "포트폴리오_김유림",
     description: "프론트엔드 개발자 김유림",
 };
 

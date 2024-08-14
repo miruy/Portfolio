@@ -1,7 +1,7 @@
 'use client'
 
 import ContentTopBar from "@/components/Content_TopBar";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import {useTab} from "@/context/TabContext";
 import {Button} from "@/components/ui/button";
 import ContentAbout from "@/components/Content_About";
@@ -9,8 +9,10 @@ import ContentProject from "@/components/Content_Project";
 
 const Content = () => {
 
+    const aboutRef = useRef<HTMLDivElement>(null);
+    const projectRef = useRef<HTMLDivElement>(null);
     const {activeTab, setActiveTab} = useTab()
-    const [isScrollEqualToScreenHeight, setIsScrollEqualToScreenHeight] = useState(false);
+    const [isScrollEqualToScreenHeight, setIsScrollEqualToScreenHeight] = useState<boolean>(false);
 
     const handleTab = (path: string) => {
         setActiveTab(() => path)
@@ -43,6 +45,31 @@ const Content = () => {
         };
     }, []);
 
+    useEffect(() => {
+        const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setActiveTab(() => entry.target.id)
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(handleIntersection, {
+            threshold: 0.5, // 요소가 50% 이상 보일 때 트리거
+        });
+
+        const targets = [aboutRef.current, projectRef.current];
+        targets.forEach((target) => {
+            if (target) observer.observe(target);
+        });
+
+        return () => {
+            targets.forEach((target) => {
+                if (target) observer.unobserve(target);
+            });
+        };
+    }, [window.scrollY]);
+
     return (
         <div className="h-screen relative flex">
             <div className="absolute z-50 top-[100vh] bottom-0 right-0 left-0 flex flex-col h-screen">
@@ -68,12 +95,12 @@ const Content = () => {
                         </Button>
                     </div>
 
-                    <div className="flex flex-1 flex-col bg-emerald-500 mt-32 justify-between mx-5 lg:ml-60 lg:mr-20">
-                        <div id="about" className="h-[100vh]">
+                    <div className="flex flex-1 flex-col mt-32 mx-10 lg:ml-60 lg:mr-20">
+                        <div id="about" ref={aboutRef} className="h-[100vh] py-5">
                             <ContentAbout/>
                         </div>
 
-                        <div id="project" className="h-[100vh]">
+                        <div id="project" ref={projectRef} className="h-[100vh] py-5">
                             <ContentProject/>
                         </div>
                     </div>
