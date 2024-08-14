@@ -10,16 +10,16 @@ interface IModalContext {
 
 export enum ModalTypes {
 
-    // 메모 검색
-    MEMO_SEARCH = "MEMO_SEARCH",
+    // 프로젝트 상세보기
+    CONTENT_PROJECT_DETAIL = "CONTENT_PROJECT_DETAIL",
 
     // 메모 댓글/답글 삭제
     MEMO_COMMENT_DELETE = "MEMO_COMMENT_DELETE",
 }
 
 type IModal = {
-    // 메모 검색
-    [ModalTypes.MEMO_SEARCH]: {
+    // 프로젝트 상세보기
+    [ModalTypes.CONTENT_PROJECT_DETAIL]: {
         isVisible: boolean,
         data: {},
     },
@@ -35,8 +35,8 @@ type IModal = {
 }
 
 const initialModalState: IModal = {
-    // 메모 검색
-    [ModalTypes.MEMO_SEARCH]: {
+    // 프로젝트 메모코드 상세보기
+    [ModalTypes.CONTENT_PROJECT_DETAIL]: {
         isVisible: false,
         data: {},
     },

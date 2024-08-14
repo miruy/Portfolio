@@ -95,12 +95,12 @@ const Content = () => {
                         </Button>
                     </div>
 
-                    <div className="flex flex-1 flex-col mt-32 mx-10 lg:ml-60 lg:mr-20">
+                    <div className="flex flex-1 flex-col mt-32 mx-10 lg:ml-[270px] lg:mr-[100px]">
                         <div id="about" ref={aboutRef} className="h-[100vh] py-5">
                             <ContentAbout/>
                         </div>
 
-                        <div id="project" ref={projectRef} className="h-[100vh] py-5">
+                        <div id="project" ref={projectRef} className="h-full pb-20">
                             <ContentProject/>
                         </div>
                     </div>

@@ -75,6 +75,7 @@ const config = {
             backdropFilter: {
                 'none': 'none',
                 'blur': 'blur(10px)',
+                'blur-sm': 'blur(5px)',
             },
         },
     },
