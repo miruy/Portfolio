@@ -3,7 +3,7 @@ import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {ModalContext, ModalTypes} from "@/context/ModalContext";
 import {useContext} from "react";
-import Content_Project_Detail_Modal from "@/components/Content_Project_Detail_Modal";
+import Content_Project_Detail_Modal from "@/components/project/Content_Project_Detail_Modal";
 
 const ContentProject = () => {
 

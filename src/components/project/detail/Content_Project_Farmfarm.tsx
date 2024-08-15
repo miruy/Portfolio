@@ -1,9 +1,9 @@
-import Content_Project_Detail_Info from "@/components/Content_Project_Detail_Info";
-import portfolio from "@/data/portfolio";
+import farmfarm from "@/data/farmfarm";
+import Content_Project_Detail_Info from "@/components/project/Content_Project_Detail_Info";
 
-const Content_Project_Portfolio = () => {
+const Content_Project_Farmfarm = () => {
 
-    const data = portfolio;
+    const data = farmfarm;
 
     return (
         <>
@@ -14,4 +14,4 @@ const Content_Project_Portfolio = () => {
     )
 }
 
-export default Content_Project_Portfolio;
+export default Content_Project_Farmfarm;

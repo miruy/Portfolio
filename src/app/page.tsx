@@ -30,7 +30,7 @@ const Home = () => {
                         Your browser does not support the video tag.
                     </video>
 
-                    <div className="absolute top-[340px] flex flex-col justify-center items-center">
+                    <div className="absolute flex flex-col justify-center items-center">
                         <div
                             className="text-[14px] sm:text-[16px] lg:text-[20px] text-muted animate__animated animate__fadeIn">
                             비 온 뒤의 땅이 단단해지듯
