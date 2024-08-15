@@ -55,8 +55,8 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
                                 </Button>
                             </TooltipTrigger>
                             <TooltipContent
-                                align="end"
-                                alignOffset={-2}
+                                align="center"
+                                alignOffset={0}
                                 sideOffset={10}
                                 className="bg-accent rounded">
                                 <p>GitHub</p>
@@ -84,8 +84,8 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
                                 </Button>
                             </TooltipTrigger>
                             <TooltipContent
-                                align="end"
-                                alignOffset={3}
+                                align="center"
+                                alignOffset={0}
                                 sideOffset={10}
                                 className="bg-accent rounded">
                                 <p>블로그</p>

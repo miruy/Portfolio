@@ -1,4 +1,4 @@
-import ProjectPreview from "@/data/Content_Project_Preview";
+import projectPreview from "@/data/content_Project_Preview";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
 import {ModalContext, ModalTypes} from "@/context/ModalContext";
@@ -12,7 +12,7 @@ const ContentProject = () => {
     return (
         <>
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-7">
-                {ProjectPreview.map((data, index) => {
+                {projectPreview.map((data, index) => {
                     return (
                         <div
                             key={index}
@@ -31,9 +31,8 @@ const ContentProject = () => {
                             <div className="flex flex-col flex-1 justify-between p-4">
                                 <div className="space-y-2">
                                     <div
-                                        className="text-[24px] 2xl:text-[20px] font-bold tracking-wide">{data.title}</div>
-                                    <div
-                                        className="text-[16px] 2xl:text-[14px] text-zinc-400 tracking-wide">{data.description}</div>
+                                        className="text-[22px] 2xl:text-[20px] font-bold tracking-wide">{data.title}</div>
+                                    <div className="text-[14px] text-zinc-400 tracking-wide">{data.description}</div>
                                 </div>
 
                                 <div className="flex flex-wrap">
@@ -61,6 +60,12 @@ const ContentProject = () => {
                                         onClick={() => {
                                             openModal({
                                                 name: ModalTypes.CONTENT_PROJECT_DETAIL,
+                                                data: {
+                                                    title: data.title,
+                                                    description: data.description,
+                                                    git: data.git,
+                                                    url: data.url
+                                                }
                                             })
                                         }}>
                                         상세 보기
@@ -71,8 +76,6 @@ const ContentProject = () => {
                     )
                 })}
             </div>
-            {/*호버하면 모달뜨게해서 모달안에 (소개글, 링크, 제작기간, 제작인원, 사용스킬/툴, 작업기여도, 주요기능및 특징-seo최적화 포함하기, 작업화면등*/}
-            {/*트러블슈팅-문제/해결/회고)*/}
 
             <Content_Project_Detail_Modal/>
         </>

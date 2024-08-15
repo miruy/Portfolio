@@ -21,7 +21,12 @@ type IModal = {
     // 프로젝트 상세보기
     [ModalTypes.CONTENT_PROJECT_DETAIL]: {
         isVisible: boolean,
-        data: {},
+        data: {
+            title: string,
+            description: string,
+            git: string,
+            url: string,
+        },
     },
 
     // 메모 댓글/답글 삭제
@@ -38,7 +43,12 @@ const initialModalState: IModal = {
     // 프로젝트 메모코드 상세보기
     [ModalTypes.CONTENT_PROJECT_DETAIL]: {
         isVisible: false,
-        data: {},
+        data: {
+            title: "",
+            description: "",
+            git: "",
+            url: ""
+        },
     },
 
     // 메모 댓글/답글 삭제
