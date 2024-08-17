@@ -1,7 +1,6 @@
 import {CiStickyNote} from "react-icons/ci";
 import {MdOutlineQuestionAnswer} from "react-icons/md";
 import {FaA, FaQ} from "react-icons/fa6";
-import {BiBold} from "react-icons/bi";
 
 const Content_Project_Memocode_DevReason = () => {
     return (
@@ -10,12 +9,12 @@ const Content_Project_Memocode_DevReason = () => {
                 제작동기
             </div>
 
-            <div className="pt-5 tracking-wide space-y-5">
+            <div className="pt-5 tracking-wide space-y-5 text-zinc-300">
                 <div>
                     <span className="text-[14px]">메모코드는 제가 개발을 하면서 </span>
-                    <span className="font-semibold text-[15px]">자주 사용하는 것들을 한 곳에 </span>
+                    <span className="font-semibold text-[15px] text-foreground">자주 사용하는 것들을 한 곳에 </span>
                     <span className="text-[14px]">모아서 사용하면 </span>
-                    <span className="font-semibold text-[15px]">공간적으로, 시간적으로 </span>
+                    <span className="font-semibold text-[15px] text-foreground">공간적으로, 시간적으로 </span>
                     <span className="text-[14px]">더욱 편리할 것 같다는 생각에 개발하게 되었습니다.</span>
                 </div>
 

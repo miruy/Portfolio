@@ -2,18 +2,18 @@ import {FaA, FaQ} from "react-icons/fa6";
 import {FaCheck} from "react-icons/fa";
 import {GoDotFill} from "react-icons/go";
 
-const Content_Project_Memocode_KeyFeatures = () => {
+const Content_Project_Memocode_Improvement = () => {
     return (
-        <div className="flex flex-col w-full h-fit bg-zinc-900 rounded p-3 sm:p-5">
+        <div className="flex flex-col w-full h-fit bg-zinc-950/70 rounded p-3 sm:p-5">
             <div className="border-b border-zinc-600 text-zinc-300 font-semibold tracking-wider pb-2">
-                주요 기능 및 특징
+                이슈 및 개선사항
             </div>
 
             <div className="pt-5 tracking-wide space-y-5">
                 <div>
                     <div className="flex text-[14px] items-center font-semibold leading-7 text-zinc-300">
                         <FaCheck className="w-4 h-4 mr-1.5"/>
-                        메모 관리 (등록, 수정, 검색, 삭제)
+                        내 블로그 페이지
                     </div>
                     <>
                         <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
@@ -131,4 +131,4 @@ const Content_Project_Memocode_KeyFeatures = () => {
     )
 }
 
-export default Content_Project_Memocode_KeyFeatures;
+export default Content_Project_Memocode_Improvement;

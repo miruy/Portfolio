@@ -13,8 +13,8 @@ export enum ModalTypes {
     // 프로젝트 상세보기
     CONTENT_PROJECT_DETAIL = "CONTENT_PROJECT_DETAIL",
 
-    // 메모 댓글/답글 삭제
-    MEMO_COMMENT_DELETE = "MEMO_COMMENT_DELETE",
+    // 프로젝트 이미지 크게보기
+    CONTENT_PROJECT_IMAGE_EXPANSION = "CONTENT_PROJECT_IMAGE_EXPANSION",
 }
 
 type IModal = {
@@ -30,11 +30,11 @@ type IModal = {
     },
 
     // 메모 댓글/답글 삭제
-    [ModalTypes.MEMO_COMMENT_DELETE]: {
+    [ModalTypes.CONTENT_PROJECT_IMAGE_EXPANSION]: {
         isVisible: boolean,
         data: {
-            memoId: string,
-            commentId: string,
+            key: string,
+            imageSrcs: string[]
         },
     },
 }
@@ -52,11 +52,11 @@ const initialModalState: IModal = {
     },
 
     // 메모 댓글/답글 삭제
-    [ModalTypes.MEMO_COMMENT_DELETE]: {
+    [ModalTypes.CONTENT_PROJECT_IMAGE_EXPANSION]: {
         isVisible: false,
         data: {
-            memoId: "",
-            commentId: "",
+            key: "",
+            imageSrcs: []
         },
     },
 };
