@@ -1,23 +1,20 @@
 import memocode from "@/data/memocode";
-import projectPreview from "@/data/content_Project_Preview";
-import Content_Project_Memocode_DevReason from "@/components/project/detail/Content_Project_Memocode_DevReason";
 import Content_Project_Detail_Info from "@/components/project/Content_Project_Detail_Info";
-import Content_Project_Memocode_KeyFeatures from "@/components/project/detail/Content_Project_Memocode_KeyFeatures";
-import Content_Project_Memocode_Improvement from "@/components/project/detail/Content_Project_Memocode_Improvement";
 import {ModalContext, ModalTypes} from "@/context/ModalContext";
 import {useContext} from "react";
 import Content_Project_Detail_Image_Expansion_Modal
     from "@/components/project/detail/Content_Project_Detail_Image_Expansion_Modal";
+import memocode_image from "@/data/memocode_images";
+import Content_Project_Memocode_DevReason
+    from "@/components/project/detail/memocode/Content_Project_Memocode_DevReason";
+import Content_Project_Memocode_KeyFeatures
+    from "@/components/project/detail/memocode/Content_Project_Memocode_KeyFeatures";
+import Content_Project_Memocode_Improvement
+    from "@/components/project/detail/memocode/Content_Project_Memocode_Improvement";
 
 const Content_Project_Memocode = () => {
 
     const data = memocode;
-    const imageSrcs = [
-        "/memocode_main1.png",
-        "/memocode_main2.png",
-        "/memocode_main3.png",
-        "/memocode_main4.png",
-    ]
     const {openModal} = useContext(ModalContext)
 
     return (
@@ -30,23 +27,28 @@ const Content_Project_Memocode = () => {
                         <div className="border-b border-zinc-600 text-zinc-300 font-semibold tracking-wider pb-2">
                             작업화면
 
-                            <div className="text-[12px] text-zinc-500 mt-1">클릭 시 큰 이미지로 볼 수 있습니다.</div>
+                            <div className="text-[12px] text-zinc-500 mt-1">클릭하면 이미지를 크게 볼 수 있습니다.</div>
                         </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-5 pt-5">
-                            {imageSrcs.map((src, index) => {
+                        <div
+                            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5 pt-5">
+                            {memocode_image.map((data, index) => {
                                 return (
-                                    <img onClick={() => {
-                                        openModal({
-                                            name: ModalTypes.CONTENT_PROJECT_IMAGE_EXPANSION,
-                                            data: {
-                                                key: "memocode",
-                                                imageSrcs: imageSrcs
-                                            }
-                                        })
-                                    }}
-                                         key={index}
-                                         src={src}
-                                         alt={`memocode_image_${index}`}/>
+                                    <div className="flex flex-col">
+                                        <img onClick={() => {
+                                            openModal({
+                                                name: ModalTypes.CONTENT_PROJECT_IMAGE_EXPANSION,
+                                                data: {
+                                                    key: "memocode",
+                                                    images: memocode_image,
+                                                    targetId: data.id
+                                                }
+                                            })
+                                        }}
+                                             key={index}
+                                             src={data.src}
+                                             alt={`memocode_image_${data.id}`}/>
+                                        <div className="flex justify-center py-1 text-[14px] text-zinc-400">{data.title}</div>
+                                    </div>
                                 )
                             })}
                         </div>

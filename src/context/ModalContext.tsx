@@ -1,6 +1,7 @@
 'use client'
 
 import React, {ReactNode, useState} from "react";
+import {Image} from "@/model/image";
 
 interface IModalContext {
     modalState: IModal;
@@ -34,7 +35,8 @@ type IModal = {
         isVisible: boolean,
         data: {
             key: string,
-            imageSrcs: string[]
+            images: Image[],
+            targetId: number
         },
     },
 }
@@ -56,7 +58,8 @@ const initialModalState: IModal = {
         isVisible: false,
         data: {
             key: "",
-            imageSrcs: []
+            images: [],
+            targetId: 0
         },
     },
 };
