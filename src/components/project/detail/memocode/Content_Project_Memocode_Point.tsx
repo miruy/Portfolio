@@ -20,30 +20,33 @@ const Content_Project_Memocode_Point = () => {
                             <span className="ml-1.5 text-foreground">프로덕션 환경 구축 및 배포</span>
                         </div>
                         <div className="text-[13px] leading-6 mx-6 text-zinc-300">
-                            서비스 개발이 완료된 후, Git을 기반으로 CI/CD 파이프라인을 설정하여 코드 변경 사항이 Git 저장소에 푸시될 때마다 자동으로 빌드와 배포가 이루어지도록 하였으며, 이를 통해 빠르고 효율적인 배포가 가능하게 했습니다.
-                        </div>
-                    </>
-                    <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5 text-foreground">서버 최적화 및 모니터링</span>
-                        </div>
-                        <div className="text-[13px] leading-6 mx-6 text-zinc-300">
-                            서버 성능을 최적화하여 높은 트래픽을 처리할 수 있도록 하였으며, 실시간 모니터링 도구를 도입하여 서비스 가용성과 성능을 지속적으로 관리하고 있습니다. 이를 통해 사용자가 서비스에 접근할 때 안정적인 경험을 제공할 수 있게 되었습니다.
+                            서비스 개발이 완료된 후, Git을 기반으로 CI/CD 파이프라인을 설정하여 코드 변경 사항이 Git 저장소에 푸시될 때마다 자동으로 빌드와 배포가 이루어지도록
+                            하였으며, 이를 통해 빠르고 효율적인 배포가 가능하게 했습니다.
                         </div>
                     </>
                 </div>
                 <div>
                     <div className="flex text-[14px] items-center font-semibold leading-7 text-zinc-300">
                         <FaCheck className="w-4 h-4 mr-1.5"/>
-                        seo 최적화 시킴
+                        하이브리드 렌더링 : SSR과 CSR의 혼합 사용
                     </div>
                     <>
                         <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
                             <GoDotFill className="w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5 text-foreground"></span>
+                            <span className="ml-1.5 text-foreground">[SSR] 초기 로드 성능 최적화</span>
                         </div>
                         <div className="text-[13px] leading-6 mx-6 text-zinc-300">
+                            서버에서 HTML을 미리 렌더링하는 SSR방식을 사용하여 빠른 페이지 로딩 및 SEO를 강화하였고, 서버에서 미리 준비된 데이터를 클라이언트로 전달하여 사용자가
+                            정보를 읽기에 불편함이 없도록 하였습니다.
+                        </div>
+                    </>
+                    <>
+                        <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
+                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                            <span className="ml-1.5 text-foreground">[CSR] 동적 콘텐츠 처리</span>
+                        </div>
+                        <div className="text-[13px] leading-6 mx-6 text-zinc-300">
+                            React를 통해 CSR을 구현하였고 이를 통해 사용자 인터랙션이 많은 페이지에서 빠른 응답성을 제공했습니다. 초기 로딩 후 필요한 데이터를 클라이언트 측에서 비동기적으로 로드하여 성능을 최적화했습니다.
                         </div>
                     </>
                 </div>
