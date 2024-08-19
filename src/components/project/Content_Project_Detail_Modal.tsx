@@ -24,7 +24,7 @@ const Content_Project_Detail_Modal = () => {
     return (
         <Dialog open={modalState[ModalTypes.CONTENT_PROJECT_DETAIL].isVisible}>
             <DialogContent
-                className="flex flex-col flex-1 p-3 sm:p-6 min-w-[90%] xl:min-w-[80%] w-[90%] h-[90vh] bg-secondary rounded sm:rounded border-0 outline-0">
+                className="flex flex-col flex-1 p-3 sm:p-6 min-w-[90%] lg:min-w-[70%] w-[70%] h-[90vh] bg-secondary rounded sm:rounded border-0 outline-0">
                 <div className="relative flex-1 overflow-y-auto">
                     <DialogHeader className="space-y-3">
                         <DialogTitle className="text-xl sm:text-2xl tracking-wider font-bold">{title}</DialogTitle>

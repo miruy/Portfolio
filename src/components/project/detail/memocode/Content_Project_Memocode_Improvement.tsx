@@ -1,10 +1,8 @@
-import {FaA, FaQ} from "react-icons/fa6";
 import {FaCheck} from "react-icons/fa";
-import {GoDotFill} from "react-icons/go";
 
 const Content_Project_Memocode_Improvement = () => {
     return (
-        <div className="flex flex-col w-full h-fit bg-zinc-950/70 rounded p-3 sm:p-5">
+        <div className="flex flex-col w-full h-fit bg-zinc-900 rounded p-3 sm:p-5">
             <div className="border-b border-zinc-600 text-zinc-300 font-semibold tracking-wider pb-2">
                 이슈 및 개선사항
             </div>
@@ -13,118 +11,22 @@ const Content_Project_Memocode_Improvement = () => {
                 <div>
                     <div className="flex text-[14px] items-center font-semibold leading-7 text-zinc-300">
                         <FaCheck className="w-4 h-4 mr-1.5"/>
-                        내 블로그 페이지
+                        모달창 키보드 단축키 기능
                     </div>
-                    <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5 text-foreground">메모 공개 / 비공개 기능</span>
-                        </div>
-                        <div className="text-[13px] leading-7 mx-6 text-zinc-300">
-                            작성한 메모를 공개 여부 설정에 따라
-                            <span className="font-bold text-foreground"> 블로그 게시글로 전환 </span>
-                            또는
-                            <span className="font-bold text-foreground"> 작성자만 열람/수정 가능한 메모장 </span>
-                            으로 이용 할 수 있습니다.
-                        </div>
-                    </>
-                    <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5 text-foreground">메모 보안 기능</span>
-                        </div>
-                        <div className="text-[13px] leading-7 mx-6 text-zinc-300">
-                            작성한 메모의 보안을 활성화하면 영구적으로 해당 메모를 블로그에 게시 및 공개할 수 없도록 하여
-                            <span className="font-bold text-foreground"> 노출되면 안되는 중요한 정보를 안전하게 관리 </span>
-                            할 수 있습니다.
-                        </div>
-                    </>
-                    <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5 text-foreground">메모 버전 관리 기능</span>
-                        </div>
-                        <div className="text-[13px] leading-7 mx-6 text-zinc-300">
-                            메모의 내용을
-                            <span className="font-bold text-foreground"> 보존 </span>
-                            하고 싶거나, 변경해도
-                            <span className="font-bold text-foreground"> 이전 내용이 유실되지 않게 보관 </span>
-                            하고 싶을 경우 해당 메모의 버전을 생성하여
-                            <span className="font-bold text-foreground"> `캡쳐` </span>
-                            하듯이 저장된 이전 내용의 메모를 버전별로 열람할 수 있습니다.
-                        </div>
-                    </>
-                    <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5 text-foreground">메모 즐겨찾기 기능</span>
-                        </div>
-                        <div className="text-[13px] leading-7 mx-6 text-zinc-300">
-                            자주 열람하거나, 자주 수정하는 메모를 즐겨찾기로 추가해 쉽게 메모를 찾아 관리할 수 있습니다.
-                        </div>
-                    </>
+                    <div className="text-[13px] leading-7 mx-6 text-zinc-300">
+                        사용자로부터 받은 피드백을 반영하여, 모달 창의 열기 및 닫기 기능에 단축키를 추가 적용할 예정입니다.
+                        이를 통해 단축키를 사용해 모달 창을 보다 효율적으로 닫을 수 있도록 개선할 계획입니다.
+                    </div>
                 </div>
-
                 <div>
                     <div className="flex text-[14px] items-center font-semibold leading-7 text-zinc-300">
                         <FaCheck className="w-4 h-4 mr-1.5"/>
-                        블로그 관리
+                        메모 작성 시 썸네일 이미지 등록 기능
                     </div>
-                    <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5">게시글 검색 기능</span>
-                        </div>
-                        <div className="text-[13px] leading-7 mx-6 text-zinc-300">
-                            제목, 머리글, 내용을 검색 키워드로 사용하여 게시글을 빠르게 검색할 수 있습니다.
-                        </div>
-                    </>
-                    <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5">게시글 댓글 / 대댓글 작성, 수정, 삭제 기능</span>
-                        </div>
-                        <div className="text-[13px] leading-7 mx-6 text-zinc-300">
-                            블로그 게시글의 댓글과 대댓글을 작성, 수정, 삭제 할 수 있습니다.
-                        </div>
-                    </>
-                    <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5">내 블로그 기능</span>
-                        </div>
-                        <div className="text-[13px] leading-7 mx-6 text-zinc-300">
-                            내 블로그 페이지에서 사용자가 게시한 게시글을 한눈에 볼 수 있습니다.
-                        </div>
-                    </>
-                </div>
-
-                <div>
-                    <div className="flex text-[14px] items-center font-semibold leading-7 text-zinc-300">
-                        <FaCheck className="w-4 h-4 mr-1.5"/>
-                        <div className="flex items-center text-[13px]">
-                            <FaQ className="w-3 h-3 mr-0.5"/>&<FaA className="w-3 h-3 ml-0.5"/>
-                        </div>
-                        관리 (등록, 수정, 검색, 삭제)
+                    <div className="text-[13px] leading-7 mx-6 text-zinc-300">
+                        메모 작성 시 썸네일 이미지를 추가로 등록할 수 있는 기능을 구현할 예정입니다.
+                        이를 통해 사용자는 각 메모에 시각적인 요소를 더하여, 내용을 보다 직관적으로 파악하고 관리할 수 있게 될 것입니다.
                     </div>
-                    <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5">질문 검색 기능</span>
-                        </div>
-                        <div className="text-[13px] leading-7 mx-6 text-zinc-300">
-                            제목, 내용, 태그를 검색 키워드로 사용하여 질문을 빠르게 검색할 수 있습니다.
-                        </div>
-                    </>
-                    <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5">답변 및 대댓글 작성, 수정, 삭제 기능</span>
-                        </div>
-                        <div className="text-[13px] leading-7 mx-6 text-zinc-300">
-                            질문의 답변과 대댓글을 작성, 수정, 삭제 할 수 있습니다.
-                        </div>
-                    </>
                 </div>
             </div>
         </div>
