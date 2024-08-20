@@ -9,11 +9,11 @@ const projectPreview = [
     },
     {
         title: "FARMFARM - 팜팜",
-        description: "비닐하우스 관리 서비스",
+        description: "시설원예 관리 서비스",
         src: "/farmfarm_preview.mov",
         git: "https://github.com/memocode-dev/farmfarm_web",
         url:"https://farmfarm.me/",
-        tags: ["내부 온도 실시간 조회", "위치 조회", "조직도 조회", "자동 개폐 시스템"]
+        tags: ["비닐하우스", "내부 온도 실시간 조회", "위치 조회", "조직도 조회", "자동 개폐 시스템"]
     },
     {
         title: "포트폴리오_김유림",

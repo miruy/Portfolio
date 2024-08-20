@@ -47,6 +47,10 @@ const Content_Project_Farmfarm_Point = () => {
                         <GoDotFill className="w-3 h-3 mx-0.5"/>
                         <span className="ml-1.5 text-foreground font-semibold">프론트 단에서 5초마다 데이터 요청 후 응답 받은 데이터를 사용자에게 실시간으로 표시</span>
                     </div>
+                    <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                        <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <span className="ml-1.5 text-foreground font-semibold">UI를 통해 사용자가 기기를 제어하며 최적화된 사용자 경험을 제공</span>
+                    </div>
                 </div>
 
                 {/* 추가 위치 */}
