@@ -20,7 +20,7 @@ const Content_Project_Farmfarm_DevReason = () => {
                     농업인이
                     <span className="font-semibold text-[15px] text-foreground"> 실제 필요로 하는 기능을 우선적으로 적용</span>하고,
                     <span className="font-semibold text-[15px] text-foreground"> 단계적으로 기능을 업그레이드</span>
-                    하여 고도화된 기술을 접목시킬 수 있도록 지속적인 발전 및 개발을 진행해 나갈 예정입니다.
+                    하여 고도화된 기술을 접목시킬 수 있도록 지속적인 발전 및 개발을 진행해 나갈 계획입니다.
                 </div>
             </div>
         </div>
