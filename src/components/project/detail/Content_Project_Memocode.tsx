@@ -25,10 +25,10 @@ const Content_Project_Memocode = () => {
             <div className="flex flex-col w-full h-full py-5">
                 <div className="flex-1 flex flex-col space-y-10 items-center">
                     <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5">
-                        <div className="border-b border-zinc-600 text-zinc-300 font-semibold tracking-wider pb-2">
+                        <div className="border-b border-zinc-600 text-foreground font-semibold tracking-wider pb-2">
                             작업화면
 
-                            <div className="text-[12px] text-zinc-500 mt-1">클릭하면 이미지를 크게 볼 수 있습니다.</div>
+                            <div className="text-[12px] text-zinc-400 mt-1">클릭하면 이미지를 크게 볼 수 있습니다.</div>
                         </div>
                         <div
                             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5 pt-5">
@@ -56,7 +56,7 @@ const Content_Project_Memocode = () => {
 
                     </div>
 
-                    {/* 개발 핵심 요소  */}
+                    {/* 중점 요소  */}
                     <Content_Project_Memocode_Point/>
 
                     {/* 제작 동기 */}
@@ -65,7 +65,7 @@ const Content_Project_Memocode = () => {
                     {/* 서비스 기능 및 특징 */}
                     <Content_Project_Memocode_KeyFeatures/>
 
-                    {/* 이슈 및 개선사항 */}
+                    {/* 이슈 및 해결방안 */}
                     <Content_Project_Memocode_Improvement/>
                 </div>
             </div>
