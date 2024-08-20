@@ -17,12 +17,14 @@ const Content = () => {
     const handleTab = (path: string) => {
         setActiveTab(() => path)
 
-        const targetDiv = document.getElementById(path);
+        if (typeof window !== 'undefined') {
+            const targetDiv = document.getElementById(path);
 
-        if (targetDiv && typeof window !== 'undefined') {
-            const yOffset = -100;
-            const yPosition = targetDiv.getBoundingClientRect().top + window.scrollY + yOffset;
-            window.scrollTo({top: yPosition, behavior: 'smooth'});
+            if (targetDiv) {
+                const yOffset = -100;
+                const yPosition = targetDiv.getBoundingClientRect().top + window.scrollY + yOffset;
+                window.scrollTo({top: yPosition, behavior: 'smooth'});
+            }
         }
     };
 
@@ -52,7 +54,7 @@ const Content = () => {
         const handleIntersection = (entries: IntersectionObserverEntry[]) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    setActiveTab(() => entry.target.id)
+                    setActiveTab(() => entry.target.id);
                 }
             });
         };
@@ -71,7 +73,7 @@ const Content = () => {
                 if (target) observer.unobserve(target);
             });
         };
-    }, [window.scrollY]);
+    }, []);
 
     return (
         <div className="h-screen relative flex">
