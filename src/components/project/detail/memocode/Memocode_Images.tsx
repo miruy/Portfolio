@@ -10,7 +10,7 @@ const MemocodeImages = ({images}: MemocodeImagesProps) => {
         <>
             {images?.map((image, index) => {
                 return (
-                    <CarouselItem key={image.id}>
+                    <CarouselItem key={index}>
                         <img
                             src={image.src}
                             alt={`memocode_expansion_image_${image.id}`}

@@ -34,7 +34,7 @@ const Content_Project_Memocode = () => {
                             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5 pt-5">
                             {memocode_image.map((data, index) => {
                                 return (
-                                    <div className="flex flex-col">
+                                    <div key={index} className="flex flex-col">
                                         <img onClick={() => {
                                             openModal({
                                                 name: ModalTypes.CONTENT_PROJECT_IMAGE_EXPANSION,
@@ -45,10 +45,10 @@ const Content_Project_Memocode = () => {
                                                 }
                                             })
                                         }}
-                                             key={index}
                                              src={data.src}
                                              alt={`memocode_image_${data.id}`}/>
-                                        <div className="flex justify-center py-1 text-[14px] text-zinc-400">{data.title}</div>
+                                        <div
+                                            className="flex justify-center py-1 text-[14px] text-zinc-400">{data.title}</div>
                                     </div>
                                 )
                             })}
