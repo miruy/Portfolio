@@ -30,7 +30,7 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
                 <Table className="mx-auto flex-1">
                     <TableHeader className="bg-zinc-700">
                         <TableRow>
-                            <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">Skills</TableHead>
+                            <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">Library</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
