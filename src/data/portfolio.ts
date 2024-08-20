@@ -2,8 +2,8 @@ const portfolio =
     {
         workingAt: "2024.08 ~ 진행중",
         workers: 1,
-        skills: ["React", "Next.js", "Typescript", "TailwindCSS"],
-        tools: ["Vercel", "WebStorm", "Shadcn UI", "React Icon"],
+        librarys: ["React", "Next.js", "Shadcn UI", "React Icon", "Typescript", "TailwindCSS"],
+        tools: ["Vercel", "WebStorm"],
         Contribution: "5 / 5",
     }
 

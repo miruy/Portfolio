@@ -44,34 +44,7 @@ const Content_Project_FarmFarm_Improvement = () => {
                     </div>
                 </div>
 
-                <div className="border-b border-zinc-600 py-5">
-                    <div className="space-y-2">
-                        <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                            <IoCloseSharp className="w-6 h-6 fill-red-500 mr-1"/>
-                            빌드 과정에서 `window is not found` / `router is not found` 에러 발생
-                        </div>
-                        <div className="text-[13px] mx-6 text-zinc-300">
-                            SSR 환경에서 브라우저 전용 객체인 `window`, `router`가 사용되어 발생하였습니다.
-                        </div>
-                    </div>
-
-                    <div className="mt-5 space-y-2">
-                        <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                            <FaCheck className="w-4 h-4 ml-1 mr-2 fill-green-700"/>
-                            해결방법
-                        </div>
-                        <div className="space-y-2">
-                            <div className="flex items-center text-zinc-300">
-                                <GoDotFill className="w-3 h-3 mx-1.5"/>
-                                <span className="text-[13px] text-zinc-300">
-                                    클라이언트 사이드에서만 사용될 수 있도록 `typeof window !== ${"undefined"}` / `typeof router !== ${"undefined"}` 조건문을 사용하여 분리하였습니다.
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* 이슈 추가 위치 */}
+                {/* 추가 위치 */}
             </div>
         </div>
     )
