@@ -18,7 +18,8 @@ const Content = () => {
         setActiveTab(() => path)
 
         const targetDiv = document.getElementById(path);
-        if (targetDiv) {
+
+        if (targetDiv && typeof window !== 'undefined') {
             const yOffset = -100;
             const yPosition = targetDiv.getBoundingClientRect().top + window.scrollY + yOffset;
             window.scrollTo({top: yPosition, behavior: 'smooth'});
@@ -26,15 +27,17 @@ const Content = () => {
     };
 
     const handleScroll = () => {
-        const position = window.scrollY;
-        const screenHeight = window.innerHeight;
+        if (typeof window !== 'undefined') {
+            const position = window.scrollY;
+            const screenHeight = window.innerHeight;
 
-        if (position >= screenHeight) {
-            setIsScrollEqualToScreenHeight(true)
-        }
+            if (position >= screenHeight) {
+                setIsScrollEqualToScreenHeight(true)
+            }
 
-        if (position < screenHeight) {
-            setIsScrollEqualToScreenHeight(false)
+            if (position < screenHeight) {
+                setIsScrollEqualToScreenHeight(false)
+            }
         }
     };
 
