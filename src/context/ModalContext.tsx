@@ -30,7 +30,7 @@ type IModal = {
         },
     },
 
-    // 메모 댓글/답글 삭제
+    // 프로젝트 이미지 크게보기
     [ModalTypes.CONTENT_PROJECT_IMAGE_EXPANSION]: {
         isVisible: boolean,
         data: {
@@ -53,7 +53,7 @@ const initialModalState: IModal = {
         },
     },
 
-    // 메모 댓글/답글 삭제
+    // 프로젝트 이미지 크게보기
     [ModalTypes.CONTENT_PROJECT_IMAGE_EXPANSION]: {
         isVisible: false,
         data: {

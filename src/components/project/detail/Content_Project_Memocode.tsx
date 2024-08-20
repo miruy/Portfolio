@@ -4,7 +4,6 @@ import {ModalContext, ModalTypes} from "@/context/ModalContext";
 import {useContext} from "react";
 import Content_Project_Detail_Image_Expansion_Modal
     from "@/components/project/detail/Content_Project_Detail_Image_Expansion_Modal";
-import memocode_image from "@/data/memocode_images";
 import Content_Project_Memocode_DevReason
     from "@/components/project/detail/memocode/Content_Project_Memocode_DevReason";
 import Content_Project_Memocode_KeyFeatures
@@ -12,6 +11,7 @@ import Content_Project_Memocode_KeyFeatures
 import Content_Project_Memocode_Improvement
     from "@/components/project/detail/memocode/Content_Project_Memocode_Improvement";
 import Content_Project_Memocode_Point from "@/components/project/detail/memocode/Content_Project_Memocode_Point";
+import memocode_images from "@/data/memocode_images";
 
 const Content_Project_Memocode = () => {
 
@@ -32,7 +32,7 @@ const Content_Project_Memocode = () => {
                         </div>
                         <div
                             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5 pt-5">
-                            {memocode_image.map((data, index) => {
+                            {memocode_images.map((data, index) => {
                                 return (
                                     <div key={index} className="flex flex-col">
                                         <img onClick={() => {
@@ -40,7 +40,7 @@ const Content_Project_Memocode = () => {
                                                 name: ModalTypes.CONTENT_PROJECT_IMAGE_EXPANSION,
                                                 data: {
                                                     key: "memocode",
-                                                    images: memocode_image,
+                                                    images: memocode_images,
                                                     targetId: data.id
                                                 }
                                             })

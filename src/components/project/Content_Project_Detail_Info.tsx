@@ -37,10 +37,10 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
                         <TableRow>
                             <TableCell className="w-auto px-0 py-2 text-center tracking-wide">
                                 <div className="flex flex-wrap">
-                                    {data.skills.map((skill, index) => {
+                                    {data.librarys.map((library, index) => {
                                         return (
                                             <Badge key={index}
-                                                   className="text-[10px] sm:text-[12px] bg-zinc-900 hover:bg-zinc-900 text-zinc-300 rounded m-0.5">{skill}</Badge>
+                                                   className="text-[10px] sm:text-[12px] bg-zinc-900 hover:bg-zinc-900 text-zinc-300 rounded m-0.5">{library}</Badge>
                                         );
                                     })}
                                 </div>

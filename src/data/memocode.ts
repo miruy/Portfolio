@@ -2,8 +2,8 @@ const memocode =
     {
         workingAt: "2023.06 ~ 진행중",
         workers: 2,
-        skills: ["React", "Next.js", "Typescript", "TailwindCSS", "keycloak-js"],
-        tools: ["Lens", "Katex", "Mermaid", "MarkDown", "WebStorm", "Shadcn UI", "MonacoEditor", "Swagger UI", "React Icon"],
+        librarys: ["React", "Next.js", "Typescript", "Katex", "Mermaid", "MarkDown", "Shadcn UI", "Swagger UI", "React Icon", "MonacoEditor", "TailwindCSS", "keycloak-js"],
+        tools: ["Lens", "WebStorm"],
         Contribution: "4 / 5",
     }
 

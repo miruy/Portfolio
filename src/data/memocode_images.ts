@@ -1,6 +1,6 @@
 import {Image} from "@/model/image";
 
-const memocode_image: Image[] = [
+const memocode_images: Image[] = [
     {id: 1, src: "/memocode/memocode_main1.png", title: "메인페이지"},
     {id: 2, src: "/memocode/memocode_main_search.png", title: "메인페이지_검색"},
     {id: 3, src: "/memocode/memocode_detail1.png", title: "메모상세페이지_게시글"},
@@ -18,4 +18,4 @@ const memocode_image: Image[] = [
     {id: 15, src: "/memocode/memocode_qna_detail2.png", title: "질문/답변 상세페이지_댓글/대댓글"},
 ];
 
-export default memocode_image;
+export default memocode_images;
