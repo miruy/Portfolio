@@ -19,8 +19,8 @@ const projectPreview = [
         title: "포트폴리오_김유림",
         description: "프론트엔드 개발자 포트폴리오",
         src: "",
-        git: "",
-        url:"",
+        git: "https://github.com/miruy/Portfolio",
+        url:"https://yurim-portfolio.vercel.app",
         tags: ["포트폴리오", "프론트엔드"]
     }
 ]

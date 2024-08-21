@@ -3,10 +3,11 @@
 import {ModalContext, ModalTypes} from "@/context/ModalContext";
 import {useContext, useEffect, useRef} from "react";
 import {Dialog, DialogContent, DialogTitle} from "@/components/ui/dialog";
-import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
+import {Carousel, CarouselContent, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
 import {VisuallyHidden} from "@radix-ui/react-visually-hidden";
 import MemocodeImages from "@/components/project/detail/memocode/Memocode_Images";
 import FarmfarmImages from "@/components/project/detail/farmfarm/Farmfarm_Images";
+import Portfolio_Images from "@/components/project/detail/portfolio/Portfolio_Images";
 
 const Content_Project_Detail_Image_Expansion_Modal = () => {
 
@@ -48,6 +49,7 @@ const Content_Project_Detail_Image_Expansion_Modal = () => {
                     <CarouselContent className="h-[330px]">
                         {key === "memocode" && <MemocodeImages images={images}/>}
                         {key === "farmfarm" && <FarmfarmImages images={images}/>}
+                        {key === "portfolio" && <Portfolio_Images images={images}/>}
                     </CarouselContent>
                     <CarouselPrevious className="w-9 h-9 bg-zinc-600 hover:bg-zinc-500"/>
                     <CarouselNext className="w-9 h-9 bg-zinc-600 hover:bg-zinc-500"/>
@@ -65,6 +67,7 @@ const Content_Project_Detail_Image_Expansion_Modal = () => {
                     <CarouselContent>
                         {key === "memocode" && <MemocodeImages images={images}/>}
                         {key === "farmfarm" && <FarmfarmImages images={images}/>}
+                        {key === "portfolio" && <Portfolio_Images images={images}/>}
                     </CarouselContent>
                     <CarouselPrevious className="w-10 h-10 bg-zinc-600 hover:bg-zinc-500"/>
                     <CarouselNext className="w-10 h-10 bg-zinc-600 hover:bg-zinc-500"/>
