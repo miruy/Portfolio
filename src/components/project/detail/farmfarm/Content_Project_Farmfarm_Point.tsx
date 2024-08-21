@@ -37,7 +37,7 @@ const Content_Project_Farmfarm_Point = () => {
                     </div>
                     <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
                         <GoDotFill className="w-3 h-3 mx-0.5"/>
-                        <span className="ml-1.5 text-red-400 font-semibold">수집된 데이터를 ???????클라우드 서버에 전송</span>
+                        <span className="ml-1.5 text-red-400 font-semibold">수집된 데이터를클라우드 서버에 전송</span>
                     </div>
                     <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
                         <GoDotFill className="w-3 h-3 mx-0.5"/>

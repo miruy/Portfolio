@@ -18,7 +18,7 @@ const Content_Project_FarmFarm_Improvement = () => {
                         </div>
                         <div className="text-[13px] mx-6 text-zinc-300">
                             ReChart 라이브러리를 사용하여 온/습도 센서 데이터를 차트로 시각화하는 과정에서,
-                            Y축 값을 설정할 때 적절히 초기화되지 않은 상태의 객체에 접근하려 하여 에러가 발생하였습니다.
+                            Y축 값을 설정할 때 적절히 초기화되지 않은 상태의 객체에 접근하려 하여 차트가 정상적으로 나타나지 않는 에러가 발생하였습니다.
                         </div>
                     </div>
 
