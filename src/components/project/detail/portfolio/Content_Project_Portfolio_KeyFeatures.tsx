@@ -1,5 +1,5 @@
 import {FaCheck} from "react-icons/fa";
-import {GoDash, GoDot, GoDotFill} from "react-icons/go";
+import {GoDot, GoDotFill} from "react-icons/go";
 
 const Content_Project_Portfolio_KeyFeatures = () => {
     return (
@@ -148,6 +148,61 @@ const Content_Project_Portfolio_KeyFeatures = () => {
                             </div>
                         </>
 
+                        <>
+                            <div className="text-[13px] mx-6 pb-1 text-foreground font-semibold">
+                                <div className="flex items-center ml-5">
+                                    <GoDot className="mr-1 text-foreground"/>
+                                    <div>주요 성과 및 기술적 중점 사항</div>
+                                </div>
+                            </div>
+                            <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="ml-9">
+                                    프로젝트에서 중점적으로 구현한 기술적 성과와 최적화 요소들을 설명하며, 개발부터 배포, SEO 최적화, 그리고 사용자 경험 개선까지의 주요 작업들을 강조한 내용입니다.
+                                </div>
+                            </div>
+                        </>
+
+                        <>
+                            <div className="text-[13px] mx-6 pb-1 text-foreground font-semibold">
+                                <div className="flex items-center ml-5">
+                                    <GoDot className="mr-1 text-foreground"/>
+                                    <div>제작동기</div>
+                                </div>
+                            </div>
+                            <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="ml-9">
+                                    프로젝트를 개발하게 된 이유와 그 방향성을 설명하였습니다.
+                                </div>
+                            </div>
+                        </>
+
+                        <>
+                            <div className="text-[13px] mx-6 pb-1 text-foreground font-semibold">
+                                <div className="flex items-center ml-5">
+                                    <GoDot className="mr-1 text-foreground"/>
+                                    <div>서비스 기능 및 특징</div>
+                                </div>
+                            </div>
+                            <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="ml-9">
+                                    프로젝트를 구성하는 요소들과 구현된 기능들을 간결하고 명확하게 정의하였습니다.
+                                </div>
+                            </div>
+                        </>
+
+                        <>
+                            <div className="text-[13px] mx-6 pb-1 text-foreground font-semibold">
+                                <div className="flex items-center ml-5">
+                                    <GoDot className="mr-1 text-foreground"/>
+                                    <div>이슈 및 해결방법</div>
+                                </div>
+                            </div>
+                            <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="ml-9">
+                                    개발 과정에서 마주했던 주요 이슈들을 간략하게 정리하였고, 그에 대한 해결 방법을 단계별로 서술하였습니다.
+                                </div>
+                            </div>
+                        </>
                     </>
                 </div>
 

@@ -5,7 +5,7 @@ const Content_Project_Farmfarm_Point = () => {
     return (
         <div className="flex flex-col w-full h-fit bg-zinc-900 rounded p-3 sm:p-5">
             <div className="border-b border-zinc-600 text-foreground font-semibold tracking-wider pb-2">
-                중점 요소
+                주요 성과 및 기술적 중점 사항
             </div>
 
             <div className="pt-5 tracking-wide space-y-5 text-zinc-300">
