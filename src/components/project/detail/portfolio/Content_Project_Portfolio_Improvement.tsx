@@ -14,11 +14,10 @@ const Content_Project_Portfolio_Improvement = () => {
                     <div className="space-y-2">
                         <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
                             <IoCloseSharp className="w-6 h-6 fill-red-500 mr-1"/>
-                            온/습도 데이터를 시각화하는 과정에서 정의되지 않은 데이터에 접근하여 에러 발생
+                            빌드 과정에서 `window is not found` 에러 발생
                         </div>
                         <div className="text-[13px] mx-6 text-zinc-300">
-                            ReChart 라이브러리를 사용하여 온/습도 센서 데이터를 차트로 시각화하는 과정에서,
-                            Y축 값을 설정할 때 적절히 초기화되지 않은 상태의 객체에 접근하려 하여 차트가 정상적으로 나타나지 않는 에러가 발생하였습니다.
+                            CSR 환경에서 useEffect() 의존성 배열에 `window`객체를 포함하여 에러가 발생하였습니다.
                         </div>
                     </div>
 
@@ -31,13 +30,7 @@ const Content_Project_Portfolio_Improvement = () => {
                             <div className="flex items-center text-zinc-300">
                                 <GoDotFill className="w-3 h-3 mx-1.5"/>
                                 <span className="text-[13px] text-zinc-300">
-                                     데이터를 가져오는 과정에서 해당 데이터가 적절히 초기화 될 수 있도록, useEffect() 로직을 추가하여 초기화 과정을 재점검 하였습니다.
-                                </span>
-                            </div>
-                            <div className="flex items-center text-zinc-300">
-                                <GoDotFill className="w-3 h-3 mx-1.5"/>
-                                <span className="text-[13px] text-zinc-300">
-                                    데이터 초기화 후 적절히 할당된 데이터를 사용하기 위해 조건부 렌더링을 적용하였으며, 이를 통해 안전한 값을 사용하고 에러를 방지할 수 있었습니다.
+                                    useEffect()의 의존성 배열에서 `window` 객체를 제거하고, `window` 관련 코드를 useEffect() 내부에서 typeof window !== `undefined` 조건문으로 감싸 에러를 방지하였습니다.
                                 </span>
                             </div>
                         </div>
