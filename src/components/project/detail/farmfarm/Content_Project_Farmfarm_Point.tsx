@@ -33,15 +33,21 @@ const Content_Project_Farmfarm_Point = () => {
                     </div>
                     <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
                         <GoDotFill className="w-3 h-3 mx-0.5"/>
-                        <span className="ml-1.5 text-foreground font-semibold">온/습도 센서 기기를 와이파이 네트워크에 연결하여 데이터 수집</span>
+                        <span className="ml-1.5 text-foreground font-semibold">온/습도 센서 기기를 와이파이 네트워크를 이용해 인터넷에 연결</span>
                     </div>
                     <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
                         <GoDotFill className="w-3 h-3 mx-0.5"/>
-                        <span className="ml-1.5 text-red-400 font-semibold">수집된 데이터를클라우드 서버에 전송</span>
+                        <span className="ml-1.5 text-foreground font-semibold">MQTT 프로토콜을 사용하여 데이터를 AWS IoT로 전송</span>
                     </div>
                     <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
                         <GoDotFill className="w-3 h-3 mx-0.5"/>
-                        <span className="ml-1.5 text-foreground font-semibold">백엔드 API 서버를 통해 데이터 처리 및 데이터베이스 저장</span>
+                        <span
+                            className="ml-1.5 text-foreground font-semibold">수신 받은 MQTT 메시지를 Apache Kafka를 통해 백엔드 서버에 전달</span>
+                    </div>
+                    <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                        <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <span
+                            className="ml-1.5 text-foreground font-semibold">Kafka를 통해 전달받은 데이터를 백엔드 서버에서 처리 및 데이터베이스 저장</span>
                     </div>
                     <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
                         <GoDotFill className="w-3 h-3 mx-0.5"/>
@@ -49,7 +55,8 @@ const Content_Project_Farmfarm_Point = () => {
                     </div>
                     <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
                         <GoDotFill className="w-3 h-3 mx-0.5"/>
-                        <span className="ml-1.5 text-foreground font-semibold">UI를 통해 사용자가 기기를 제어하며 최적화된 사용자 경험을 제공</span>
+                        <span
+                            className="ml-1.5 text-foreground font-semibold">UI를 통해 사용자가 기기를 제어하며 최적화된 사용자 경험을 제공</span>
                     </div>
                 </div>
 

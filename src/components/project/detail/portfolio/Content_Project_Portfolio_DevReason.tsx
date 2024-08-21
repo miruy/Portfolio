@@ -6,21 +6,16 @@ const Content_Project_Portfolio_DevReason = () => {
             </div>
 
             <div className="pt-5 tracking-wide leading-7 text-zinc-300">
-                <span className="text-[14px]">팜팜은 </span>
-                <span className="font-semibold text-[15px] text-foreground">스마트팜 </span>
-                <span className="text-[14px]">기술 도입에 관심이 있고, </span>
-                <span
-                    className="font-semibold text-[15px] text-foreground">실제 현업에 종사하고 계시는 제 주변 시설원예 농업인</span>
-                <span className="text-[14px]">을 위해 개발하게 되었습니다.</span>
-
-                <div className="text-[14px]">
-                    IoT 기반 스마트팜 시스템을 통해 농업인의 부담을 줄이고, 농업의 생산성과 효율성을 극대화하는 것을 목표로 하고 있습니다.
+                <span className="font-semibold text-[15px] text-foreground">기획, 디자인, 개발, 배포까지 모든 과정을 직접 수행</span>
+                <span className="text-[14px]">하며, 프론트엔드 개발자로서 저의 역량을 발휘하기 위해 이 프로젝트를 제작하였습니다.</span>
+                <div className="text-[14px]">다양한 웹 기술과 디자인 패턴을 활용하여
+                    <span className="font-semibold text-[15px] text-foreground"> 사용자 친화적인 인터페이스</span>
+                    를 구현하였고,
                 </div>
                 <div className="text-[14px]">
-                    농업인이
-                    <span className="font-semibold text-[15px] text-foreground"> 실제 필요로 하는 기능을 우선적으로 적용</span>하고,
-                    <span className="font-semibold text-[15px] text-foreground"> 단계적으로 기능을 업그레이드</span>
-                    하여 고도화된 기술을 접목시킬 수 있도록 지속적인 발전 및 개발을 진행해 나갈 계획입니다.
+                    초기 기획에서 구현하고자 했던
+                    <span className="font-semibold text-[15px] text-foreground"> 기능들을 완벽하게 구현</span>
+                    하는 데 집중하여, 계획했던 목표에 부합하는 결과물을 만들어냈습니다.
                 </div>
             </div>
         </div>
