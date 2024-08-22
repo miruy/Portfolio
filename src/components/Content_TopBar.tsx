@@ -17,7 +17,7 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
 
     return (
         <div
-            className={`${isScrollEqualToScreenHeight ? 'fixed top-0' : 'absolute top-0'} w-full h-24 bg-background/5 backdrop-blur`}>
+            className={`${isScrollEqualToScreenHeight ? 'fixed top-0' : 'absolute top-0'} w-full h-24 bg-background/5 backdrop-blur z-[1000]`}>
             <div className="flex h-full justify-between lg:justify-end items-center px-5">
                 <div className="flex lg:hidden space-x-1">
                     <Button

@@ -88,7 +88,7 @@ const Content = () => {
                             className={`${activeTab === "about" ? `text-foreground` : `text-zinc-600 hover:text-zinc-500`} h-fit w-fit rounded duration-300`}
                             onClick={() => handleTab("about")}
                         >
-                            <span className="text-4xl tracking-wider font-bold">About</span>
+                            <span className="text-4xl tracking-wider font-bold">ABOUT ME</span>
                         </Button>
 
                         <Button
@@ -96,16 +96,16 @@ const Content = () => {
                             className={`${activeTab === "project" ? `text-foreground` : `text-zinc-600 hover:text-zinc-500 `} h-fit w-fit rounded duration-300`}
                             onClick={() => handleTab("project")}
                         >
-                            <span className="text-4xl tracking-wider font-bold">Project</span>
+                            <span className="text-4xl tracking-wider font-bold">PROJECT</span>
                         </Button>
                     </div>
 
-                    <div className="flex flex-1 flex-col mt-32 mx-10 lg:ml-[270px] lg:mr-[100px]">
-                        <div id="about" ref={aboutRef} className="h-[100vh] py-5">
+                    <div className="flex flex-1 flex-col mt-32 mx-4 sm:mx-10 lg:ml-[280px] lg:mr-[45px]">
+                        <div id="about" ref={aboutRef} className="h-[100vh] pb-10">
                             <ContentAbout/>
                         </div>
 
-                        <div id="project" ref={projectRef} className="h-full pb-20">
+                        <div id="project" ref={projectRef} className="h-[90vh]">
                             <ContentProject/>
                         </div>
                     </div>
