@@ -101,11 +101,11 @@ const Content = () => {
                     </div>
 
                     <div className="flex flex-1 flex-col mt-32 mx-4 sm:mx-10 lg:ml-[280px] lg:mr-[45px]">
-                        <div id="about" ref={aboutRef} className="h-[100vh] pb-10">
+                        <div id="about" ref={aboutRef} className="h-full mb-20">
                             <ContentAbout/>
                         </div>
 
-                        <div id="project" ref={projectRef} className="h-[90vh]">
+                        <div id="project" ref={projectRef} className="h-full">
                             <ContentProject/>
                         </div>
                     </div>

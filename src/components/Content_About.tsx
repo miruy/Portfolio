@@ -1,7 +1,7 @@
-import memocode_images from "@/data/memocode_images";
-import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
-import {BellRing} from "lucide-react";
 import {useEffect, useRef, useState} from "react";
+import education_experience from "@/data/education_Lisence";
+import {Badge} from "@/components/ui/badge";
+import {LiaCalendarDaySolid, LiaGraduationCapSolid, LiaLightbulbSolid} from "react-icons/lia";
 
 const ContentAbout = () => {
 
@@ -25,57 +25,46 @@ const ContentAbout = () => {
         }
     }, []);
 
-    console.log("width", width)
-
     return (
         <div className="flex flex-col flex-1 items-center space-y-20" ref={divRef}>
             <div className="bg-zinc-900 w-52 h-52"></div>
 
             <div className="flex flex-col w-full h-fit">
                 <div className="border-b border-zinc-600 text-foreground text-2xl font-semibold tracking-wider pb-5">
-                    Education & License
+                    Education & Experience
                 </div>
 
-                <div className="flex space-x-5 overflow-x-auto py-6 w-[100vh]">
-                    {memocode_images.map((data, index) => {
-                        return (
-                            <Card className="border-zinc-900 bg-zinc-900 w-[500px] rounded">
-                                <CardHeader>
-                                    <CardTitle>Notifications</CardTitle>
-                                    <CardDescription>You have 3 unread messages.</CardDescription>
-                                </CardHeader>
-                                <CardContent className="grid gap-4">
-                                    <div className=" flex items-center space-x-4 rounded-md border p-4">
-                                        <BellRing/>
-                                        <div className="flex-1 space-y-1">
-                                            <p className="text-sm font-medium leading-none">
-                                                Push Notifications
-                                            </p>
-                                            <p className="text-sm text-muted-foreground">
-                                                Send notifications to device.
-                                            </p>
+                <div className="flex h-fit overflow-x-auto py-7" style={{maxWidth: width}}>
+                    <div className="flex space-x-4">
+                        {[...education_experience].reverse().map((data, index) => { // 배열 순서 반대로 갸져오기
+                            return (
+                                <div key={index}
+                                     className="space-y-3 border-zinc-900 bg-zinc-900 w-[300px] h-[300px] rounded p-5 tracking-wider">
+                                    <Badge
+                                        variant="outline"
+                                        className="border border-zinc-600 py-1.5 px-4 flex w-fit h-fit">
+                                        <div className="text-[14px]">{data.type}</div>
+                                    </Badge>
+                                    <div className="text-xl font-semibold">{data.title}</div>
+
+                                    <div className="space-y-1.5 text-zinc-300">
+                                        <div className="flex items-start space-x-1.5">
+                                            <LiaGraduationCapSolid className="flex-shrink-0 w-5 h-5 mt-0.5"/>
+                                            <div className="leading-6 text-[15px]">{data.detail}</div>
+                                        </div>
+
+                                        <div className="flex items-center space-x-1.5">
+                                            <LiaCalendarDaySolid className="w-5 h-5"/>
+                                            <div className="text-[15px]">{data.date}</div>
                                         </div>
                                     </div>
-                                </CardContent>
-                            </Card>
-                        )
-                    })}
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
 
-            About page
-
-            사진
-            이름
-            짧은 소개글
-            교육
-            자격
-            스킬앤툴(프로그래밍언어, 툴, 프레임워크)
-
-            {/*<div className="w-52 h-96 bg-pink-500"></div>*/}
-            {/*<div className="w-50 h-50 bg-pink-500"></div>*/}
-            {/*<div className="w-52 h-96 bg-pink-500"></div>*/}
-            {/*<div className="w-52 h-96 bg-pink-500"></div>*/}
         </div>
     )
 }
