@@ -3,41 +3,33 @@
 @tailwind utilities;
 
 @layer base {
-
-    @layer base {
-
-        @layer base {
-            :root {
-                --background: 240 10% 3.9%;
-                --foreground: 0 0% 98%;
-                --card: 240 10% 3.9%;
-                --card-foreground: 0 0% 98%;
-                --popover: 240 10% 3.9%;
-                --popover-foreground: 0 0% 98%;
-                --primary: 0 0% 98%;
-                --primary-foreground: 240 5.9% 10%;
-                --secondary: 240 3.7% 15.9%;
-                --secondary-foreground: 0 0% 98%;
-                --muted: 240 3.7% 15.9%;
-                --muted-foreground: 240 5% 64.9%;
-                --accent: 240 3.7% 15.9%;
-                --accent-foreground: 0 0% 98%;
-                --destructive: 0 62.8% 30.6%;
-                --destructive-foreground: 0 0% 98%;
-                --border: 240 3.7% 15.9%;
-                --input: 240 3.7% 15.9%;
-                --ring: 240 4.9% 83.9%;
-                --chart-1: 220 70% 50%;
-                --chart-2: 160 60% 45%;
-                --chart-3: 30 80% 55%;
-                --chart-4: 280 65% 60%;
-                --chart-5: 340 75% 55%;
-            }
-        }
+    :root {
+        --background: 240 10% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 240 10% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 240 10% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 240 5.9% 10%;
+        --secondary: 240 3.7% 15.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 240 3.7% 15.9%;
+        --muted-foreground: 240 5% 64.9%;
+        --accent: 240 3.7% 15.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 3.7% 15.9%;
+        --input: 240 3.7% 15.9%;
+        --ring: 240 4.9% 83.9%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
     }
-}
 
-@layer base {
     * {
         @apply border-border;
     }
@@ -47,6 +39,7 @@
         margin: 0;
     }
 }
+
 
 .animate-slide-up {
     animation: slide-up 1.5s ease-out forwards;
@@ -59,4 +52,40 @@
     100% {
         transform: translateY(0);
     }
+}
+
+/* 기본 전체 스크롤바 커스텀 */
+::-webkit-scrollbar {
+    width: 6px; /* 스크롤바의 너비 */
+    height: 6px; /* 스크롤바의 너비 */
+}
+
+/* 기본 스크롤바의 트랙(바탕) */
+::-webkit-scrollbar-track {
+    background: hsl(var(--background)); /* 트랙의 색상 */
+}
+
+/* 기본 스크롤바의 슬라이더(움직이는 부분) */
+::-webkit-scrollbar-thumb {
+    background-color: #3f3f46; /* 슬라이더의 색상 */
+    border-radius: 10px; /* 슬라이더의 둥글기 */
+    border: 3px solid #3f3f46; /* 슬라이더의 테두리 및 트랙과의 간격 */
+}
+
+/* Project_상세 뷰 스크롤바 전체 */
+.overflow-y-auto::-webkit-scrollbar {
+    width: 6px; /* 스크롤바의 너비 */
+    height: 6px; /* 스크롤바의 높이 */
+}
+
+/* Project_상세 뷰 스크롤바 트랙(바탕) */
+.overflow-y-auto::-webkit-scrollbar-track {
+    background: hsl(var(--secondary)); /* 트랙의 색상 */
+}
+
+/* Project_상세 뷰 스크롤바 슬라이더(움직이는 부분) */
+.overflow-y-auto::-webkit-scrollbar-thumb {
+    background-color: #18181b; /* 슬라이더의 색상 */
+    border-radius: 10px; /* 슬라이더의 둥글기 */
+    border: 3px solid #18181b; /* 슬라이더의 테두리 및 트랙과의 간격 */
 }
