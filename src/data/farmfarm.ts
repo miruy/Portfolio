@@ -3,7 +3,7 @@ const farmfarm =
         workingAt: "2023.06 ~ 진행중",
         workers: 2,
         librarys: ["React", "Next.js", "Recharts", "Shadcn UI", "Swagger UI", "React Icon", "Typescript", "TailwindCSS", "keycloak-js"],
-        tools: ["Lens", "WebStorm"],
+        tools: ["k8s Lens", "WebStorm"],
         Contribution: "4 / 5",
     }
 
