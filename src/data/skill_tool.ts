@@ -3,12 +3,12 @@ import skill_tool_model from "@/model/skill_tool_model";
 const skill_tool: skill_tool_model[] = [
     {
         title: "Front-End",
-        skills: ["/skill/React.svg", "/skill/Next.js.svg", "/skill/JavaScript.svg", "/skill/TypeScript.svg", "/skill/HTML.png", "/skill/CSS.png", "/skill/TailwindCSS.svg", "/skill/Markdown.png", "/skill/Mermaid.png", "/skill/Recharts.png"],
-        tools: ["/tool/WebStorm.png", "/tool/k8sLens.png", "/tool/swaggerUI.png"],
+        skills: ["/skill/React.svg", "/skill/Next.js.svg", "/skill/JavaScript.svg", "/skill/TypeScript.svg", "/skill/HTML.png", "/skill/CSS.png", "/skill/TailwindCSS.svg", "/skill/Mermaid.png", "/skill/Markdown.png", "/skill/Recharts.png"],
+        tools: ["/tool/WebStorm.png", "/tool/k8sLens.png", "/tool/SwaggerUI.png"],
     },
     {
         title: "Back-End",
-        skills: ["/skill/Java.svg", "/skill/Spring.png", "/skill/JSP.png", "/skill/Docker.png"],
+        skills: ["/skill/JAVA.svg", "/skill/Spring.png", "/skill/JSP.png", "/skill/Docker.png"],
         dbs: ["/skill/MySQL.png"],
         tools: ["/tool/EclipseIDE.svg", "/tool/IntelliJ.png", "/tool/GCP.png"],
     },
