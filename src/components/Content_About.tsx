@@ -25,8 +25,14 @@ const ContentAbout = () => {
     }, []);
 
     return (
-        <div className="flex flex-col flex-1 items-center space-y-14" ref={divRef}>
-            <div className="bg-zinc-900 w-52 h-52"></div>
+        <div className="flex flex-col flex-1 space-y-14" ref={divRef}>
+            <div className="flex">
+                <div className="relative w-[350px] h-[350px] p-1">
+                    <img src="/notion_avatar.svg" alt="notion_avatar" className="absolute -top-16 w-full h-full"/>
+                </div>
+
+                <div className="flex-1 bg-zinc-900"></div>
+            </div>
 
             <EducationExperience width={width}/>
 

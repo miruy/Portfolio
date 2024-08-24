@@ -37,6 +37,33 @@ const Content_Project_Portfolio_Improvement = () => {
                     </div>
                 </div>
 
+                <div className="border-b border-zinc-600 py-5">
+                    <div className="space-y-2">
+                        <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
+                            <IoCloseSharp className="w-6 h-6 fill-red-500 mr-1"/>
+                            교육/경험, 스킬/툴 width에러 옵저버로 해결
+                        </div>
+                        <div className="text-[13px] mx-6 text-zinc-300">
+
+                        </div>
+                    </div>
+
+                    <div className="mt-5 space-y-2">
+                        <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
+                            <FaCheck className="w-4 h-4 ml-1 mr-2 fill-green-700"/>
+                            해결방법
+                        </div>
+                        <div className="space-y-2">
+                            <div className="flex items-center text-zinc-300">
+                                <GoDotFill className="w-3 h-3 mx-1.5"/>
+                                <span className="text-[13px] text-zinc-300">
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 {/* 추가 위치 */}
             </div>
         </div>
