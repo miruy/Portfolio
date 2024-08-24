@@ -9,11 +9,11 @@ interface EducationExperienceProps {
 const EducationExperience = ({width}: EducationExperienceProps) => {
     return (
         <div className="flex flex-col w-full h-fit">
-            <div className="border-b border-zinc-600 text-foreground text-2xl font-semibold tracking-wider pb-5">
+            <div className="border-b border-zinc-600 text-foreground text-2xl font-semibold tracking-wider pb-2">
                 Education & Experience
             </div>
 
-            <div className="flex h-fit overflow-x-auto pt-7 pb-4" style={{maxWidth: width}}>
+            <div className="flex h-fit pt-7 pb-4 overflow-x-scroll" style={{width: width}}>
                 <div className="flex space-x-5">
                     {[...education_experience].reverse().map((data, index) => { // 배열 순서 반대로 갸져오기
                         return (

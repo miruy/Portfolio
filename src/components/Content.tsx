@@ -60,7 +60,7 @@ const Content = () => {
         };
 
         const observer = new IntersectionObserver(handleIntersection, {
-            threshold: 0.5, // 요소가 50% 이상 보일 때 트리거
+            threshold: 0.3, // 요소가 30% 이상 보일 때 트리거
         });
 
         const targets = [aboutRef.current, projectRef.current];
@@ -101,13 +101,14 @@ const Content = () => {
                     </div>
 
                     <div className="flex flex-1 flex-col mt-32 mx-4 sm:mx-10 lg:ml-[280px] lg:mr-[45px]">
-                        <div id="about" ref={aboutRef} className="h-full mb-20">
+                        <div id="about" ref={aboutRef} className="">
                             <ContentAbout/>
                         </div>
 
-                        <div id="project" ref={projectRef} className="h-full">
+                        <div id="project" ref={projectRef} className="mt-24">
                             <ContentProject/>
                         </div>
+                        <div className="h-[500px]"></div>
                     </div>
                 </div>
             </div>

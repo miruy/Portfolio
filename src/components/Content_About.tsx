@@ -13,7 +13,7 @@ const ContentAbout = () => {
             // ResizeObserver 인스턴스 생성
             const resizeObserver = new ResizeObserver(entries => {
                 const {width} = entries[0].contentRect;
-                setWidth(width);
+                setWidth(width - 10);
             });
 
             // 관찰 시작

@@ -20,16 +20,18 @@ const Frontend_Skill_Tool = ({data}: FrontendSkillToolProps) => {
                 <div className="grid grid-cols-5 gap-4 rounded">
                     {data.skills?.map((skill, index) => {
                         const name = skill.replace("/skill/", "").replace(/\.(svg|png)$/, "");
+                        const color = "bg-green-500"
                         return (
                             <div key={index} className="flex flex-col items-center">
-                                <div
-                                    className={`flex justify-center items-center bg-zinc-700 rounded w-[50px] h-[50px]
-                                                       ${name === "Markdown" || name === "Katex" || name === "Recharts" || name === "Java" ? `p-0.5` : `p-2.5`}
-                                                         `}>
+                                <div className={`flex justify-center items-center bg-zinc-700 rounded w-[50px] h-[50px] scale-95 relative
+                                                      ${name === "Markdown" || name === "Recharts" ? `p-0.5` : `p-2.5`}`}>
                                     <img
                                         src={skill}
                                         alt={name + `_image_` + index}
                                         className="w-full h-auto"/>
+
+                                    <div
+                                        className={`absolute -top-1 -right-1 inline-flex rounded-full h-3 w-3 scale-95 ${color}`}></div>
                                 </div>
                                 <div className="text-[10px] text-zinc-300 mt-1">{name}</div>
                             </div>
@@ -43,16 +45,21 @@ const Frontend_Skill_Tool = ({data}: FrontendSkillToolProps) => {
                 <div className="grid grid-cols-5 gap-4 rounded">
                     {data.tools?.map((tool, index) => {
                         const name = tool.replace("/tool/", "").replace(/\.(svg|png)$/, "");
+                        let color = "bg-green-500"
+                        if (name === "GCP") {
+                            color = "bg-yellow-300"
+                        }
                         return (
                             <div key={index} className="flex flex-col items-center">
                                 <div
-                                    className={`flex justify-center items-center bg-zinc-700 rounded w-[50px] h-[50px] 
-                                                                ${name === "Pycharm" ? `p-2` : `p-2.5`}
-                                                                `}>
+                                    className={`flex justify-center items-center bg-zinc-700 rounded w-[50px] h-[50px] p-2.5 relative`}>
                                     <img
                                         src={tool}
                                         alt={name + `_image_` + index}
                                         className="w-full h-auto"/>
+
+                                    <div
+                                        className={`absolute -top-1 -right-1 inline-flex rounded-full h-3 w-3 ${color}`}></div>
                                 </div>
                                 <div className="text-[10px] text-zinc-300 mt-1">{name}</div>
                             </div>
