@@ -43,8 +43,8 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                 </div>
             </div>
 
-            <div className="flex">
-                <div className="flex-1 space-y-3">
+            <div className="flex justify-between">
+                <div className="space-y-3">
                     <div
                         className="flex items-center text-[14px] font-semibold text-zinc-300">
                         DataBase
@@ -79,9 +79,9 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                     </div>
                 </div>
 
-                <div className="flex-1 space-y-3">
+                <div className="space-y-3 mr-1">
                     <div
-                        className="flex items-center text-[14px] font-semibold text-zinc-300">
+                        className="flex text-[14px] font-semibold text-zinc-300">
                         Infra
                     </div>
                     <div className="flex space-x-4 rounded">

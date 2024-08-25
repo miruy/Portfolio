@@ -100,8 +100,8 @@ const Content = () => {
                         </Button>
                     </div>
 
-                    <div className="flex flex-1 flex-col mt-32 mx-4 sm:mx-10 lg:ml-[280px] lg:mr-[45px]">
-                        <div id="about" ref={aboutRef} className="">
+                    <div className="flex flex-1 flex-col mt-[100px] mx-4 sm:mx-10 lg:ml-[280px] lg:mr-[45px]">
+                        <div id="about" ref={aboutRef}>
                             <ContentAbout/>
                         </div>
 
