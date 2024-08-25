@@ -10,13 +10,13 @@ const Content_Project_Memocode_Point = () => {
 
             <div className="pt-5 tracking-wide space-y-5 text-zinc-300">
                 <div>
-                    <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                        <FaCheck className="w-4 h-4 mr-1.5"/>
+                    <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                        <FaCheck className="flex-shrink-0 mt-1.5 w-4 h-4 mr-1.5"/>
                         개발 및 배포 완료 후 현재 서비스 운영 중
                     </div>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">프로덕션 환경 구축 및 배포</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -26,13 +26,13 @@ const Content_Project_Memocode_Point = () => {
                     </>
                 </div>
                 <div>
-                    <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                        <FaCheck className="w-4 h-4 mr-1.5"/>
+                    <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                        <FaCheck className="flex-shrink-0 mt-1.5 w-4 h-4 mr-1.5"/>
                         하이브리드 렌더링을 통한 사용자 경험 최적화
                     </div>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">[SSR] 초기 로드 성능 최적화</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -41,8 +41,8 @@ const Content_Project_Memocode_Point = () => {
                         </div>
                     </>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">[CSR] 동적 콘텐츠 처리</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -52,13 +52,13 @@ const Content_Project_Memocode_Point = () => {
                     </>
                 </div>
                 <div>
-                    <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                        <FaCheck className="w-4 h-4 mr-1.5"/>
+                    <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                        <FaCheck className="flex-shrink-0 mt-1.5 w-4 h-4 mr-1.5"/>
                         SEO 최적화
                     </div>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">메타 태그 및 구조화된 데이터 적용</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -67,8 +67,8 @@ const Content_Project_Memocode_Point = () => {
                         </div>
                     </>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">페이지 로딩 속도 개선</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -76,8 +76,8 @@ const Content_Project_Memocode_Point = () => {
                         </div>
                     </>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">모바일 친화성 강화</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -86,13 +86,13 @@ const Content_Project_Memocode_Point = () => {
                     </>
                 </div>
                 <div>
-                    <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                        <FaCheck className="w-4 h-4 mr-1.5"/>
+                    <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                        <FaCheck className="flex-shrink-0 mt-1.5 w-4 h-4 mr-1.5"/>
                         Google 애널리틱스 적용
                     </div>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">트래픽 분석 및 사용자 행동 추적</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -101,8 +101,8 @@ const Content_Project_Memocode_Point = () => {
                         </div>
                     </>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">사용자 이벤트 추적을 통한 사용자 경험 개선</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -110,8 +110,8 @@ const Content_Project_Memocode_Point = () => {
                         </div>
                     </>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">Google Ads와의 연동을 위한 지속적인 리팩토링</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">

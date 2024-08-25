@@ -10,27 +10,27 @@ const Content_Project_Portfolio_KeyFeatures = () => {
 
             <div className="pt-5 tracking-wide leading-7 text-zinc-300 space-y-5">
                 <div>
-                    <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                        <FaCheck className="w-4 h-4 mr-1.5"/>
+                    <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                        <FaCheck className="flex-shrink-0 mt-1 w-4 h-4 mr-1.5"/>
                         메인페이지
                     </div>
-                    <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                        <GoDotFill className="w-3 h-3 mx-0.5"/>
+                    <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                        <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                         <span className="ml-1.5 text-foreground font-semibold">역동적인 애니메이션을 배경으로 사용하여 반응형 웹사이트의 특성을 강조하였습니다.</span>
                     </div>
-                    <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                        <GoDotFill className="w-3 h-3 mx-0.5"/>
+                    <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                        <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                         <span className="ml-1.5 text-foreground font-semibold">배경의 큰 움직임을 고려해 소개 글은 짧고 간결하게 작성하여 저를 효과적으로 표현할 수 있도록 했습니다.</span>
                     </div>
-                    <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                        <GoDotFill className="w-3 h-3 mx-0.5"/>
+                    <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                        <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                         <span className="ml-1.5 text-foreground font-semibold">아래로 이동하는 버튼에 스크롤을 유도하는 시각적 요소를 함께 사용하여 사용자 편의성을 높였습니다.</span>
                     </div>
                 </div>
 
                 <div>
-                    <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                        <FaCheck className="w-4 h-4 mr-1.5"/>
+                    <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                        <FaCheck className="flex-shrink-0 mt-1 w-4 h-4 mr-1.5"/>
                         화면 오른쪽 상단에 배치된 GitHub와 개발 블로그 링크
                     </div>
                     <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -39,13 +39,13 @@ const Content_Project_Portfolio_KeyFeatures = () => {
                 </div>
 
                 <div>
-                    <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                        <FaCheck className="w-4 h-4 mr-1.5"/>
+                    <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                        <FaCheck className="flex-shrink-0 mt-1 w-4 h-4 mr-1.5"/>
                         점프링크 반응형 탭 버튼
                     </div>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">디스플레이 환경에 따른 디자인 및 위치 변경</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -53,8 +53,8 @@ const Content_Project_Portfolio_KeyFeatures = () => {
                         </div>
                     </>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">점프링크 기능 적용</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -64,21 +64,21 @@ const Content_Project_Portfolio_KeyFeatures = () => {
                 </div>
 
                 <div>
-                    <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                        <FaCheck className="w-4 h-4 mr-1.5"/>
+                    <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                        <FaCheck className="flex-shrink-0 mt-1 w-4 h-4 mr-1.5"/>
                         소개 탭 콘텐츠 (About)
                     </div>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold"></span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
                         </div>
                     </>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold"></span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -87,13 +87,13 @@ const Content_Project_Portfolio_KeyFeatures = () => {
                 </div>
 
                 <div>
-                    <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                        <FaCheck className="w-4 h-4 mr-1.5"/>
+                    <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                        <FaCheck className="flex-shrink-0 mt-1 w-4 h-4 mr-1.5"/>
                         프로젝트 탭 콘텐츠 (Project)
                     </div>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">프로젝트 요약 뷰</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -101,15 +101,15 @@ const Content_Project_Portfolio_KeyFeatures = () => {
                         </div>
                     </>
                     <>
-                        <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                            <GoDotFill className="w-3 h-3 mx-0.5"/>
+                        <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                            <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                             <span className="ml-1.5 text-foreground font-semibold">프로젝트 상세 뷰</span>
                         </div>
 
                         <>
                             <div className="text-[13px] mx-6 pb-1 text-foreground font-semibold">
-                                <div className="flex items-center ml-5">
-                                    <GoDot className="mr-1 text-foreground"/>
+                                <div className="flex items-start ml-5">
+                                    <GoDot className="flex-shrink-0 mt-2 mr-1 text-foreground"/>
                                     <div>상단에 위치한 프로젝트 개요</div>
                                 </div>
                             </div>
@@ -122,8 +122,8 @@ const Content_Project_Portfolio_KeyFeatures = () => {
 
                         <>
                             <div className="text-[13px] mx-6 pb-1 text-foreground font-semibold">
-                                <div className="flex items-center ml-5">
-                                    <GoDot className="mr-1 text-foreground"/>
+                                <div className="flex items-start ml-5">
+                                    <GoDot className="flex-shrink-0 mt-2 mr-1 text-foreground"/>
                                     <div>작업화면</div>
                                 </div>
                             </div>
@@ -136,8 +136,8 @@ const Content_Project_Portfolio_KeyFeatures = () => {
 
                         <>
                             <div className="text-[13px] mx-6 pb-1 text-foreground font-semibold">
-                                <div className="flex items-center ml-5">
-                                    <GoDot className="mr-1 text-foreground"/>
+                                <div className="flex items-start ml-5">
+                                    <GoDot className="flex-shrink-0 mt-2 mr-1 text-foreground"/>
                                     <div>작업화면_이미지 크게보기</div>
                                 </div>
                             </div>
@@ -150,8 +150,8 @@ const Content_Project_Portfolio_KeyFeatures = () => {
 
                         <>
                             <div className="text-[13px] mx-6 pb-1 text-foreground font-semibold">
-                                <div className="flex items-center ml-5">
-                                    <GoDot className="mr-1 text-foreground"/>
+                                <div className="flex items-start ml-5">
+                                    <GoDot className="flex-shrink-0 mt-2 mr-1 text-foreground"/>
                                     <div>주요 성과 및 기술적 중점 사항</div>
                                 </div>
                             </div>
@@ -164,8 +164,8 @@ const Content_Project_Portfolio_KeyFeatures = () => {
 
                         <>
                             <div className="text-[13px] mx-6 pb-1 text-foreground font-semibold">
-                                <div className="flex items-center ml-5">
-                                    <GoDot className="mr-1 text-foreground"/>
+                                <div className="flex items-start ml-5">
+                                    <GoDot className="flex-shrink-0 mt-2 mr-1 text-foreground"/>
                                     <div>제작동기</div>
                                 </div>
                             </div>
@@ -178,8 +178,8 @@ const Content_Project_Portfolio_KeyFeatures = () => {
 
                         <>
                             <div className="text-[13px] mx-6 pb-1 text-foreground font-semibold">
-                                <div className="flex items-center ml-5">
-                                    <GoDot className="mr-1 text-foreground"/>
+                                <div className="flex items-start ml-5">
+                                    <GoDot className="flex-shrink-0 mt-2 mr-1 text-foreground"/>
                                     <div>서비스 기능 및 특징</div>
                                 </div>
                             </div>
@@ -192,8 +192,8 @@ const Content_Project_Portfolio_KeyFeatures = () => {
 
                         <>
                             <div className="text-[13px] mx-6 pb-1 text-foreground font-semibold">
-                                <div className="flex items-center ml-5">
-                                    <GoDot className="mr-1 text-foreground"/>
+                                <div className="flex items-start ml-5">
+                                    <GoDot className="flex-shrink-0 mt-2 mr-1 text-foreground"/>
                                     <div>이슈 및 해결방법</div>
                                 </div>
                             </div>

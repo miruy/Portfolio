@@ -10,12 +10,12 @@ const Content_Project_Portfolio_Point = () => {
 
             <div className="pt-5 tracking-wide space-y-5 text-zinc-300">
                 <div>
-                    <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                        <FaCheck className="w-4 h-4 mr-1.5"/>
+                    <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                        <FaCheck className="flex-shrink-0 mt-1 w-4 h-4 mr-1.5"/>
                         지속적인 포트폴리오 개선 작업
                     </div>
-                    <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                        <GoDotFill className="w-3 h-3 mx-0.5"/>
+                    <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                        <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                         <span className="ml-1.5 text-foreground font-semibold">포트폴리오에 대한 피드백을 수렴하고, 적극적으로 개선 사항을 반영하여 지속적으로 발전시키고 있습니다. </span>
                     </div>
                 </div>

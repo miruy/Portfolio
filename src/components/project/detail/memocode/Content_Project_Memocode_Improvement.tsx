@@ -12,8 +12,8 @@ const Content_Project_Memocode_Improvement = () => {
             <div className="tracking-wide">
                 <div className="border-b border-zinc-600 py-5">
                     <div className="space-y-2">
-                        <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                            <IoCloseSharp className="w-6 h-6 fill-red-500 mr-1"/>
+                        <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                            <IoCloseSharp className="flex-shrink-0 mt-0.5 w-6 h-6 fill-red-500 mr-1"/>
                             Google Ads와의 연동을 통해 리마케팅을 시도하였으나 정책 위반으로 거절
                         </div>
                         <div className="text-[13px] mx-6 text-zinc-300">
@@ -23,19 +23,19 @@ const Content_Project_Memocode_Improvement = () => {
                     </div>
 
                     <div className="mt-5 space-y-2">
-                        <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                            <FaCheck className="w-4 h-4 ml-1 mr-2 fill-green-700"/>
+                        <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                            <FaCheck className="flex-shrink-0 mt-1.5 w-4 h-4 ml-1 mr-2 fill-green-700"/>
                             해결방법
                         </div>
                         <div className="space-y-2">
-                            <div className="flex items-center text-zinc-300">
-                                <GoDotFill className="w-3 h-3 mx-1.5"/>
+                            <div className="flex items-start text-zinc-300">
+                                <GoDotFill className="flex-shrink-0 w-3 h-3 mx-1.5 mt-1"/>
                                 <span className="text-[13px] text-zinc-300">
                                     Google Ads 정책에 따라 광고가 게재되는 페이지에 유의미한 콘텐츠를 추가하여 가치 있는 페이지로 개선될 수 있도록 하였습니다.
                                 </span>
                             </div>
-                            <div className="flex items-center text-zinc-300">
-                                <GoDotFill className="w-3 h-3 mx-1.5"/>
+                            <div className="flex items-start text-zinc-300">
+                                <GoDotFill className="flex-shrink-0 w-3 h-3 mx-1.5 mt-1"/>
                                 <span className="text-[13px] text-zinc-300">
                                     준비 중인 페이지나 알림 화면에서는 광고를 제거하고, 사용자에게 의미 있는 정보가 포함된 페이지에만 광고를 배치하도록 설정하였습니다.
                                 </span>
@@ -46,8 +46,8 @@ const Content_Project_Memocode_Improvement = () => {
 
                 <div className="border-b border-zinc-600 py-5">
                     <div className="space-y-2">
-                        <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                            <IoCloseSharp className="w-6 h-6 fill-red-500 mr-1"/>
+                        <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                            <IoCloseSharp className="flex-shrink-0 mt-0.5 w-6 h-6 fill-red-500 mr-1"/>
                             빌드 과정에서 `window is not found` / `router is not found` 에러 발생
                         </div>
                         <div className="text-[13px] mx-6 text-zinc-300">
@@ -56,13 +56,13 @@ const Content_Project_Memocode_Improvement = () => {
                     </div>
 
                     <div className="mt-5 space-y-2">
-                        <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                            <FaCheck className="w-4 h-4 ml-1 mr-2 fill-green-700"/>
+                        <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                            <FaCheck className="flex-shrink-0 mt-1.5 w-4 h-4 ml-1 mr-2 fill-green-700"/>
                             해결방법
                         </div>
                         <div className="space-y-2">
-                            <div className="flex items-center text-zinc-300">
-                                <GoDotFill className="w-3 h-3 mx-1.5"/>
+                            <div className="flex items-start text-zinc-300">
+                                <GoDotFill className="flex-shrink-0 w-3 h-3 mx-1.5 mt-1"/>
                                 <span className="text-[13px] text-zinc-300">
                                     클라이언트 사이드에서만 사용될 수 있도록 `typeof window !== ${"undefined"}` / `typeof router !== ${"undefined"}` 조건문을 사용하여 분리하였습니다.
                                 </span>

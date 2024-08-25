@@ -12,8 +12,8 @@ const Content_Project_Portfolio_Improvement = () => {
             <div className="tracking-wide">
                 <div className="border-b border-zinc-600 py-5">
                     <div className="space-y-2">
-                        <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                            <IoCloseSharp className="w-6 h-6 fill-red-500 mr-1"/>
+                        <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                            <IoCloseSharp className="flex-shrink-0 mt-0.5 w-6 h-6 fill-red-500 mr-1"/>
                             빌드 과정에서 `window is not found` 에러 발생
                         </div>
                         <div className="text-[13px] mx-6 text-zinc-300">
@@ -22,13 +22,13 @@ const Content_Project_Portfolio_Improvement = () => {
                     </div>
 
                     <div className="mt-5 space-y-2">
-                        <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                            <FaCheck className="w-4 h-4 ml-1 mr-2 fill-green-700"/>
+                        <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                            <FaCheck className="flex-shrink-0 mt-1.5 w-4 h-4 ml-1 mr-2 fill-green-700"/>
                             해결방법
                         </div>
                         <div className="space-y-2">
-                            <div className="flex items-center text-zinc-300">
-                                <GoDotFill className="w-3 h-3 mx-1.5"/>
+                            <div className="flex items-start text-zinc-300">
+                                <GoDotFill className="flex-shrink-0 w-3 h-3 mx-1.5 mt-1"/>
                                 <span className="text-[13px] text-zinc-300">
                                     useEffect()의 의존성 배열에서 `window` 객체를 제거하고, `window` 관련 코드를 useEffect() 내부에서 typeof window !== `undefined` 조건문으로 감싸 에러를 방지하였습니다.
                                 </span>
@@ -39,8 +39,8 @@ const Content_Project_Portfolio_Improvement = () => {
 
                 <div className="border-b border-zinc-600 py-5">
                     <div className="space-y-2">
-                        <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                            <IoCloseSharp className="w-6 h-6 fill-red-500 mr-1"/>
+                        <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                            <IoCloseSharp className="flex-shrink-0 mt-0.5 w-6 h-6 fill-red-500 mr-1"/>
                             교육/경험, 스킬/툴 width에러 옵저버로 해결
                         </div>
                         <div className="text-[13px] mx-6 text-zinc-300">
@@ -49,13 +49,13 @@ const Content_Project_Portfolio_Improvement = () => {
                     </div>
 
                     <div className="mt-5 space-y-2">
-                        <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                            <FaCheck className="w-4 h-4 ml-1 mr-2 fill-green-700"/>
+                        <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                            <FaCheck className="flex-shrink-0 mt-1.5 w-4 h-4 ml-1 mr-2 fill-green-700"/>
                             해결방법
                         </div>
                         <div className="space-y-2">
-                            <div className="flex items-center text-zinc-300">
-                                <GoDotFill className="w-3 h-3 mx-1.5"/>
+                            <div className="flex items-start text-zinc-300">
+                                <GoDotFill className="flex-shrink-0 w-3 h-3 mx-1.5 mt-1"/>
                                 <span className="text-[13px] text-zinc-300">
 
                                 </span>

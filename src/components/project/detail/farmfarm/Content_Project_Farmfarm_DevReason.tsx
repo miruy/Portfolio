@@ -5,7 +5,7 @@ const Content_Project_Farmfarm_DevReason = () => {
                 제작동기
             </div>
 
-            <div className="pt-5 tracking-wide leading-7 text-zinc-300">
+            <div className="pt-5 tracking-wide leading-6 text-zinc-300">
                 <span className="text-[14px]">팜팜은 </span>
                 <span className="font-semibold text-[15px] text-foreground">스마트팜 </span>
                 <span className="text-[14px]">기술 도입에 관심이 있고, </span>

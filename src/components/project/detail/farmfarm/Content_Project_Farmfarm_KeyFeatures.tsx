@@ -15,13 +15,13 @@ const Content_Project_Farmfarm_KeyFeatures = () => {
 
                     <div className="tracking-wide space-y-5">
                         <div>
-                            <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                                <FaCheck className="w-4 h-4 mr-1.5"/>
+                            <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                                <FaCheck className="flex-shrink-0 mt-1 w-4 h-4 mr-1.5"/>
                                 대시보드 관리
                             </div>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">사용자 정의 대시보드</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -33,13 +33,13 @@ const Content_Project_Farmfarm_KeyFeatures = () => {
                         </div>
 
                         <div>
-                            <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                                <FaCheck className="w-4 h-4 mr-1.5"/>
+                            <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                                <FaCheck className="flex-shrink-0 mt-1 w-4 h-4 mr-1.5"/>
                                 하우스 관리
                             </div>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">하우스 생성 및 동기화</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -47,8 +47,8 @@ const Content_Project_Farmfarm_KeyFeatures = () => {
                                 </div>
                             </>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">하우스 동 생성 및 동기화</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -56,8 +56,8 @@ const Content_Project_Farmfarm_KeyFeatures = () => {
                                 </div>
                             </>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">하우스 동 센서 생성 및 동기화</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -65,8 +65,8 @@ const Content_Project_Farmfarm_KeyFeatures = () => {
                                 </div>
                             </>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">하우스 정보 조회</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -76,13 +76,13 @@ const Content_Project_Farmfarm_KeyFeatures = () => {
                         </div>
 
                         <div>
-                            <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                                <FaCheck className="w-4 h-4 mr-1.5"/>
+                            <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
+                                <FaCheck className="flex-shrink-0 mt-1 w-4 h-4 mr-1.5"/>
                                 조직 관리
                             </div>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">하우스 관리 조직 생성 및 조회</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -92,13 +92,13 @@ const Content_Project_Farmfarm_KeyFeatures = () => {
                         </div>
 
                         <div>
-                            <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
-                                <FaCheck className="w-4 h-4 mr-1.5"/>
+                            <div className="flex items-start leading-7 font-semibold text-[15px] text-foreground">
+                                <FaCheck className="flex-shrink-0 mt-1 w-4 h-4 mr-1.5"/>
                                 센서 모델 관리
                             </div>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">센서 기기 정보 조회</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">

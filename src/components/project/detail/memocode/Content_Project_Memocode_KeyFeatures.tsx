@@ -11,13 +11,13 @@ const Content_Project_Memocode_KeyFeatures = () => {
                 <AccordionContent>
                     <div className="tracking-wide space-y-5">
                         <div>
-                            <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
+                            <div className="flex items-center leading-6 font-semibold text-[15px] text-foreground">
                                 <FaCheck className="w-4 h-4 mr-1.5"/>
                                 메모 관리 (등록, 수정, 검색, 삭제)
                             </div>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">메모 공개 / 비공개 기능</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -29,8 +29,8 @@ const Content_Project_Memocode_KeyFeatures = () => {
                                 </div>
                             </>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">메모 보안 기능</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -40,8 +40,8 @@ const Content_Project_Memocode_KeyFeatures = () => {
                                 </div>
                             </>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">메모 버전 관리 기능</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -55,8 +55,8 @@ const Content_Project_Memocode_KeyFeatures = () => {
                                 </div>
                             </>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">메모 즐겨찾기 기능</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -66,13 +66,13 @@ const Content_Project_Memocode_KeyFeatures = () => {
                         </div>
 
                         <div>
-                            <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
+                            <div className="flex items-center leading-6 font-semibold text-[15px] text-foreground">
                                 <FaCheck className="w-4 h-4 mr-1.5"/>
                                 블로그 관리
                             </div>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">게시글 검색 기능</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -80,8 +80,8 @@ const Content_Project_Memocode_KeyFeatures = () => {
                                 </div>
                             </>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">게시글 댓글 / 대댓글 작성, 수정, 삭제 기능</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -89,8 +89,8 @@ const Content_Project_Memocode_KeyFeatures = () => {
                                 </div>
                             </>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">내 블로그 기능</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -100,7 +100,7 @@ const Content_Project_Memocode_KeyFeatures = () => {
                         </div>
 
                         <div>
-                            <div className="flex items-center leading-7 font-semibold text-[15px] text-foreground">
+                            <div className="flex items-center leading-6 font-semibold text-[15px] text-foreground">
                                 <FaCheck className="w-4 h-4 mr-1.5"/>
                                 <div className="flex items-center text-[13px]">
                                     <FaQ className="w-3 h-3 mr-0.5"/>&<FaA className="w-3 h-3 ml-0.5"/>
@@ -108,8 +108,8 @@ const Content_Project_Memocode_KeyFeatures = () => {
                                 관리 (등록, 수정, 검색, 삭제)
                             </div>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">질문 검색 기능</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">
@@ -117,8 +117,8 @@ const Content_Project_Memocode_KeyFeatures = () => {
                                 </div>
                             </>
                             <>
-                                <div className="flex items-center text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
-                                    <GoDotFill className="w-3 h-3 mx-0.5"/>
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                    <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">답변 및 대댓글 작성, 수정, 삭제 기능</span>
                                 </div>
                                 <div className="text-[13px] mx-6 pb-1 text-zinc-300">

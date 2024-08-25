@@ -46,9 +46,6 @@ const Frontend_Skill_Tool = ({data}: FrontendSkillToolProps) => {
                     {data.tools?.map((tool, index) => {
                         const name = tool.replace("/tool/", "").replace(/\.(svg|png)$/, "");
                         let color = "bg-green-500"
-                        if (name === "GCP") {
-                            color = "bg-yellow-300"
-                        }
                         return (
                             <div key={index} className="flex flex-col items-center">
                                 <div
