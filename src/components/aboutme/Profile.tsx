@@ -66,11 +66,6 @@ const Profile = () => {
                     하는 프론트엔드 개발에
                     집중하고 있습니다.
                 </div>
-                <div>포트폴리오를 둘러보신 후,
-                    <span className="text-white font-semibold"> 귀중한 피드백</span>
-                    을 남겨주신다면 겸손한 마음으로 개선사항에 반영하겠습니다.
-                </div>
-                <div>귀한 시간 내어 방문해 주셔서 감사합니다 : )</div>
             </div>
         </div>
     )
