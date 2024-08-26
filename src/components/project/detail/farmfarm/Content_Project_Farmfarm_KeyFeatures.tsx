@@ -8,10 +8,16 @@ const Content_Project_Farmfarm_KeyFeatures = () => {
             <AccordionItem value="item-1">
                 <AccordionTrigger>서비스 기능 및 특징</AccordionTrigger>
                 <AccordionContent>
-                    <div className="flex items-center space-x-1 pb-10 text-zinc-400 text-[13px]">
-                        <FaAsterisk className="w-2 h-2"/>
-                        <div>서비스 내 사용되는 모든 명칭 및 구조는 실제 시설원예(비닐하우스) 도메인을 반영하여 사용자가 쉽게 조회하고 관리할 수 있도록 구성하였습니다.</div>
-                    </div>
+                    <>
+                        <div className="flex items-start space-x-1 text-zinc-400 text-[13px]">
+                            <FaAsterisk className="flex-shrink-0 mt-1.5 w-2 h-2"/>
+                            <div>서비스 내 사용되는 모든 명칭 및 구조는 실제 시설원예(비닐하우스) 도메인을 반영하여 사용자가 쉽게 조회하고 관리할 수 있도록 구성하였습니다.</div>
+                        </div>
+                        <div className="flex items-start space-x-1 pb-5 text-zinc-400 text-[13px]">
+                            <FaAsterisk className="flex-shrink-0 mt-1.5 w-2 h-2 text-zinc-400"/>
+                            <div>로그인 및 서비스 이용은 등록된 비닐하우스를 운영하는 농업인만 가능하며, 등록 절차는 저희와의 협의를 통해 완료되는 점 양해 부탁드립니다.</div>
+                        </div>
+                    </>
 
                     <div className="tracking-wide space-y-5">
                         <div>
