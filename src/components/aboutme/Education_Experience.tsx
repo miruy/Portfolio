@@ -18,7 +18,7 @@ const EducationExperience = ({width}: EducationExperienceProps) => {
                     {[...education_experience].reverse().map((data, index) => { // 배열 순서 반대로 갸져오기
                         return (
                             <div key={index}
-                                 className="space-y-3 border-zinc-900 bg-zinc-900 w-[300px] h-[300px] rounded p-5 tracking-wider">
+                                 className="space-y-3 border-zinc-900 bg-zinc-900 w-[280px] h-[280px] rounded p-5 tracking-wider">
                                 <Badge
                                     variant="outline"
                                     className="border border-zinc-600 py-1.5 px-4 flex w-fit h-fit">
