@@ -31,12 +31,6 @@ export const metadata: Metadata = {
             },
         ],
     },
-    alternates: {
-        canonical: `https://yurim-portfolio.vercel.app`,
-        languages: {
-            'ko-KR': `https://yurim-portfolio.vercel.app`
-        },
-    },
     icons: {
         icon: [
             {url: './favicon.ico', type: 'image/x-icon'},
@@ -81,8 +75,6 @@ export default function RootLayout({
                 ogType="website"
                 ogUrl={jsonLd.url}
                 ogImage={jsonLd.image.url}
-                ogImageAlt={jsonLd.image.alt}
-                jsonLd={jsonLd}
             />
 
             {children}
