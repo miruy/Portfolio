@@ -19,7 +19,7 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                 </div>
                 <div className="grid grid-cols-5 gap-4 rounded">
                     {data.skills?.map((skill, index) => {
-                        const name = skill.replace("/skill/", "").replace(/\.(svg|png)$/, "");
+                        const name = skill.replace("/image/skill/", "").replace(/\.(svg|png)$/, "");
                         let color = "bg-orange-400"
                         if (name === "Docker") {
                             color = "bg-yellow-300"
@@ -51,7 +51,7 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                     </div>
                     <div className="flex space-x-4 rounded">
                         {data.dbs?.map((db, index) => {
-                            const name = db.replace("/skill/", "").replace(/\.(svg|png)$/, "");
+                            const name = db.replace("/image/skill/", "").replace(/\.(svg|png)$/, "");
                             let color = "bg-orange-400"
                             return (
                                 <div key={index} className="flex flex-col items-center">
@@ -86,7 +86,7 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                     </div>
                     <div className="flex space-x-4 rounded">
                         {data.infras?.map((infra, index) => {
-                            const name = infra.replace("/skill/", "").replace(/\.(svg|png)$/, "");
+                            const name = infra.replace("/image/skill/", "").replace(/\.(svg|png)$/, "");
                             let color = "bg-yellow-300"
                             return (
                                 <div key={index} className="flex flex-col items-center">
@@ -119,7 +119,7 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                 <div className="text-[14px] font-semibold text-zinc-300">Tool</div>
                 <div className="grid grid-cols-5 gap-4 rounded">
                     {data.tools?.map((tool, index) => {
-                        const name = tool.replace("/tool/", "").replace(/\.(svg|png)$/, "");
+                        const name = tool.replace("/image/tool/", "").replace(/\.(svg|png)$/, "");
                         let color = "bg-green-500"
                         if (name === "GCP") {
                             color = "bg-yellow-300"

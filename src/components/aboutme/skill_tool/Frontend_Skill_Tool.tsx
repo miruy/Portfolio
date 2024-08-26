@@ -19,7 +19,7 @@ const Frontend_Skill_Tool = ({data}: FrontendSkillToolProps) => {
                 </div>
                 <div className="grid grid-cols-5 gap-4 rounded">
                     {data.skills?.map((skill, index) => {
-                        const name = skill.replace("/skill/", "").replace(/\.(svg|png)$/, "");
+                        const name = skill.replace("/image/skill/", "").replace(/\.(svg|png)$/, "");
                         const color = "bg-green-500"
                         return (
                             <div key={index} className="flex flex-col items-center">
@@ -44,7 +44,7 @@ const Frontend_Skill_Tool = ({data}: FrontendSkillToolProps) => {
                 <div className="text-[14px] font-semibold text-zinc-300">Tool</div>
                 <div className="grid grid-cols-5 gap-4 rounded">
                     {data.tools?.map((tool, index) => {
-                        const name = tool.replace("/tool/", "").replace(/\.(svg|png)$/, "");
+                        const name = tool.replace("/image/tool/", "").replace(/\.(svg|png)$/, "");
                         let color = "bg-green-500"
                         return (
                             <div key={index} className="flex flex-col items-center">

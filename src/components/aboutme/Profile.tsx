@@ -10,7 +10,7 @@ const Profile = () => {
                 <div
                     className="flex justify-center relative w-[155px] h-[155px] xl:w-[300px] xl:h-[300px]">
                     <div className="flex flex-row md:flex-col absolute -top-2">
-                        <img src="/notion_avatar.svg" alt="notion_avatar" className="w-full h-full"/>
+                        <img src="/image/notion_avatar.svg" alt="notion_avatar" className="w-full h-full"/>
                     </div>
                 </div>
 
@@ -39,7 +39,7 @@ const Profile = () => {
                                 rel="noopener noreferrer"
                             >
                                 <img
-                                    src="/memocode_white.png"
+                                    src="/image/memocode/memocode_white.png"
                                     className="w-7 h-8 xl:w-8 xl:h-9 mt-1"
                                     alt="memocode_icon"/>
                             </Link>

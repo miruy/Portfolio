@@ -77,7 +77,7 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
                                         rel="noopener noreferrer"
                                     >
                                         <img
-                                            src="/memocode_white.png"
+                                            src="/image/memocode/memocode_white.png"
                                             className="w-6 h-7 lg:w-7 lg:h-8 mt-1"
                                             alt="memocode_icon"/>
                                     </Link>
@@ -92,7 +92,6 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
                             </TooltipContent>
                         </Tooltip>
                     </TooltipProvider>
-
                 </div>
             </div>
         </div>

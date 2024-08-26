@@ -10,7 +10,7 @@ const Design_Skill_Tool = ({data}: DesignSkillToolProps) => {
             <div className="text-[14px] font-semibold text-zinc-300">Tool</div>
             <div className="grid grid-cols-5 gap-4 rounded">
                 {data.tools?.map((tool, index) => {
-                    const name = tool.replace("/tool/", "").replace(/\.(svg|png)$/, "");
+                    const name = tool.replace("/image/tool/", "").replace(/\.(svg|png)$/, "");
                     let color = "bg-green-500"
                     if (name === "Figma") {
                         color = "bg-orange-400"
