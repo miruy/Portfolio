@@ -3,7 +3,7 @@ import skill_tool_model from "@/model/skill_tool_model";
 const skill_tool: skill_tool_model[] = [
     {
         title: "Front-End",
-        skills: ["/skill/React.svg", "/skill/Next.js.svg", "/skill/JavaScript.svg", "/skill/TypeScript.svg", "/skill/HTML.png", "/skill/CSS.png", "/skill/TailwindCSS.svg"],
+        skills: ["/skill/React.svg", "/skill/Next.js.svg", "/skill/JavaScript.svg", "/skill/TypeScript.svg", "/skill/jquery.png", "/skill/HTML.png", "/skill/CSS.png", "/skill/TailwindCSS.svg"],
         tools: ["/tool/WebStorm.png", "/tool/k8sLens.png"],
     },
     {
