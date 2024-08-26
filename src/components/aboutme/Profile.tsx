@@ -61,7 +61,7 @@ const Profile = () => {
                     입니다.
                 </div>
                 <div>
-                    백엔드 개발자 양성과정을 통해 기초를 다진 후, 이제는
+                    백엔드 개발자 양성과정을 통해 기초를 다진 후, 현재는
                     <span className="text-white font-semibold"> 사용자 중심의 인터페이스를 구축</span>
                     하는 프론트엔드 개발에
                     집중하고 있습니다.

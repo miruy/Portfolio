@@ -66,22 +66,26 @@ const Content_Project_Portfolio_KeyFeatures = () => {
                 <div>
                     <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
                         <FaCheck className="flex-shrink-0 mt-1 w-4 h-4 mr-1.5"/>
-                        소개 탭 콘텐츠 (About)
+                        소개 탭 콘텐츠 (ABOUT ME)
                     </div>
                     <>
                         <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
                             <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5 text-foreground font-semibold"></span>
+                            <span
+                                className="ml-1.5 text-foreground font-semibold">교육 & 경험 (Education & Experience)</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                            학력, 이수한 IT 관련 교육과정, 자격증, 경력사항을 카드 형태로 구성하고, 가로 캐러셀 기능을 적용하여 정보의 시각적 접근성을 높혀 사용자 경험을 향상시켰습니다.
                         </div>
                     </>
                     <>
                         <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
                             <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
-                            <span className="ml-1.5 text-foreground font-semibold"></span>
+                            <span className="ml-1.5 text-foreground font-semibold">사용 가능한 스킬 & 툴 (Skill & Tool)</span>
                         </div>
                         <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                            실무에 바로 사용 가능한 스킬과 툴을 아이콘으로 시각화하여 직관적으로 인식할 수 있게 하였으며,
+                            `경험 있음`부터 `경험 많음`까지를 3단계로 분류하고 색상으로 구분함으로써 각 기술 숙련도를 쉽게 파악할 수 있도록 구현하였습니다.
                         </div>
                     </>
                 </div>
@@ -89,7 +93,7 @@ const Content_Project_Portfolio_KeyFeatures = () => {
                 <div>
                     <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
                         <FaCheck className="flex-shrink-0 mt-1 w-4 h-4 mr-1.5"/>
-                        프로젝트 탭 콘텐츠 (Project)
+                        프로젝트 탭 콘텐츠 (PROJECT)
                     </div>
                     <>
                         <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
@@ -129,7 +133,8 @@ const Content_Project_Portfolio_KeyFeatures = () => {
                             </div>
                             <div className="text-[13px] mx-6 pb-1 text-zinc-300">
                                 <div className="ml-9">
-                                    실제 사용 중인 화면을 이미지로 게시하였고, 이미지 클릭 시 사용자가 직관적으로 이미지를 탐색할 수 있도록 캐러셀 기능을 활용해 큰 화면으로 표시되도록 구현했습니다.
+                                    실제 사용 중인 화면을 이미지로 게시하였고, 이미지 클릭 시 사용자가 직관적으로 이미지를 탐색할 수 있도록 캐러셀 기능을 활용해 큰 화면으로 표시되도록
+                                    구현했습니다.
                                 </div>
                             </div>
                         </>
@@ -157,7 +162,8 @@ const Content_Project_Portfolio_KeyFeatures = () => {
                             </div>
                             <div className="text-[13px] mx-6 pb-1 text-zinc-300">
                                 <div className="ml-9">
-                                    프로젝트에서 중점적으로 구현한 기술적 성과와 최적화 요소들을 설명하며, 개발부터 배포, SEO 최적화, 그리고 사용자 경험 개선까지의 주요 작업들을 강조한 내용입니다.
+                                    프로젝트에서 중점적으로 구현한 기술적 성과와 최적화 요소들을 설명하며, 개발부터 배포, SEO 최적화, 그리고 사용자 경험 개선까지의 주요 작업들을
+                                    강조한 내용입니다.
                                 </div>
                             </div>
                         </>
