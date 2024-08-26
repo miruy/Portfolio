@@ -40,7 +40,6 @@ export const metadata: Metadata = {
     icons: {
         icon: [
             {url: '/favicon.ico', type: 'image/x-icon'},
-            {url: 'https://api.memocode.dev/memos/1ce6d122-d9a7-49db-9c16-037f61b2e7de/images/087f4ff0-16a8-4756-8d04-4d97ccc3250b.png', sizes: '187x206', type: 'image/png'},
         ]
     }
 };
