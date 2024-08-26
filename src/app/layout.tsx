@@ -25,8 +25,6 @@ export const metadata: Metadata = {
         images: [
             {
                 url: 'https://api.memocode.dev/memos/1ce6d122-d9a7-49db-9c16-037f61b2e7de/images/f70368f6-0223-4dc8-9f86-47ec58bae486.png',
-                width: 800,
-                height: 600,
                 alt: 'portfolio_image',
             },
         ],
@@ -47,8 +45,6 @@ const jsonLd = {
     'image': {
         '@type': 'websiteImage',
         'url': 'https://api.memocode.dev/memos/1ce6d122-d9a7-49db-9c16-037f61b2e7de/images/f70368f6-0223-4dc8-9f86-47ec58bae486.png',
-        'width': 800,
-        'height': 600,
         'alt': 'portfolio_image',
     },
 };
@@ -76,7 +72,6 @@ export default function RootLayout({
                 ogUrl={jsonLd.url}
                 ogImage={jsonLd.image.url}
             />
-
             {children}
         </ClientProviders>
         </body>
