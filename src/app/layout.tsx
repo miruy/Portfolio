@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         locale: 'ko_KR',
         images: [
             {
-                url: 'https://yurim-portfolio.vercel.app/favicon_187x206.png',
+                url: '/favicon_187x206.png',
                 width: 800,
                 height: 600,
                 alt: 'portfolio_image',
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     },
     icons: {
         icon: [
-            {url: 'https://yurim-portfolio.vercel.app/favicon.ico', type: 'image/x-icon'},
-            {url: 'https://yurim-portfolio.vercel.app/favicon_187x206.png', sizes: '187x206', type: 'image/png'},
+            {url: '/favicon.ico', type: 'image/x-icon'},
+            {url: '/favicon_187x206.png', sizes: '187x206', type: 'image/png'},
         ]
     }
 };
@@ -53,7 +53,7 @@ const jsonLd = {
     'url': 'https://yurim-portfolio.vercel.app',
     'image': {
         '@type': 'websiteImage',
-        'url': 'https://yurim-portfolio.vercel.app/favicon_187x206.png',
+        'url': '/favicon_187x206.png',
         'width': 800,
         'height': 600,
         'alt': 'portfolio_image',
