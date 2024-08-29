@@ -6,6 +6,7 @@ import {useTab} from "@/context/TabContext";
 import {Button} from "@/components/ui/button";
 import ContentAbout from "@/components/Content_About";
 import ContentProject from "@/components/Content_Project";
+import {TbClockEdit} from "react-icons/tb";
 
 const Content = () => {
 
@@ -109,6 +110,12 @@ const Content = () => {
                             <ContentProject/>
                         </div>
                         <div className="h-[500px]"></div>
+                    </div>
+
+                    <div
+                        className={`${isScrollEqualToScreenHeight ? 'fixed' : 'absolute'} hidden lg:flex items-center space-x-1.5 bottom-5 left-5 z-50 text-zinc-400`}>
+                        <TbClockEdit className="w-5 h-5"/>
+                        <div className="tracking-wide text-[15px]">2024.08.29</div>
                     </div>
                 </div>
             </div>
