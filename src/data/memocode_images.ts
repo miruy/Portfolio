@@ -5,7 +5,7 @@ const memocode_images: Image[] = [
     {id: 2, src: "/image/memocode/memocode_main_search.png", title: "메인페이지_검색"},
     {id: 3, src: "/image/memocode/memocode_detail1.png", title: "메모상세페이지_게시글"},
     {id: 4, src: "/image/memocode/memocode_detail2.png", title: "메모상세페이지_댓글/대댓글"},
-    {id: 5, src: "/image/memocode/memocode_login.png", title: "로그인"},
+    // {id: 5, src: "/image/memocode/memocode_login.png", title: "로그인"},
     {id: 6, src: "/image/memocode/memocode_myblog1.png", title: "내 블로그페이지_내 메모 탭"},
     {id: 7, src: "/image/memocode/memocode_w1.png", title: "메모작성페이지"},
     {id: 8, src: "/image/memocode/memocode_w_search.png", title: "메모작성페이지_검색"},
