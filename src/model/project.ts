@@ -1,7 +1,7 @@
 export interface Project {
     workingAt?: string;
-    workers?: number;
+    workers?: string;
     librarys: string[];
     tools: string[];
-    Contribution?: string;
+    contribution?: string;
 }

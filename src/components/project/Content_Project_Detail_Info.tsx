@@ -14,14 +14,14 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
                     <TableRow>
                         <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">개발기간</TableHead>
                         <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">개발인원</TableHead>
-                        <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">기여도</TableHead>
+                        <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">프론트엔드 기여도</TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
                     <TableRow>
                         <TableCell className="w-auto px-5 text-[10px] sm:text-[12px] text-center tracking-wide">{data.workingAt}</TableCell>
                         <TableCell className="w-auto px-5 text-[10px] sm:text-[12px] text-center tracking-wide">{data.workers}</TableCell>
-                        <TableCell className="w-auto px-5 text-[10px] sm:text-[12px] text-center tracking-wide">{data.Contribution}</TableCell>
+                        <TableCell className="w-auto px-5 text-[10px] sm:text-[12px] text-center tracking-wide">{data.contribution}</TableCell>
                     </TableRow>
                 </TableBody>
             </Table>
