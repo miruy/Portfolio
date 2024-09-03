@@ -17,7 +17,7 @@ const Content_Project_Farmfarm_KeyFeatures = () => {
                             <FaAsterisk className="flex-shrink-0 mt-1.5 w-2 h-2 text-zinc-400"/>
                             <div>
                                 본 서비스는 실제 시설에서 사용 중인 관계로, 로그인 및 서비스 이용은 등록된 비닐하우스를 운영하는 농업인만 가능합니다. 이에 따라, 사이트에 대한 자세한
-                                정보는 포트폴리오 내 작업 화면을 통해서만 확인할 수 있음을 양해 부탁드립니다.
+                                정보는 포트폴리오 내 작업 화면을 통해서만 확인할 수 있다는 점 양해 부탁드립니다.
                             </div>
                         </div>
                     </>
