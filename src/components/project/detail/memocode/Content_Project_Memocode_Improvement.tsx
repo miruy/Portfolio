@@ -31,13 +31,13 @@ const Content_Project_Memocode_Improvement = () => {
                             <div className="flex items-start text-zinc-300">
                                 <GoDotFill className="flex-shrink-0 w-3 h-3 mx-1.5 mt-1"/>
                                 <span className="text-[13px] text-zinc-300">
-                                    Google Ads 정책에 따라 광고가 게재되는 페이지에 유의미한 콘텐츠를 추가하여 가치 있는 페이지로 개선될 수 있도록 하였습니다.
+                                    Google Ads 정책에 따라 광고가 게재되는 페이지에 유의미한 콘텐츠를 추가하여 가치 있는 페이지로 개선될 수 있도록 지속적으로 개선중입니다.
                                 </span>
                             </div>
                             <div className="flex items-start text-zinc-300">
                                 <GoDotFill className="flex-shrink-0 w-3 h-3 mx-1.5 mt-1"/>
                                 <span className="text-[13px] text-zinc-300">
-                                    준비 중인 페이지나 알림 화면에서는 광고를 제거하고, 사용자에게 의미 있는 정보가 포함된 페이지에만 광고를 배치하도록 설정하였습니다.
+                                    광고는 사용자에게 의미 있는 정보가 포함된 고품질 페이지에만 배치하고, 준비 중인 페이지나 알림 화면에서는 광고를 배제하여 사용자 경험을 최적화할 계획입니다.
                                 </span>
                             </div>
                         </div>
