@@ -113,7 +113,7 @@ const Content = () => {
                     </div>
 
                     <div
-                        className={`${isScrollEqualToScreenHeight ? 'fixed' : 'absolute'} hidden lg:flex items-center space-x-1.5 bottom-5 left-5 z-50 text-zinc-400`}>
+                        className={`${isScrollEqualToScreenHeight ? 'fixed' : 'absolute'} hidden lg:flex items-center space-x-1.5 bottom-5 left-5 z-50 text-zinc-500`}>
                         <TbClockEdit className="w-5 h-5"/>
                         <div className="tracking-wide text-[15px]">2024.09.03</div>
                     </div>
