@@ -133,7 +133,6 @@
 
 /* 메인 텍스트 효과 */
 .container svg {
-    /*max-width: 60rem;*/
     width: 100%;
     height: auto;
     stroke-width: 3;
@@ -232,7 +231,7 @@
         transform: translate(0, 0) scale(1);
     }
     100% {
-        transform: translate(0, -250px) scale(0.9);
+        transform: translate(0, -150px) scale(0.9);
     }
 }
 
@@ -244,13 +243,13 @@
 
 /* 메인 움직이는 카드 효과 */
 .hover__wrap > div {
-    margin: 3%;
+    margin: 5%;
     position: relative;
     perspective: 1000px;
 }
 
 .hover__wrap > div .front {
-    transition: transform 1s;
+    transition: transform 0.6s;
     backface-visibility: hidden;
     transform-style: preserve-3d;
 }
@@ -260,17 +259,14 @@
     left: 0;
     top: 0;
     z-index: -1;
-    transition: transform 1s;
+    transition: transform 0.6s;
     transform-style: preserve-3d;
 }
 
 .hover__wrap > div figcaption {
-    padding: 10px;
-    text-align: center;
-    line-height: 1.5;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) translateZ(100px);
+    transform: translate(-50%, -50%) translateZ(50px);
     backface-visibility: hidden;
 }
 
@@ -305,4 +301,8 @@
 
 .hover__leftright:hover .back {
     transform: rotateY(0deg);
+}
+
+.animate__animated.animate__slideInUp {
+    --animate-duration: 1.3s;
 }

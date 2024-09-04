@@ -1,11 +1,9 @@
 'use client'
 
 import Content from "@/components/Content";
-import {BiChevronsDown} from "react-icons/bi";
-import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip";
-import {Button} from "@/components/ui/button";
 import {useEffect, useState} from "react";
 import "animate.css";
+import {MdKeyboardArrowDown} from "react-icons/md";
 
 const Home = () => {
 
@@ -34,8 +32,7 @@ const Home = () => {
     return (
         <>
             <div className="fixed z-10 top-0 bottom-0 right-0 left-0 flex">
-                <div
-                    className="flex flex-1 justify-center items-center">
+                <div className="flex">
                     <div
                         id="container"
                         className={`flex justify-center items-center min-h-[100vh] min-w-[100vw] ${loaded ? 'bg-main-bg transition opacity-100 ease-in-out duration-1000 scale-100' : 'bg-[#F1F2F1] transition opacity-100 ease-in-out duration-1000 scale-110'}`}>
@@ -65,7 +62,9 @@ const Home = () => {
                                 stroke="#71717a"
                                 fill="#a1a1aa"
                                 fillRule="evenodd"
-                                fillOpacity="0.5">
+                                fillOpacity="0.5"
+                                strokeOpacity="0.7"
+                            >
                                 <text
                                     stroke="#71717a"
                                     fill="#a1a1aa"
@@ -109,49 +108,29 @@ const Home = () => {
                         </div>
                     </div>
 
-                    {/*<div*/}
-                    {/*    className="fixed min-w-[100vw] min-h-[100vh] animate__animated animate__zoomIn delay-6000">*/}
-                    {/*    <div className="w-[100%]">*/}
-                    {/*        <div className="hover__wrap flex justify-center items-center mt-[200px] h-[100vh]">*/}
-                    {/*            <div className="hover__updown">*/}
-                    {/*                <figure className="front">*/}
-                    {/*                    <div className="w-[400px] h-[400px] bg-secondary opacity-30 shadow-md rounded-full">*/}
-
-                    {/*                    </div>*/}
-                    {/*                </figure>*/}
-                    {/*                <figure className="back">*/}
-                    {/*                    <div className="w-[400px] h-[400px] bg-secondary opacity-50 shadow-md rounded-full"></div>*/}
-                    {/*                    <figcaption className="bg-white bg-opacity-30 absolute w-[100%] h-[100%] rounded-full space-y-5 flex flex-col justify-center items-center">*/}
-                    {/*                        <span className="text-xl text-zinc-700">Git Hub</span>*/}
-                    {/*                        <Button variant="default" className="rounded w-[50%] bg-zinc-700 hover:bg-zinc-600">바로가기</Button>*/}
-                    {/*                    </figcaption>*/}
-                    {/*                </figure>*/}
-                    {/*            </div>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
-
-                    <TooltipProvider>
-                        <Tooltip delayDuration={100}>
-                            <TooltipTrigger asChild className="button">
-                                <Button
-                                    variant={null}
-                                    className="absolute bottom-12"
-                                >
-                                    <BiChevronsDown
-                                        onClick={handleDown}
-                                        className="w-14 h-14 fill-zinc-500"/>
-                                </Button>
-                            </TooltipTrigger>
-                            <TooltipContent
-                                align="center"
-                                alignOffset={0}
-                                sideOffset={10}
-                                className="bg-accent rounded">
-                                <p>Click or Scroll</p>
-                            </TooltipContent>
-                        </Tooltip>
-                    </TooltipProvider>
+                    <div
+                        className="fixed min-w-[100vw] min-h-[100vh] animate__animated animate__slideInUp delay-5500">
+                        <div className="w-[100%]">
+                            <div className="hover__wrap flex justify-center items-end mb-[50px] h-[100vh]">
+                                <div className="hover__updown cursor-pointer" onClick={handleDown}>
+                                    <figure className="front">
+                                        <div
+                                            className="flex flex-col justify-center items-center w-[90px] h-[90px] bg-transparent shadow-md rounded-full">
+                                            <MdKeyboardArrowDown className="w-[60px] h-[60px] text-zinc-600"/>
+                                        </div>
+                                    </figure>
+                                    <figure className="back">
+                                        <div
+                                            className="w-[90px] h-[90px] bg-white bg-opacity-20 shadow-md rounded-full"></div>
+                                        <figcaption
+                                            className="bg-white bg-opacity-30 w-[120%] h-[120%] shadow-md rounded-full absolute flex flex-col justify-center items-center">
+                                            <div className="text-zinc-700">Click or Scroll</div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
