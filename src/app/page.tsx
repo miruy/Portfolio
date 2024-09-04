@@ -4,8 +4,6 @@ import Content from "@/components/Content";
 import {useEffect, useState} from "react";
 import "animate.css";
 import {MdKeyboardArrowDown} from "react-icons/md";
-import {Button} from "@/components/ui/button";
-import {ModalTypes} from "@/context/ModalContext";
 
 const Home = () => {
 
@@ -39,7 +37,7 @@ const Home = () => {
                         id="container"
                         className={`flex justify-center items-center min-h-[100vh] min-w-[100vw] ${loaded ? 'bg-main-bg transition opacity-100 ease-in-out duration-1000 scale-100 relative' : 'bg-[#f6f6f6] transition opacity-100 ease-in-out duration-1000 scale-110'}`}>
 
-                        <div className="absolute inset-0 backdrop-blur-xs bg-zinc-100/30"></div>
+                        <div className="absolute inset-0 backdrop-blur-xs bg-zinc-50/30"></div>
                     </div>
 
                     <div
