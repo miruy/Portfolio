@@ -25,7 +25,7 @@ const Content_Project_Memocode = () => {
             <div className="flex flex-col w-full h-full py-5">
                 <div className="flex-1 flex flex-col space-y-10 items-center">
                     <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5">
-                        <div className="border-b border-zinc-600 text-foreground font-semibold tracking-wider pb-2">
+                        <div className="border-b border-zinc-400 text-foreground font-semibold tracking-wider pb-2">
                             작업화면
 
                             <div className="text-[12px] text-zinc-400 mt-1">클릭하면 이미지를 크게 볼 수 있습니다.</div>
@@ -48,7 +48,7 @@ const Content_Project_Memocode = () => {
                                              src={data.src}
                                              alt={`memocode_image_${data.id}`}/>
                                         <div
-                                            className="flex justify-center py-1 text-[14px] text-zinc-400">{data.title}</div>
+                                            className="flex justify-center py-1 text-[14px] text-zinc-500">{data.title}</div>
                                     </div>
                                 )
                             })}

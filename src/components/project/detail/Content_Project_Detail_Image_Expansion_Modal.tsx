@@ -51,8 +51,8 @@ const Content_Project_Detail_Image_Expansion_Modal = () => {
                         {key === "farmfarm" && <FarmfarmImages images={images}/>}
                         {key === "portfolio" && <Portfolio_Images images={images}/>}
                     </CarouselContent>
-                    <CarouselPrevious className="w-9 h-9 bg-zinc-600 hover:bg-zinc-500"/>
-                    <CarouselNext className="w-9 h-9 bg-zinc-600 hover:bg-zinc-500"/>
+                    <CarouselPrevious className="w-9 h-9"/>
+                    <CarouselNext className="w-9 h-9"/>
                 </Carousel>
 
                 {/* sm 이상 */}
@@ -69,8 +69,8 @@ const Content_Project_Detail_Image_Expansion_Modal = () => {
                         {key === "farmfarm" && <FarmfarmImages images={images}/>}
                         {key === "portfolio" && <Portfolio_Images images={images}/>}
                     </CarouselContent>
-                    <CarouselPrevious className="w-10 h-10 bg-zinc-600 hover:bg-zinc-500"/>
-                    <CarouselNext className="w-10 h-10 bg-zinc-600 hover:bg-zinc-500"/>
+                    <CarouselPrevious className="w-10 h-10"/>
+                    <CarouselNext className="w-10 h-10"/>
                 </Carousel>
             </DialogContent>
         </Dialog>

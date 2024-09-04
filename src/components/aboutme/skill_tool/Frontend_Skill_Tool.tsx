@@ -10,7 +10,7 @@ const Frontend_Skill_Tool = ({data}: FrontendSkillToolProps) => {
         <div className="space-y-7">
             <div className="flex-1 space-y-3">
                 <div
-                    className="flex items-center text-[14px] font-semibold text-zinc-300">
+                    className="flex items-center text-[14px] font-semibold text-zinc-600">
                     Framework
                     <BsDot/>
                     Language
@@ -33,7 +33,7 @@ const Frontend_Skill_Tool = ({data}: FrontendSkillToolProps) => {
                                     <div
                                         className={`absolute -top-1 -right-1 inline-flex rounded-full h-3 w-3 scale-95 ${color}`}></div>
                                 </div>
-                                <div className="text-[10px] text-zinc-300 mt-1">{name}</div>
+                                <div className="text-[10px] text-zinc-700 mt-1">{name}</div>
                             </div>
                         )
                     })}
@@ -41,7 +41,7 @@ const Frontend_Skill_Tool = ({data}: FrontendSkillToolProps) => {
             </div>
 
             <div className="flex-1 space-y-3">
-                <div className="text-[14px] font-semibold text-zinc-300">Tool</div>
+                <div className="text-[14px] font-semibold text-zinc-600">Tool</div>
                 <div className="grid grid-cols-5 gap-4 rounded">
                     {data.tools?.map((tool, index) => {
                         const name = tool.replace("/image/tool/", "").replace(/\.(svg|png)$/, "");
@@ -58,7 +58,7 @@ const Frontend_Skill_Tool = ({data}: FrontendSkillToolProps) => {
                                     <div
                                         className={`absolute -top-1 -right-1 inline-flex rounded-full h-3 w-3 ${color}`}></div>
                                 </div>
-                                <div className="text-[10px] text-zinc-300 mt-1">{name}</div>
+                                <div className="text-[10px] text-zinc-700 mt-1">{name}</div>
                             </div>
                         )
                     })}

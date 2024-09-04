@@ -5,7 +5,7 @@ import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/co
 
 const Content_Project_Memocode_KeyFeatures = () => {
     return (
-        <Accordion type="single" collapsible className="w-full bg-zinc-900 rounded p-3 sm:p-5">
+        <Accordion type="single" collapsible className="w-full bg-zinc-200 rounded p-3 sm:p-5">
             <AccordionItem value="item-1">
                 <AccordionTrigger>서비스 기능 및 특징</AccordionTrigger>
                 <AccordionContent>
@@ -16,11 +16,11 @@ const Content_Project_Memocode_KeyFeatures = () => {
                                 메모 관리 (등록, 수정, 검색, 삭제)
                             </div>
                             <>
-                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-500">
                                     <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">메모 공개 / 비공개 기능</span>
                                 </div>
-                                <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="text-[13px] mx-6 pb-1 text-zinc-700">
                                     작성한 메모를 공개 여부 설정에 따라
                                     <span className="font-bold text-foreground"> 블로그 게시글로 전환 </span>
                                     또는
@@ -29,22 +29,22 @@ const Content_Project_Memocode_KeyFeatures = () => {
                                 </div>
                             </>
                             <>
-                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-500">
                                     <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">메모 보안 기능</span>
                                 </div>
-                                <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="text-[13px] mx-6 pb-1 text-zinc-700">
                                     작성한 메모의 보안을 활성화하면 영구적으로 해당 메모를 블로그에 게시 및 공개할 수 없도록 하여
                                     <span className="font-bold text-foreground"> 노출되면 안되는 중요한 정보를 안전하게 관리 </span>
                                     할 수 있습니다.
                                 </div>
                             </>
                             <>
-                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-500">
                                     <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">메모 버전 관리 기능</span>
                                 </div>
-                                <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="text-[13px] mx-6 pb-1 text-zinc-700">
                                     메모의 내용을
                                     <span className="font-bold text-foreground"> 보존 </span>
                                     하고 싶거나, 변경해도
@@ -55,11 +55,11 @@ const Content_Project_Memocode_KeyFeatures = () => {
                                 </div>
                             </>
                             <>
-                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-500">
                                     <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">메모 즐겨찾기 기능</span>
                                 </div>
-                                <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="text-[13px] mx-6 pb-1 text-zinc-700">
                                     자주 열람하거나, 자주 수정하는 메모를 즐겨찾기로 추가해 쉽게 메모를 찾아 관리할 수 있습니다.
                                 </div>
                             </>
@@ -71,29 +71,29 @@ const Content_Project_Memocode_KeyFeatures = () => {
                                 블로그 관리
                             </div>
                             <>
-                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-500">
                                     <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">게시글 검색 기능</span>
                                 </div>
-                                <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="text-[13px] mx-6 pb-1 text-zinc-700">
                                     제목, 머리글, 내용을 검색 키워드로 사용하여 게시글을 빠르게 검색할 수 있습니다.
                                 </div>
                             </>
                             <>
-                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-500">
                                     <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">게시글 댓글 / 대댓글 작성, 수정, 삭제 기능</span>
                                 </div>
-                                <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="text-[13px] mx-6 pb-1 text-zinc-700">
                                     블로그 게시글의 댓글과 대댓글을 작성, 수정, 삭제 할 수 있습니다.
                                 </div>
                             </>
                             <>
-                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-500">
                                     <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">내 블로그 기능</span>
                                 </div>
-                                <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="text-[13px] mx-6 pb-1 text-zinc-700">
                                     내 블로그 페이지에서 사용자가 게시한 게시글을 한눈에 볼 수 있습니다.
                                 </div>
                             </>
@@ -108,20 +108,20 @@ const Content_Project_Memocode_KeyFeatures = () => {
                                 관리 (등록, 수정, 검색, 삭제)
                             </div>
                             <>
-                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-500">
                                     <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">질문 검색 기능</span>
                                 </div>
-                                <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="text-[13px] mx-6 pb-1 text-zinc-700">
                                     제목, 내용, 태그를 검색 키워드로 사용하여 질문을 빠르게 검색할 수 있습니다.
                                 </div>
                             </>
                             <>
-                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-300">
+                                <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-500">
                                     <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                                     <span className="ml-1.5 text-foreground font-semibold">답변 및 대댓글 작성, 수정, 삭제 기능</span>
                                 </div>
-                                <div className="text-[13px] mx-6 pb-1 text-zinc-300">
+                                <div className="text-[13px] mx-6 pb-1 text-zinc-700">
                                     질문의 답변과 대댓글을 작성, 수정, 삭제 할 수 있습니다.
                                 </div>
                             </>

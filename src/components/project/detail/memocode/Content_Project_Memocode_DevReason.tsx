@@ -4,11 +4,11 @@ import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/co
 
 const Content_Project_Memocode_DevReason = () => {
     return (
-        <Accordion type="single" collapsible className="w-full bg-zinc-900 rounded p-3 sm:p-5">
+        <Accordion type="single" collapsible className="w-full bg-zinc-200 rounded p-3 sm:p-5">
             <AccordionItem value="item-1">
                 <AccordionTrigger>제작동기</AccordionTrigger>
                 <AccordionContent>
-                    <div className="tracking-wide space-y-5 text-zinc-300">
+                    <div className="tracking-wide space-y-5 text-zinc-700">
                         <div>
                             <span className="text-[14px]">메모코드는 제가 개발을 하면서 </span>
                             <span className="font-semibold text-[15px] text-foreground">자주 사용하는 것들을 한 곳에 </span>

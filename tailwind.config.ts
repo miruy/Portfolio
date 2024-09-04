@@ -77,6 +77,14 @@ const config = {
                 'blur': 'blur(10px)',
                 'blur-sm': 'blur(5px)',
             },
+            backgroundImage: {
+                'main-bg': "url('/image/main_bg.png')",
+            },
+            transitionDelay: {
+                '5000': '5000ms',
+                '6000': '6000ms',
+                '7000': '7000ms',
+            }
         },
     },
     plugins: [require("tailwindcss-animate")],

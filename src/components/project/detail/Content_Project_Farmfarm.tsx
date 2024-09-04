@@ -27,24 +27,24 @@ const Content_Project_Farmfarm = () => {
                 <div className="flex-1 flex flex-col space-y-10 items-center">
                     <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5 space-y-7">
                         <div className="space-y-2">
-                            <div className="flex items-start space-x-1.5 text-zinc-300 text-[14px] md:text-[15px]">
+                            <div className="flex items-start space-x-1.5 text-zinc-600 text-[14px] md:text-[15px]">
                                 <FaAsterisk className="flex-shrink-0 mt-1.5 w-2.5 h-2.5"/>
                                 <div>
                                     서비스 내 사용되는 모든 명칭 및 구조는 실제 시설원예(비닐하우스) 도메인을 반영하여 사용자가 쉽게 조회하고 관리할 수 있도록 구성하였습니다.
                                 </div>
                             </div>
-                            <div className="flex items-start space-x-1.5 text-zinc-300 text-[14px] md:text-[15px]">
+                            <div className="flex items-start space-x-1.5 text-zinc-600 text-[14px] md:text-[15px]">
                                 <FaAsterisk className="flex-shrink-0 mt-1.5 w-2.5 h-2.5"/>
                                 <div>
-                                    본 서비스는 실제 시설에서 사용 중인 관계로, <span className="text-red-300">로그인 및 서비스 이용은 등록된 비닐하우스를 운영하는 농업인만 가능합니다.</span>
-                                    <div>이에 따라, <span className="text-red-400">사이트에 대한 자세한 정보는 포트폴리오 내 작업 화면 및 작성 내용을 통해서만 확인</span>할
+                                    본 서비스는 실제 시설에서 사용 중인 관계로, <span className="text-zinc-700 font-semibold">로그인 및 서비스 이용은 등록된 비닐하우스를 운영하는 농업인만 가능합니다.</span>
+                                    <div>이에 따라, <span className="text-zinc-900 font-semibold">사이트에 대한 자세한 정보는 포트폴리오 내 작업 화면 및 작성 내용을 통해서만 확인</span>할
                                         수 있다는 점 양해 부탁드립니다.
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="border-b border-zinc-600 text-foreground font-semibold tracking-wider pb-2">
+                        <div className="border-b border-zinc-400 text-foreground font-semibold tracking-wider pb-2">
                             작업화면
 
                             <div className="text-[12px] text-zinc-400 mt-1">클릭하면 이미지를 크게 볼 수 있습니다.</div>
@@ -67,7 +67,7 @@ const Content_Project_Farmfarm = () => {
                                              src={data.src}
                                              alt={`farmfarm_image_${data.id}`}/>
                                         <div
-                                            className="flex justify-center py-1 text-[14px] text-zinc-400">{data.title}</div>
+                                            className="flex justify-center py-1 text-[14px] text-zinc-500">{data.title}</div>
                                     </div>
                                 )
                             })}

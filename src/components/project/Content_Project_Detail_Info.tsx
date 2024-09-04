@@ -10,7 +10,7 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
     return (
         <>
             <Table className="mx-auto w-full lg:w-[50%] mb-1">
-                <TableHeader className="bg-zinc-700">
+                <TableHeader className="bg-zinc-200">
                     <TableRow>
                         <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">개발기간</TableHead>
                         <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">개발인원</TableHead>
@@ -28,7 +28,7 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
 
             <div className="flex space-x-2">
                 <Table className="mx-auto flex-1">
-                    <TableHeader className="bg-zinc-700">
+                    <TableHeader className="bg-zinc-200">
                         <TableRow>
                             <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">Library</TableHead>
                         </TableRow>
@@ -40,7 +40,7 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
                                     {data.librarys.map((library, index) => {
                                         return (
                                             <Badge key={index}
-                                                   className="text-[10px] sm:text-[12px] bg-zinc-900 hover:bg-zinc-900 text-zinc-300 rounded m-0.5">{library}</Badge>
+                                                   className="text-[10px] sm:text-[12px] bg-zinc-600 hover:bg-zinc-600/80 rounded m-0.5 cursor-default">{library}</Badge>
                                         );
                                     })}
                                 </div>
@@ -50,7 +50,7 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
                 </Table>
 
                 <Table className="mx-auto flex-1">
-                    <TableHeader className="bg-zinc-700">
+                    <TableHeader className="bg-zinc-200">
                         <TableRow>
                             <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">Tools</TableHead>
                         </TableRow>
@@ -62,7 +62,7 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
                                     {data.tools.map((tool, index) => {
                                         return (
                                             <Badge key={index}
-                                                   className="text-[10px] sm:text-[12px] bg-zinc-900 hover:bg-zinc-900 text-zinc-300 rounded m-0.5">{tool}</Badge>
+                                                   className="text-[10px] sm:text-[12px] bg-zinc-600 hover:bg-zinc-600/80 rounded m-0.5 cursor-default">{tool}</Badge>
                                         );
                                     })}
                                 </div>

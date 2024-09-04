@@ -36,8 +36,8 @@ const Content_Project_Detail_Modal = () => {
                     <div
                         className="flex fixed z-[1000] top-3 right-3 space-x-2 items-center rounded">
                         <DialogClose asChild>
-                            <Button variant={null}
-                                    className="h-fit w-fit px-1 py-1 rounded-full bg-zinc-600 hover:bg-zinc-500">
+                            <Button variant="default"
+                                    className="h-fit w-fit px-1 py-1 rounded-full">
                                 <IoClose
                                     className="w-5 h-5"
                                     onClick={() => {
@@ -50,24 +50,24 @@ const Content_Project_Detail_Modal = () => {
                     <div className="flex justify-center py-5 space-x-1 items-center">
                         <div className="flex flex-col items-center mb-1">
                             <div className="text-[11px] sm:text-[13px]">사이트 바로가기</div>
-                            <Separator className="my-2 w-32 bg-zinc-500"/>
+                            <Separator className="my-2 w-32 bg-zinc-400"/>
                             <Link
                                 href={url}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <FaLink className="w-5 h-5 mt-1 fill-zinc-300 hover:fill-white"/>
+                                <FaLink className="w-5 h-5 mt-1 fill-zinc-500 hover:fill-zinc-900"/>
                             </Link>
                         </div>
                         <div className="flex flex-col items-center">
                             <div className="text-[11px] sm:text-[13px]">관련 Git 바로가기</div>
-                            <Separator className="my-2 w-32 bg-zinc-500"/>
+                            <Separator className="my-2 w-32 bg-zinc-400"/>
                             <Link
                                 href={git}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <FaGithub className="w-6 h-6 mt-1 fill-zinc-300 hover:fill-white"/>
+                                <FaGithub className="w-6 h-6 mt-1 fill-zinc-500 hover:fill-zinc-900"/>
                             </Link>
                         </div>
                     </div>

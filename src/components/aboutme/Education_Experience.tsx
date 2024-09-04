@@ -9,7 +9,7 @@ interface EducationExperienceProps {
 const EducationExperience = ({width}: EducationExperienceProps) => {
     return (
         <div className="flex flex-col w-full h-fit">
-            <div className="border-b border-zinc-600 text-foreground text-2xl font-semibold tracking-wider pb-2">
+            <div className="border-b border-zinc-400 text-foreground text-2xl font-semibold tracking-wider pb-2">
                 Education & Experience
             </div>
 
@@ -18,22 +18,22 @@ const EducationExperience = ({width}: EducationExperienceProps) => {
                     {[...education_experience].reverse().map((data, index) => { // 배열 순서 반대로 갸져오기
                         return (
                             <div key={index}
-                                 className="space-y-4 border-zinc-900 bg-zinc-900 w-[330px] h-auto rounded p-5 tracking-wider">
+                                 className="space-y-4 bg-zinc-100 w-[330px] h-auto rounded p-5 tracking-wider">
                                 <Badge
                                     variant="outline"
-                                    className="border border-zinc-600 py-1.5 px-4 flex w-fit h-fit">
+                                    className="border border-zinc-400 py-1.5 px-4 flex w-fit h-fit">
                                     <div className="text-[14px]">{data.type}</div>
                                 </Badge>
                                 <div className="text-xl font-semibold">{data.organization}</div>
 
-                                <div className="space-y-3 text-zinc-300">
+                                <div className="space-y-3 text-zinc-700">
                                     <div className="flex items-start space-x-1.5">
                                         <IoMdRibbon className="flex-shrink-0 w-5 h-5 mt-1"/>
                                         <div className="leading-6 text-[15px]">{data.title}</div>
                                     </div>
 
                                     {data.description &&
-                                        <div className="text-[13px] text-zinc-400 py-3">{data.description}</div>
+                                        <div className="text-[13px] text-zinc-600 py-3">{data.description}</div>
                                     }
 
                                     <div className="flex items-center space-x-1.5">

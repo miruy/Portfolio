@@ -58,7 +58,7 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
                                 align="center"
                                 alignOffset={0}
                                 sideOffset={10}
-                                className="bg-accent rounded">
+                                className="bg-zinc-50 border-none rounded">
                                 <p>GitHub</p>
                             </TooltipContent>
                         </Tooltip>
@@ -77,7 +77,7 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
                                         rel="noopener noreferrer"
                                     >
                                         <img
-                                            src="/image/memocode/memocode_white.png"
+                                            src="/image/memocode/memocode_black.png"
                                             className="w-6 h-7 lg:w-7 lg:h-8 mt-1"
                                             alt="memocode_icon"/>
                                     </Link>
@@ -87,7 +87,7 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
                                 align="center"
                                 alignOffset={0}
                                 sideOffset={10}
-                                className="bg-accent rounded">
+                                className="bg-zinc-50 border-none rounded">
                                 <p>블로그</p>
                             </TooltipContent>
                         </Tooltip>

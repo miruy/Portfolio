@@ -1,11 +1,11 @@
 const Content_Project_Farmfarm_DevReason = () => {
     return (
-        <div className="flex flex-col w-full h-fit bg-zinc-900 rounded p-3 sm:p-5">
-            <div className="border-b border-zinc-600 text-foreground font-semibold tracking-wider pb-2">
+        <div className="flex flex-col w-full h-fit bg-zinc-200 rounded p-3 sm:p-5">
+            <div className="border-b border-zinc-400 text-foreground font-semibold tracking-wider pb-2">
                 제작동기
             </div>
 
-            <div className="pt-5 tracking-wide leading-6 text-zinc-300">
+            <div className="pt-5 tracking-wide leading-6 text-zinc-700">
                 <span className="text-[14px]">팜팜은 </span>
                 <span className="font-semibold text-[15px] text-foreground">스마트팜 </span>
                 <span className="text-[14px]">기술 도입에 관심이 있고, </span>

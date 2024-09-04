@@ -16,7 +16,7 @@ const ContentProject = () => {
                     return (
                         <div
                             key={index}
-                            className="relative flex flex-col w-full h-full bg-secondary rounded cursor-pointer shadow-xl shadow-black"
+                            className="relative flex flex-col w-full h-full bg-secondary rounded cursor-pointer shadow-xl"
                             style={{aspectRatio: '3 / 4'}}>
                             <video
                                 src={data.src}
@@ -32,14 +32,15 @@ const ContentProject = () => {
                                 <div className="space-y-2">
                                     <div
                                         className="text-[22px] 2xl:text-[20px] font-bold tracking-wide">{data.title}</div>
-                                    <div className="text-[14px] text-zinc-400 tracking-wide">{data.description}</div>
+                                    <div className="text-[14px] text-zinc-500 tracking-wide">{data.description}</div>
                                 </div>
 
                                 <div className="flex flex-wrap">
                                     {data.tags.map((tag, index) => {
                                         return (
                                             <Badge key={index}
-                                                   className="text-[15px] 2xl:text-[13px] bg-zinc-700 hover:bg-zinc-900 text-zinc-300 rounded m-0.5">{tag}</Badge>
+                                                   variant="default"
+                                                   className="text-[15px] 2xl:text-[13px] bg-zinc-600 rounded m-0.5">{tag}</Badge>
                                         );
                                     })}
                                 </div>
@@ -47,7 +48,7 @@ const ContentProject = () => {
 
                             {/* 오버레이 */}
                             <div
-                                className="absolute inset-0 hover:backdrop-blur-sm hover:bg-secondary/70 transition duration-500 rounded">
+                                className="absolute inset-0 hover:backdrop-blur-sm hover:bg-zinc-200/30 transition duration-500 rounded">
                                 <div
                                     className="opacity-0 hover:opacity-100 transition-opacity duration-300 p-5 flex flex-col items-center justify-center h-full space-y-5">
                                     <div

@@ -86,7 +86,7 @@ const Content = () => {
                         className={`${isScrollEqualToScreenHeight ? 'fixed' : 'absolute'} hidden lg:flex top-24 left-5 z-50 flex-col w-auto h-auto p-1 bg-transparent`}>
                         <Button
                             variant={null}
-                            className={`${activeTab === "about" ? `text-foreground` : `text-zinc-600 hover:text-zinc-500`} h-fit w-fit rounded duration-300`}
+                            className={`${activeTab === "about" ? `text-foreground` : `text-zinc-400 hover:text-zinc-300`} h-fit w-fit rounded duration-300`}
                             onClick={() => handleTab("about")}
                         >
                             <span className="text-4xl tracking-wider font-bold">ABOUT ME</span>
@@ -94,7 +94,7 @@ const Content = () => {
 
                         <Button
                             variant={null}
-                            className={`${activeTab === "project" ? `text-foreground` : `text-zinc-600 hover:text-zinc-500 `} h-fit w-fit rounded duration-300`}
+                            className={`${activeTab === "project" ? `text-foreground` : `text-zinc-400 hover:text-zinc-300 `} h-fit w-fit rounded duration-300`}
                             onClick={() => handleTab("project")}
                         >
                             <span className="text-4xl tracking-wider font-bold">PROJECT</span>
@@ -115,7 +115,7 @@ const Content = () => {
                     <div
                         className={`${isScrollEqualToScreenHeight ? 'fixed' : 'absolute'} hidden lg:flex items-center space-x-1.5 bottom-5 left-5 z-50 text-zinc-500`}>
                         <TbClockEdit className="w-5 h-5"/>
-                        <div className="tracking-wide text-[15px]">2024.09.03</div>
+                        <div className="tracking-wide text-[15px]">2024.09.04</div>
                     </div>
                 </div>
             </div>

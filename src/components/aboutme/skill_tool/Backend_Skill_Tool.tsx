@@ -10,7 +10,7 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
         <div className="space-y-7">
             <div className="flex-1 space-y-3">
                 <div
-                    className="flex items-center text-[14px] font-semibold text-zinc-300">
+                    className="flex items-center text-[14px] font-semibold text-zinc-600">
                     Framework
                     <BsDot/>
                     Language
@@ -22,7 +22,7 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                         const name = skill.replace("/image/skill/", "").replace(/\.(svg|png)$/, "");
                         let color = "bg-orange-400"
                         if (name === "Docker") {
-                            color = "bg-yellow-300"
+                            color = "bg-yellow-400"
                         }
                         return (
                             <div key={index} className="flex flex-col items-center">
@@ -36,7 +36,7 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                                     <div
                                         className={`absolute -top-1 -right-1 inline-flex rounded-full h-3 w-3 ${color}`}></div>
                                 </div>
-                                <div className="text-[10px] text-zinc-300 mt-1">{name}</div>
+                                <div className="text-[10px] text-zinc-700 mt-1">{name}</div>
                             </div>
                         )
                     })}
@@ -46,7 +46,7 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
             <div className="flex justify-between">
                 <div className="space-y-3">
                     <div
-                        className="flex items-center text-[14px] font-semibold text-zinc-300">
+                        className="flex items-center text-[14px] font-semibold text-zinc-600">
                         DataBase
                     </div>
                     <div className="flex space-x-4 rounded">
@@ -66,7 +66,7 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                                             className={`absolute -top-1 -right-1 inline-flex rounded-full h-3 w-3 ${color}`}></div>
                                     </div>
                                     <div
-                                        className="text-[10px] text-zinc-300 mt-1">{name === "OracleSQLDeveloper" ?
+                                        className="text-[10px] text-zinc-700 mt-1">{name === "OracleSQLDeveloper" ?
                                         <div className="flex flex-col items-center leading-3">
                                             <div>OracleSQL</div>
                                             <div>Developer</div>
@@ -81,13 +81,13 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
 
                 <div className="space-y-3 mr-1">
                     <div
-                        className="flex text-[14px] font-semibold text-zinc-300">
+                        className="flex text-[14px] font-semibold text-zinc-600">
                         Infra
                     </div>
                     <div className="flex space-x-4 rounded">
                         {data.infras?.map((infra, index) => {
                             const name = infra.replace("/image/skill/", "").replace(/\.(svg|png)$/, "");
-                            let color = "bg-yellow-300"
+                            let color = "bg-yellow-400"
                             return (
                                 <div key={index} className="flex flex-col items-center">
                                     <div
@@ -101,7 +101,7 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                                             className={`absolute -top-1 -right-1 inline-flex rounded-full h-3 w-3 ${color}`}></div>
                                     </div>
                                     <div
-                                        className="text-[10px] text-zinc-300 mt-1">{name === "OracleSQLDeveloper" ?
+                                        className="text-[10px] text-zinc-700 mt-1">{name === "OracleSQLDeveloper" ?
                                         <div className="flex flex-col items-center leading-3">
                                             <div>OracleSQL</div>
                                             <div>Developer</div>
@@ -116,13 +116,13 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
             </div>
 
             <div className="flex-1 space-y-3">
-                <div className="text-[14px] font-semibold text-zinc-300">Tool</div>
+                <div className="text-[14px] font-semibold text-zinc-600">Tool</div>
                 <div className="grid grid-cols-5 gap-4 rounded">
                     {data.tools?.map((tool, index) => {
                         const name = tool.replace("/image/tool/", "").replace(/\.(svg|png)$/, "");
                         let color = "bg-green-500"
                         if (name === "GCP") {
-                            color = "bg-yellow-300"
+                            color = "bg-yellow-400"
                         }
                         return (
                             <div key={index} className="flex flex-col items-center">
@@ -136,7 +136,7 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                                     <div
                                         className={`absolute -top-1 -right-1 inline-flex rounded-full h-3 w-3 ${color}`}></div>
                                 </div>
-                                <div className="text-[10px] text-zinc-300 mt-1">{name}</div>
+                                <div className="text-[10px] text-zinc-700 mt-1">{name}</div>
                             </div>
                         )
                     })}

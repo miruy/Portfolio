@@ -7,7 +7,7 @@ interface CooperationSkillToolProps {
 const Cooperation_Skill_Tool = ({data}: CooperationSkillToolProps) => {
     return (
         <div className="flex-1 space-y-3">
-            <div className="text-[14px] font-semibold text-zinc-300">Tool</div>
+            <div className="text-[14px] font-semibold text-zinc-600">Tool</div>
             <div className="grid grid-cols-5 gap-4 rounded">
                 {data.tools?.map((tool, index) => {
                     const name = tool.replace("/image/tool/", "").replace(/\.(svg|png)$/, "");
@@ -25,7 +25,7 @@ const Cooperation_Skill_Tool = ({data}: CooperationSkillToolProps) => {
                                 <div
                                     className={`absolute -top-1 -right-1 inline-flex rounded-full h-3 w-3 ${color}`}></div>
                             </div>
-                            <div className="text-[10px] text-zinc-300 mt-1">{name}</div>
+                            <div className="text-[10px] text-zinc-700 mt-1">{name}</div>
                         </div>
                     )
                 })}

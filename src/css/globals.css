@@ -1,28 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
     :root {
-        --background: 240 10% 3.9%;
-        --foreground: 0 0% 98%;
-        --card: 240 10% 3.9%;
-        --card-foreground: 0 0% 98%;
-        --popover: 240 10% 3.9%;
-        --popover-foreground: 0 0% 98%;
-        --primary: 0 0% 98%;
-        --primary-foreground: 240 5.9% 10%;
-        --secondary: 240 3.7% 15.9%;
-        --secondary-foreground: 0 0% 98%;
-        --muted: 240 3.7% 15.9%;
-        --muted-foreground: 240 5% 64.9%;
-        --accent: 240 3.7% 15.9%;
-        --accent-foreground: 0 0% 98%;
-        --destructive: 0 62.8% 30.6%;
+        --background: 0 0% 100%;
+        --foreground: 240 10% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+        --primary: 240 5.9% 10%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 240 4.8% 95.9%;
+        --secondary-foreground: 240 5.9% 10%;
+        --muted: 240 4.8% 95.9%;
+        --muted-foreground: 240 3.8% 46.1%;
+        --accent: 240 4.8% 95.9%;
+        --accent-foreground: 240 5.9% 10%;
+        --destructive: 0 84.2% 60.2%;
         --destructive-foreground: 0 0% 98%;
-        --border: 240 3.7% 15.9%;
-        --input: 240 3.7% 15.9%;
-        --ring: 240 4.9% 83.9%;
+        --border: 240 5.9% 90%;
+        --input: 240 5.9% 90%;
+        --ring: 240 5.9% 10%;
+        /*--background: 0 0% 100%;*/
+        /*--foreground: 0 0% 98%;*/
+        /*--card: 240 10% 3.9%;*/
+        /*--card-foreground: 0 0% 98%;*/
+        /*--popover: 240 10% 3.9%;*/
+        /*--popover-foreground: 0 0% 98%;*/
+        /*--primary: 0 0% 98%;*/
+        /*--primary-foreground: 240 5.9% 10%;*/
+        /*--secondary: 240 5% 84%;*/
+        /*--secondary-foreground: 0 0% 98%;*/
+        /*--muted: 240 5% 84%;*/
+        /*--muted-foreground: 240 5% 64.9%;*/
+        /*--accent: 240 3.7% 15.9%;*/
+        /*--accent-foreground: 0 0% 98%;*/
+        /*--destructive: 0 62.8% 30.6%;*/
+        /*--destructive-foreground: 0 0% 98%;*/
+        /*--border: 240 3.7% 15.9%;*/
+        /*--input: 240 3.7% 15.9%;*/
+        /*--ring: 240 4.9% 83.9%;*/
+        /*--background: 0 0% 100%;*/
+        /*--foreground: 20 14.3% 4.1%;*/
+        /*--card: 0 0% 100%;*/
+        /*--card-foreground: 20 14.3% 4.1%;*/
+        /*--popover: 0 0% 100%;*/
+        /*--popover-foreground: 20 14.3% 4.1%;*/
+        /*--primary: 24 9.8% 10%;*/
+        /*--primary-foreground: 60 9.1% 97.8%;*/
+        /*--secondary: 60 4.8% 95.9%;*/
+        /*--secondary-foreground: 24 9.8% 10%;*/
+        /*--muted: 60 4.8% 95.9%;*/
+        /*--muted-foreground: 25 5.3% 44.7%;*/
+        /*--accent: 60 4.8% 95.9%;*/
+        /*--accent-foreground: 24 9.8% 10%;*/
+        /*--destructive: 0 84.2% 60.2%;*/
+        /*--destructive-foreground: 60 9.1% 97.8%;*/
+        /*--border: 20 5.9% 90%;*/
+        /*--input: 20 5.9% 90%;*/
+        /*--ring: 20 14.3% 4.1%;*/
     }
 
     * {
@@ -48,9 +88,9 @@
 
 /* 기본 스크롤바의 슬라이더(움직이는 부분) */
 ::-webkit-scrollbar-thumb {
-    background-color: #3f3f46; /* 슬라이더의 색상 */
+    background-color: #d4d4d8; /* 슬라이더의 색상 */
     border-radius: 10px; /* 슬라이더의 둥글기 */
-    border: 3px solid #3f3f46; /* 슬라이더의 테두리 및 트랙과의 간격 */
+    border: 3px solid #d4d4d8; /* 슬라이더의 테두리 및 트랙과의 간격 */
 }
 
 /* Project_상세 뷰 스크롤바 전체 */
@@ -66,7 +106,203 @@
 
 /* Project_상세 뷰 스크롤바 슬라이더(움직이는 부분) */
 .overflow-y-auto::-webkit-scrollbar-thumb {
-    background-color: #18181b; /* 슬라이더의 색상 */
+    background-color: #a1a1aa; /* 슬라이더의 색상 */
     border-radius: 10px; /* 슬라이더의 둥글기 */
-    border: 3px solid #18181b; /* 슬라이더의 테두리 및 트랙과의 간격 */
+    border: 3px solid #a1a1aa; /* 슬라이더의 테두리 및 트랙과의 간격 */
+}
+
+/* 메인 페이지 스크롤 버튼 효과 */
+.button:hover svg {
+    animation: moveArrow 1000ms;
+}
+
+@keyframes moveArrow {
+    0% {
+        transform: translatey(0px);
+    }
+    49% {
+        transform: translatey(20px);
+    }
+    50% {
+        transform: translatey(-50px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+/* 메인 텍스트 효과 */
+.container svg {
+    /*max-width: 60rem;*/
+    width: 100%;
+    height: auto;
+    stroke-width: 3;
+}
+
+.container svg tspan > tspan {
+    stroke-dasharray: 1500;
+    stroke-dashoffset: -1500;
+}
+
+@keyframes draw {
+    100% {
+        stroke-dashoffset: 10;
+    }
+}
+
+/* 각 tspan 요소에 대해 반복적으로 적용 (번호, 150씩) */
+.container svg tspan > tspan:nth-of-type(1) {
+    animation: draw 300ms 150ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(2) {
+    animation: draw 300ms 300ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(3) {
+    animation: draw 300ms 450ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(4) {
+    animation: draw 300ms 600ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(5) {
+    animation: draw 300ms 750ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(6) {
+    animation: draw 300ms 900ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(7) {
+    animation: draw 300ms 1050ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(8) {
+    animation: draw 300ms 1200ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(9) {
+    animation: draw 300ms 1350ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(10) {
+    animation: draw 300ms 1500ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(11) {
+    animation: draw 300ms 1650ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(12) {
+    animation: draw 300ms 1800ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(13) {
+    animation: draw 300ms 1950ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(14) {
+    animation: draw 300ms 2100ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(15) {
+    animation: draw 300ms 2250ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(16) {
+    animation: draw 300ms 2400ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(17) {
+    animation: draw 300ms 2550ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(18) {
+    animation: draw 300ms 2700ms forwards;
+}
+
+.container svg tspan > tspan:nth-of-type(19) {
+    animation: draw 300ms 2850ms forwards;
+}
+
+@keyframes moveToTop {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(0, -250px) scale(0.9);
+    }
+}
+
+.container {
+    animation: draw 3s forwards, moveToTop 2s 3s forwards;
+    transform-origin: center;
+    padding: 0;
+}
+
+/* 메인 움직이는 카드 효과 */
+.hover__wrap > div {
+    margin: 3%;
+    position: relative;
+    perspective: 1000px;
+}
+
+.hover__wrap > div .front {
+    transition: transform 1s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.hover__wrap > div .back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.hover__wrap > div figcaption {
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateZ(100px);
+    backface-visibility: hidden;
+}
+
+/* hover effect */
+.hover__updown .front {
+    transform: rotateX(0deg);
+}
+
+.hover__updown:hover .front {
+    transform: rotateX(180deg);
+}
+
+.hover__updown .back {
+    transform: rotateX(-180deg);
+}
+
+.hover__updown:hover .back {
+    transform: rotateX(0deg);
+}
+
+.hover__leftright .front {
+    transform: rotateY(0deg);
+}
+
+.hover__leftright:hover .front {
+    transform: rotateY(180deg);
+}
+
+.hover__leftright .back {
+    transform: rotateY(-180deg);
+}
+
+.hover__leftright:hover .back {
+    transform: rotateY(0deg);
 }
