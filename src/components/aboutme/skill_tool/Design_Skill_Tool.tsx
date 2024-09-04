@@ -18,7 +18,7 @@ const Design_Skill_Tool = ({data}: DesignSkillToolProps) => {
                     return (
                         <div key={index} className="flex flex-col items-center">
                             <div
-                                className={`flex justify-center items-center bg-zinc-700 rounded w-[50px] h-[50px] p-2.5 relative`}>
+                                className={`flex justify-center items-center bg-white rounded w-[50px] h-[50px] p-2.5 relative`}>
                                 <img
                                     src={tool}
                                     alt={name + `_image_` + index}

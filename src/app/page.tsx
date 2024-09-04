@@ -45,11 +45,11 @@ const Home = () => {
                         className="container fixed flex flex-col justify-center items-center min-h-[100vh] min-w-[100vw]">
                         <div className="absolute flex flex-col items-center mb-40 lg:mb-52">
                             <div
-                                className="text-[16px] lg:text-[20px] text-zinc-500 animate__animated animate__fadeInUp">
+                                className="text-[16px] lg:text-[20px] text-zinc-600 animate__animated animate__fadeInUp">
                                 비 온 뒤의 땅이 단단해지듯
                             </div>
                             <div
-                                className="text-[16px] lg:text-[20px] text-zinc-500 animate__animated animate__fadeInUp">
+                                className="text-[16px] lg:text-[20px] text-zinc-600 animate__animated animate__fadeInUp">
                                 도전과 실패를 바탕으로 견고한 성과를 만들어내는
                             </div>
                         </div>
@@ -62,13 +62,13 @@ const Home = () => {
                             preserveAspectRatio="xMidYMid meet"
                         >
                             <g
-                                stroke="#a1a1aa"
-                                fill="#d4d4d8"
+                                stroke="#71717a"
+                                fill="#a1a1aa"
                                 fillRule="evenodd"
                                 fillOpacity="0.5">
                                 <text
-                                    stroke="#a1a1aa"
-                                    fill="#d4d4d8"
+                                    stroke="#71717a"
+                                    fill="#a1a1aa"
                                     fontWeight="normal"
                                     textAnchor="middle"
                                     x="50%"
@@ -100,56 +100,36 @@ const Home = () => {
                         </svg>
 
                         <div className="fixed flex space-x-3 animate__animated animate__fadeIn delay-5000 mt-24">
-                            <div className="text-zinc-500 text-3xl lg:text-4xl font-semibold tracking-wide">
+                            <div className="text-zinc-600 text-3xl lg:text-4xl font-semibold tracking-wide">
                                 YU RIM
                             </div>
-                            <div className="text-zinc-500 text-3xl lg:text-4xl font-semibold tracking-wide">
+                            <div className="text-zinc-600 text-3xl lg:text-4xl font-semibold tracking-wide">
                                 PORTFOLIO
                             </div>
                         </div>
                     </div>
 
-                    <div
-                        className="fixed min-w-[100vw] min-h-[100vh] animate__animated animate__zoomIn delay-6000">
-                        <div className="w-[100%]">
-                            <div className="hover__wrap flex justify-center items-center mt-[200px] h-[100vh]">
-                                <div className="hover__updown">
-                                    <figure className="front">
-                                        <div className="w-[400px] h-[400px] bg-secondary opacity-30 shadow-md rounded-full">
+                    {/*<div*/}
+                    {/*    className="fixed min-w-[100vw] min-h-[100vh] animate__animated animate__zoomIn delay-6000">*/}
+                    {/*    <div className="w-[100%]">*/}
+                    {/*        <div className="hover__wrap flex justify-center items-center mt-[200px] h-[100vh]">*/}
+                    {/*            <div className="hover__updown">*/}
+                    {/*                <figure className="front">*/}
+                    {/*                    <div className="w-[400px] h-[400px] bg-secondary opacity-30 shadow-md rounded-full">*/}
 
-                                        </div>
-                                    </figure>
-                                    <figure className="back">
-                                        <div className="w-[400px] h-[400px] bg-secondary opacity-50 shadow-md rounded-full"></div>
-                                        <figcaption className="bg-white bg-opacity-30 absolute w-[100%] h-[100%] rounded-full space-y-5 flex flex-col justify-center items-center">
-                                            <span className="text-xl text-zinc-700">Git Hub</span>
-                                            <Button variant="default" className="rounded w-[50%] bg-zinc-700 hover:bg-zinc-600">바로가기</Button>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                {/*<div className="hover__leftright">*/}
-                                {/*    <figure className="front">*/}
-                                {/*        <img*/}
-                                {/*            src="https://github.com/mj0614k/Coding/blob/main/animation/img/hoverAni_03.jpg?raw=true"*/}
-                                {/*            alt=""/>*/}
-                                {/*        <figcaption>*/}
-                                {/*            <h3>Mouse Hover Effect</h3>*/}
-                                {/*            <p>마우스를 올리면<br/>to Right</p>*/}
-                                {/*        </figcaption>*/}
-                                {/*    </figure>*/}
-                                {/*    <figure className="back">*/}
-                                {/*        <img*/}
-                                {/*            src="https://github.com/mj0614k/Coding/blob/main/animation/img/hoverAni_04.jpg?raw=true"*/}
-                                {/*            alt=""/>*/}
-                                {/*        <figcaption>*/}
-                                {/*            <h3>Mouse Hover Effect</h3>*/}
-                                {/*            <p>마우스를 내리면<br/>to Left</p>*/}
-                                {/*        </figcaption>*/}
-                                {/*    </figure>*/}
-                                {/*</div>*/}
-                            </div>
-                        </div>
-                    </div>
+                    {/*                    </div>*/}
+                    {/*                </figure>*/}
+                    {/*                <figure className="back">*/}
+                    {/*                    <div className="w-[400px] h-[400px] bg-secondary opacity-50 shadow-md rounded-full"></div>*/}
+                    {/*                    <figcaption className="bg-white bg-opacity-30 absolute w-[100%] h-[100%] rounded-full space-y-5 flex flex-col justify-center items-center">*/}
+                    {/*                        <span className="text-xl text-zinc-700">Git Hub</span>*/}
+                    {/*                        <Button variant="default" className="rounded w-[50%] bg-zinc-700 hover:bg-zinc-600">바로가기</Button>*/}
+                    {/*                    </figcaption>*/}
+                    {/*                </figure>*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
                     <TooltipProvider>
                         <Tooltip delayDuration={100}>

@@ -23,7 +23,7 @@ const Frontend_Skill_Tool = ({data}: FrontendSkillToolProps) => {
                         const color = "bg-green-500"
                         return (
                             <div key={index} className="flex flex-col items-center">
-                                <div className={`flex justify-center items-center bg-zinc-700 rounded w-[50px] h-[50px] scale-95 relative
+                                <div className={`flex justify-center items-center bg-white rounded w-[50px] h-[50px] scale-95 relative
                                                       ${name === "Markdown" || name === "Recharts" ? `p-0.5` : `p-2.5`}`}>
                                     <img
                                         src={skill}
@@ -49,7 +49,7 @@ const Frontend_Skill_Tool = ({data}: FrontendSkillToolProps) => {
                         return (
                             <div key={index} className="flex flex-col items-center">
                                 <div
-                                    className={`flex justify-center items-center bg-zinc-700 rounded w-[50px] h-[50px] p-2.5 relative`}>
+                                    className={`flex justify-center items-center bg-white rounded w-[50px] h-[50px] p-2.5 relative`}>
                                     <img
                                         src={tool}
                                         alt={name + `_image_` + index}

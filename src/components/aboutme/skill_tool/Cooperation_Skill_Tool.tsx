@@ -15,7 +15,7 @@ const Cooperation_Skill_Tool = ({data}: CooperationSkillToolProps) => {
                     return (
                         <div key={index} className="flex flex-col items-center">
                             <div
-                                className={`flex justify-center items-center bg-zinc-700 rounded w-[50px] h-[50px] relative
+                                className={`flex justify-center items-center bg-white rounded w-[50px] h-[50px] relative
                                                             ${name === "GitHub" ? `p-1.5` : `p-2.5`}`}>
                                 <img
                                     src={tool}
