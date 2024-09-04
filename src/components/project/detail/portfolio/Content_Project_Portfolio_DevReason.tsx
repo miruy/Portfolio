@@ -6,7 +6,7 @@ const Content_Project_Portfolio_DevReason = () => {
             </div>
 
             <div className="pt-5 tracking-wide leading-6 text-zinc-700">
-                <span className="font-semibold text-[15px] text-foreground">기획, 디자인, 개발, 배포까지 모든 과정을 직접 수행</span>
+                <span className="font-semibold text-[15px] text-foreground">기획, 디자인, 개발 모든 과정을 직접 작업</span>
                 <span className="text-[14px]">하며, 프론트엔드 개발자로서 저의 역량을 발휘하기 위해 이 프로젝트를 제작하였습니다.</span>
                 <div className="text-[14px]">다양한 웹 기술과 디자인 패턴을 활용하여
                     <span className="font-semibold text-[15px] text-foreground"> 사용자 친화적인 인터페이스</span>

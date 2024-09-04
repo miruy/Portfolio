@@ -16,11 +16,11 @@ const Content_Project_Portfolio_KeyFeatures = () => {
                     </div>
                     <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-500">
                         <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
-                        <span className="ml-1.5 text-foreground font-semibold">역동적인 애니메이션을 배경으로 사용하여 반응형 웹사이트의 특성을 강조하였습니다.</span>
+                        <span className="ml-1.5 text-foreground font-semibold">직접 작성한 CSS 코드와 TailwindCSS, 그리고 animate.css 라이브러리를 활용하여 다양한 애니메이션 효과를 구현하였고, 이를 통해 반응형 웹사이트의 특성을 강조하였습니다.</span>
                     </div>
                     <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-500">
                         <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
-                        <span className="ml-1.5 text-foreground font-semibold">배경의 큰 움직임을 고려해 소개 글은 짧고 간결하게 작성하여 저를 효과적으로 표현할 수 있도록 했습니다.</span>
+                        <span className="ml-1.5 text-foreground font-semibold">제목과 소개글에 부드럽게 전환되는 애니메이션 효과를 적용하고, 저를 나타내는 문장을 간결하게 작성하여 효과적으로 전달할 수 있도록 구현했습니다.</span>
                     </div>
                     <div className="flex items-start text-[14px] leading-7 mx-5 py-0.5 text-zinc-500">
                         <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
