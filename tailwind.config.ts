@@ -76,13 +76,14 @@ const config = {
                 'none': 'none',
                 'blur': 'blur(10px)',
                 'blur-sm': 'blur(5px)',
+                'blur-xs': 'blur(2.5px)',
             },
             backgroundImage: {
                 'main-bg': "url('/image/main_bg.png')",
             },
             transitionDelay: {
                 '5000': '5000ms',
-                '5500': '5500ms',
+                '5300': '5300ms',
             }
         },
     },

@@ -4,6 +4,8 @@ import Content from "@/components/Content";
 import {useEffect, useState} from "react";
 import "animate.css";
 import {MdKeyboardArrowDown} from "react-icons/md";
+import {Button} from "@/components/ui/button";
+import {ModalTypes} from "@/context/ModalContext";
 
 const Home = () => {
 
@@ -35,7 +37,9 @@ const Home = () => {
                 <div className="flex">
                     <div
                         id="container"
-                        className={`flex justify-center items-center min-h-[100vh] min-w-[100vw] ${loaded ? 'bg-main-bg transition opacity-100 ease-in-out duration-1000 scale-100' : 'bg-[#F1F2F1] transition opacity-100 ease-in-out duration-1000 scale-110'}`}>
+                        className={`flex justify-center items-center min-h-[100vh] min-w-[100vw] ${loaded ? 'bg-main-bg transition opacity-100 ease-in-out duration-1000 scale-100 relative' : 'bg-[#f6f6f6] transition opacity-100 ease-in-out duration-1000 scale-110'}`}>
+
+                        <div className="absolute inset-0 backdrop-blur-xs bg-zinc-100/30"></div>
                     </div>
 
                     <div
@@ -59,15 +63,15 @@ const Home = () => {
                             preserveAspectRatio="xMidYMid meet"
                         >
                             <g
-                                stroke="#71717a"
-                                fill="#a1a1aa"
+                                stroke="#52525b"
+                                fill="#d4d4d8"
                                 fillRule="evenodd"
                                 fillOpacity="0.5"
                                 strokeOpacity="0.7"
                             >
                                 <text
-                                    stroke="#71717a"
-                                    fill="#a1a1aa"
+                                    stroke="#52525b"
+                                    fill="#d4d4d8"
                                     fontWeight="normal"
                                     textAnchor="middle"
                                     x="50%"
@@ -109,7 +113,7 @@ const Home = () => {
                     </div>
 
                     <div
-                        className="fixed min-w-[100vw] min-h-[100vh] animate__animated animate__slideInUp delay-5500">
+                        className="fixed min-w-[100vw] min-h-[100vh] animate__animated animate__slideInUp delay-5300">
                         <div className="w-[100%]">
                             <div className="hover__wrap flex justify-center items-end mb-[50px] h-[100vh]">
                                 <div className="hover__updown cursor-pointer" onClick={handleDown}>
