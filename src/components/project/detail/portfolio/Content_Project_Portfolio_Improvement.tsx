@@ -42,7 +42,7 @@ const Content_Project_Portfolio_Improvement = () => {
                         <div className="flex items-start leading-6 font-semibold text-[15px] text-foreground">
                             <IoCloseSharp className="flex-shrink-0 mt-0.5 w-6 h-6 fill-red-500 mr-1"/>
                             ABOUT ME 섹션의 `Education & Experience` 및 `Skill & Tool` 항목에 대한 가로 캐러셀 기능을 구현하는 과정에서, 화면의 너비에
-                            따라 구성 요소들이 실시간으로 재배치 되지 않아 레이아웃이 깨지는 에러가 발생하였습니다.
+                            따라 구성 요소들이 실시간으로 재배치 되지 않아 레이아웃이 깨지는 에러 발생
                         </div>
                         <div className="text-[13px] mx-6 text-zinc-700">
                             화면 너비가 실시간으로 변경되거나 다양한 디스플레이 크기의 기기로 접속할 때, UI 요소들이 동적으로 반응하여 의도된 위치에 정렬되어야 하지만, 이러한 반응이 제대로
