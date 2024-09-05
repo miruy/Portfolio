@@ -17,13 +17,16 @@ const Skill_Tool = ({width}: SkillToolProps) => {
                 className="flex items-center justify-between border-b border-zinc-400 text-foreground text-2xl font-semibold tracking-wider pb-2">
                 <div>Skill & Tool</div>
 
-                <div className="flex items-center space-x-1">
+                <div className="flex items-center space-x-2 scale-90 sm:scale-100">
                     <div className="flex items-center space-x-1">
                         <div className={`rounded-full h-2.5 w-2.5 bg-green-500`}></div>
                         <div className="text-[12px] text-zinc-500">경험 많음</div>
                     </div>
 
-                    <AiOutlineDash className="text-zinc-500"/>
+                    <div className="flex items-center space-x-1">
+                        <div className={`rounded-full h-2.5 w-2.5 bg-orange-400`}></div>
+                        <div className="text-[12px] text-zinc-500">경험 보통</div>
+                    </div>
 
                     <div className="flex items-center space-x-1">
                         <div className={`rounded-full h-2.5 w-2.5 bg-yellow-400`}></div>
