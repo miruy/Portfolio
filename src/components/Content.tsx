@@ -101,7 +101,7 @@ const Content = () => {
                         </Button>
                     </div>
 
-                    <div className="flex flex-1 flex-col mt-[100px] mx-4 sm:mx-10 lg:ml-[250px] lg:mr-[30px] 2xl:ml-[280px] 2xl:mr-[45px]">
+                    <div className="flex flex-1 flex-col mt-[100px] mx-4 sm:mx-10 lg:ml-[250px] lg:mr-[30px] 2xl:ml-[290px] 2xl:mr-[45px]">
                         <div id="about" ref={aboutRef}>
                             <ContentAbout/>
                         </div>

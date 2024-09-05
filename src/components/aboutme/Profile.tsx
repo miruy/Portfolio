@@ -2,6 +2,8 @@ import {Separator} from "@/components/ui/separator";
 import Link from "next/link";
 import {FaGithub} from "react-icons/fa";
 import {useState} from "react";
+import {FaChildReaching, FaHandsClapping} from "react-icons/fa6";
+import {PiShootingStarFill} from "react-icons/pi";
 
 const Profile = () => {
 
@@ -9,18 +11,13 @@ const Profile = () => {
 
     return (
         <div
-            className="flex flex-col md:flex-row space-y-5 md:space-y-0 space-x-0 md:space-x-5 items-center">
-            <div className="flex flex-row md:flex-col justify-center md:justify-start">
-                <div
-                    className="flex justify-center relative w-[155px] h-[155px] xl:w-[230px] xl:h-[230px]">
-                    <div className="flex flex-row md:flex-col absolute -top-2">
-                        <img src="/image/mimo_avatar.png" alt="notion_avatar" className="w-full h-full"/>
-                    </div>
+            className="flex flex-col 2xl:flex-row space-y-5 2xl:space-y-0 space-x-0 2xl:space-x-14 items-center">
+            <div className="flex flex-col justify-center space-y-4">
+                <div className="w-[230px] h-[230px] lg:w-[280px] lg:h-[280px]">
+                    <img src="/image/mimo_avatar.png" alt="notion_avatar" className="w-full h-full"/>
                 </div>
 
-                <div className="flex flex-col w-[200px] md:w-full items-center justify-center space-y-1">
-                    <div className="text-xl xl:text-2xl font-semibold tracking-wide">김유림</div>
-
+                <div className="flex flex-col w-[200px] md:w-full items-center justify-center">
                     <div className="flex w-full space-x-1">
                         <div className="flex flex-col flex-1 items-center mb-1">
                             <div className="text-[12px] sm:text-[14px]">GitHub</div>
@@ -31,7 +28,7 @@ const Profile = () => {
                                 rel="noopener noreferrer"
                             >
                                 <FaGithub
-                                    className="w-7 h-7 xl:w-8 xl:h-8 mt-1 fill-zinc-500 hover:fill-foreground hover:scale-105"/>
+                                    className="w-8 h-8 mt-1 fill-zinc-500 hover:fill-foreground hover:scale-105"/>
                             </Link>
                         </div>
 
@@ -47,7 +44,7 @@ const Profile = () => {
                                     onMouseOver={() => setHovered(true)}
                                     onMouseLeave={() => setHovered(false)}
                                     src={hovered ? `/image/memocode/memocode_black.png` : `/image/memocode/memocode_gray.png`}
-                                    className="w-7 h-8 xl:w-8 xl:h-9 mt-1"
+                                    className="w-8 h-9 mt-1"
                                     alt="memocode_icon"/>
                             </Link>
                         </div>
@@ -56,38 +53,74 @@ const Profile = () => {
             </div>
 
             <div
-                className="flex flex-col h-fit leading-5 2xl:leading-7 tracking-wide py-5 px-2 text-sm 2xl:text-[16px] text-secondary-foreground">
-                <div>안녕하세요.</div>
-                <div>
-                    프론트엔드 개발자가 되고자<span className="text-foreground font-bold"> 끊임없는 공부</span>와
-                    <span className="text-foreground font-bold"> 지속적인 실전 경험</span>을 쌓기 위해 노력하고 있는
-                    <span className="text-foreground font-bold"> 김유림 </span>입니다.
-                </div>
-                <div className="mb-3">
-                    백엔드 개발자 양성과정을 통해 기초를 다진 후, 현재는
-                    <span className="text-foreground font-bold"> 사용자 중심의 인터페이스를 구축</span>하는 프론트엔드 개발에 집중하고 있습니다.
-                </div>
-                <div className="mb-3">
-                    IT 학원에서 7개월간 백엔드 개발자 양성과정을 이수하며, 팀 프로젝트를 통해 백엔드와 프론트엔드 전반을 경험했습니다.
-                    특히, 프로젝트 과정에서 <span className="text-foreground font-bold">생동감 있는 디자인 요소 </span>와
-                    <span className="text-foreground font-bold"> 즉각적인 피드백이 반영되는</span> 프론트엔드 개발에 큰 매력을 느꼈습니다.
+                className="flex flex-col h-fit tracking-wide py-5 pr-2 text-[15px] 2xl:text-[16px] text-zinc-700 space-y-5">
+                <div className="bg-secondary rounded p-5 leading-[25px] md:leading-7">
+                    <div className="flex flex-shrink-0 items-start space-x-1 mb-2">
+                        <FaChildReaching className="w-4 h-4 mt-1.5"/>
+                        <div className="text-[17px] font-bold">소개</div>
+                    </div>
 
+                    안녕하세요.
                     <div>
-                        이를 통해 문제를 이해하고,
-                        <span className="text-foreground font-bold"> 적절한 해결 방안을 기획하고 적용하는 과정에서 사용자 중심의 인터페이스 구축에 깊은 관심</span>
-                        을 가지게 되었습니다.
+                        프론트엔드 개발자가 되고자 <span
+                        className="bg-zinc-600 py-0.5 px-1.5 text-white rounded text-[13.5px] 2xl:text-[14.5px]">끊임없는 공부</span>
+                        와{` `}
+                        <span className="bg-zinc-600 py-0.5 px-1.5 text-white rounded text-[13.5px] 2xl:text-[14.5px]">지속적인 실전 경험</span>을
+                        쌓기 위해 노력하고 있는
+                        {` `}<span
+                        className="underline underline-offset-4 font-semibold text-foreground">김유림</span>입니다.
+                    </div>
+                    <div>
+                        백엔드 개발자 양성과정을 통해 기초를 다진 후, 현재는{` `}
+                        <span className="bg-zinc-600 py-0.5 px-1.5 text-white rounded text-[13.5px] 2xl:text-[14.5px]">사용자 중심의 인터페이스를 구축</span>하는
+                        프론트엔드
+                        개발에 집중하고 있습니다.
                     </div>
                 </div>
-                <div className="mb-3">
-                    또한, 팀 프로젝트에서 <span className="text-foreground font-semibold">팀장 </span>
-                    역할을 맡아 팀원들을 이끌며 동료들과의 협업과 원활한 커뮤니케이션의 중요성을 깊이 깨달았습니다.
-                    이를 바탕으로 <span className="text-foreground font-semibold">효율적인 협업 방안을 모색</span>하고,
-                    <span className="text-foreground font-semibold"> 더 나은 성과를 도출하는 방법</span>에 대해 꾸준히 고민해왔습니다.
+
+                <div className="bg-secondary rounded p-5 leading-[25px] md:leading-7">
+                    <div className="flex flex-shrink-0 items-start space-x-1 mb-2">
+                        <PiShootingStarFill className="w-5 h-5 mt-1"/>
+                        <div className="text-[17px] font-bold">프론트엔드 개발에 도전하게 된 이유</div>
+                    </div>
+
+                    IT 학원에서 7개월간 백엔드 개발자 양성과정을 이수하며, 팀 프로젝트를 통해 백엔드와 프론트엔드 전반을 경험했습니다.
+                    <div>특히,{` `}
+                        <span
+                            className="bg-zinc-600 py-0.5 px-1.5 text-white rounded text-[13.5px] 2xl:text-[14.5px]">생동감 있는 디자인 요소와 사용자 경험을 중심으로 문제를 해결</span>하며,{` `}
+                        <span className="bg-zinc-600 py-0.5 px-1.5 text-white rounded text-[13.5px] 2xl:text-[14.5px]">받은 피드백을 즉각적으로 반영할 수 있다는 점</span>에서
+                        프론트엔드 개발에 큰 매력을 느꼈습니다.
+                    </div>
+
+                    <div>
+                        이러한 경험을 통해{` `}
+                        <span className="underline underline-offset-4 font-semibold text-foreground">사용자 중심의 인터페이스 설계 및 구축에 깊은 관심</span>을
+                        가지게 되었고, 그 결과 프론트엔드 개발에 도전하게 되었습니다.
+                    </div>
                 </div>
-                <div className="mb-3">
-                    저는 프론트엔드 개발이 단순히 디자인 구현을 넘어
-                    <span className="text-foreground font-semibold"> 사용자 경험을 고려한 효율적인 처리와 개선이 필수적</span>이라고
-                    생각합니다. 앞으로도 지속적인 학습과 참여를 통해, 사용자에게 최상의 경험을 제공하는 프론트엔드 개발자로 성장해 나가고자 합니다.
+
+                <div className="bg-secondary rounded p-5 leading-[25px] md:leading-7">
+                    <div className="flex flex-shrink-0 items-start space-x-1.5 mb-2">
+                        <FaHandsClapping className="w-4 h-4 mt-1"/>
+                        <div className="text-[17px] font-bold">개발 역량을 강화하기 위한 노력</div>
+                    </div>
+
+                    팀 프로젝트에서 팀장 역할을 맡아 팀원들과의 원활한 소통 및 협업을 이끌어냈습니다.
+                    <div>
+                        이를 통해{` `}
+                        <span className="bg-zinc-600 py-0.5 px-1.5 text-white rounded text-[13.5px] 2xl:text-[14.5px]">
+                        효율적인 협업 방안을 모색하고, 더 나은 성과를 이끌어내기 위한 다양한 방법을 꾸준히 고민</span>해 왔습니다.
+                    </div>
+                    <div>
+                        또한, React, Next.js, HTML, CSS, Javascript, Typescript 등{` `}
+                        <span className="bg-zinc-600 py-0.5 px-1.5 text-white rounded text-[13.5px] 2xl:text-[14.5px]">
+                            프론트엔드 개발에 필수적인 기술을 학습
+                        </span>하고, 이를 실전 프로젝트에 적용하며 기술을 효과적으로 활용하고 응용하는 능력을 키웠습니다.
+                    </div>
+                    더불어{` `}
+                    <span className="bg-zinc-600 py-0.5 px-1.5 text-white rounded text-[13.5px] 2xl:text-[14.5px]">
+                        문제 해결 능력을 키우기 위해 지속적인 학습
+                    </span>을 병행하며, 실무에서 요구되는 기술적 깊이를 꾸준히 쌓아가고 있습니다.
                 </div>
             </div>
         </div>

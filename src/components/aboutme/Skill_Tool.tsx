@@ -39,7 +39,7 @@ const Skill_Tool = ({width}: SkillToolProps) => {
                     {skill_tool.map((data, index) => { // 배열 순서 반대로 갸져오기
                         return (
                             <div key={index}
-                                 className="flex flex-col flex-1 space-y-5 bg-zinc-100 w-[330px] h-auto rounded p-5 tracking-wider">
+                                 className="flex flex-col flex-1 space-y-5 bg-secondary w-[330px] h-auto rounded p-5 tracking-wider">
                                 <Badge
                                     variant="outline"
                                     className="border border-zinc-400 py-1.5 px-4 flex w-fit h-fit">
