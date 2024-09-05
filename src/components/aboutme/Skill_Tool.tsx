@@ -4,7 +4,6 @@ import Frontend_Skill_Tool from "@/components/aboutme/skill_tool/Frontend_Skill_
 import Backend_Skill_Tool from "@/components/aboutme/skill_tool/Backend_Skill_Tool";
 import Design_Skill_Tool from "@/components/aboutme/skill_tool/Design_Skill_Tool";
 import Cooperation_Skill_Tool from "@/components/aboutme/skill_tool/Cooperation_Skill_Tool";
-import {AiOutlineDash} from "react-icons/ai";
 
 interface SkillToolProps {
     width: number
