@@ -14,7 +14,7 @@ const Profile = () => {
                 <div
                     className="flex justify-center relative w-[155px] h-[155px] xl:w-[250px] xl:h-[250px]">
                     <div className="flex flex-row md:flex-col absolute -top-2">
-                        <img src="/image/notion_avatar.svg" alt="notion_avatar" className="w-full h-full"/>
+                        <img src="/image/mimo_avatar.png" alt="notion_avatar" className="w-full h-full"/>
                     </div>
                 </div>
 
