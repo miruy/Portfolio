@@ -6,7 +6,7 @@ const Content_Project_Memocode_KeyFeatures = () => {
     return (
         <div className="flex flex-col w-full h-fit bg-zinc-200 rounded p-3 sm:p-5">
             <div className="border-b border-zinc-400 text-foreground font-semibold tracking-wider pb-2">
-                제작동기
+                서비스 기능 및 특징
             </div>
 
             <div className="tracking-wide pt-5 space-y-5">
