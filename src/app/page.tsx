@@ -4,6 +4,9 @@ import Content from "@/components/Content";
 import {useEffect, useState} from "react";
 import "animate.css";
 import {MdKeyboardArrowDown} from "react-icons/md";
+import {Separator} from "@/components/ui/separator";
+import {BsMouse} from "react-icons/bs";
+import {TbHandClick} from "react-icons/tb";
 
 const Home = () => {
 
@@ -111,10 +114,10 @@ const Home = () => {
                     </div>
 
                     <div
-                        className="fixed min-w-[100vw] min-h-[100vh] animate__animated animate__slideInUp delay-5300">
-                        <div className="w-[100%]">
-                            <div className="hover__wrap flex justify-center items-end mb-[50px] h-[100vh]">
-                                <div className="hover__updown cursor-pointer" onClick={handleDown}>
+                        className="fixed flex flex-col justify-end items-center min-h-[100vh] min-w-[100vw]">
+                        <div className="animate__animated animate__slideInUp delay-5300">
+                            <div className="hover__wrap">
+                                <div className="hover__updown cursor-pointer pb-20" onClick={handleDown}>
                                     <figure className="front">
                                         <div
                                             className="flex flex-col justify-center items-center w-[90px] h-[90px] bg-transparent shadow-md rounded-full">
@@ -123,10 +126,14 @@ const Home = () => {
                                     </figure>
                                     <figure className="back">
                                         <div
-                                            className="w-[90px] h-[90px] bg-white bg-opacity-20 shadow-md rounded-full"></div>
+                                            className="w-[90px] h-[90px] bg-transparent shadow-md rounded-full"></div>
                                         <figcaption
-                                            className="bg-white bg-opacity-30 w-[120%] h-[120%] shadow-md rounded-full absolute flex flex-col justify-center items-center">
-                                            <div className="text-zinc-700">Click or Scroll</div>
+                                            className="bg-white bg-opacity-20 w-[120%] h-[120%] shadow-md rounded-full absolute flex flex-col justify-center items-center">
+                                            <div className="flex items-center text-zinc-600 space-x-1.5">
+                                                <TbHandClick className="stroke-[1.5px] w-7 h-7"/>
+                                                <Separator orientation="vertical" className="p-[1px] h-[17px] bg-zinc-400 rounded"/>
+                                                <BsMouse className="w-7 h-7"/>
+                                            </div>
                                         </figcaption>
                                     </figure>
                                 </div>

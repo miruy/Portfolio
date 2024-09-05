@@ -101,7 +101,7 @@ const Content = () => {
                         </Button>
                     </div>
 
-                    <div className="flex flex-1 flex-col mt-[100px] mx-4 sm:mx-10 lg:ml-[250px] lg:mr-[30px] 2xl:ml-[290px] 2xl:mr-[45px]">
+                    <div className="flex flex-1 flex-col mt-[100px] mx-4 sm:mx-10 lg:ml-[260px] lg:mr-[50px] 2xl:ml-[310px] 2xl:mr-[70px]">
                         <div id="about" ref={aboutRef}>
                             <ContentAbout/>
                         </div>
@@ -115,7 +115,7 @@ const Content = () => {
                     <div
                         className={`${isScrollEqualToScreenHeight ? 'fixed' : 'absolute'} hidden lg:flex items-center space-x-1.5 bottom-5 left-5 z-50 text-zinc-500`}>
                         <TbClockEdit className="w-5 h-5"/>
-                        <div className="tracking-wide text-[15px]">2024.09.05</div>
+                        <div className="tracking-wide text-[15px]">2024.09.06</div>
                     </div>
                 </div>
             </div>

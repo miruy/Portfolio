@@ -22,7 +22,7 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
                 <div className="flex lg:hidden space-x-1">
                     <Button
                         variant="ghost"
-                        className={`${activeTab === "about" ? `bg-muted` : ``} h-fit w-fit rounded duration-300`}
+                        className={`${activeTab === "about" ? `bg-accent` : ``} h-fit w-fit rounded duration-300`}
                         onClick={() => handleTab("about")}
                     >
                         <span className="text-md tracking-wider font-bold">About</span>
@@ -30,7 +30,7 @@ const ContentTopBar = ({isScrollEqualToScreenHeight, handleTab}: ContentTopBarPr
 
                     <Button
                         variant="ghost"
-                        className={`${activeTab === "project" ? `bg-muted` : ``} h-fit w-fit rounded duration-300`}
+                        className={`${activeTab === "project" ? `bg-accent` : ``} h-fit w-fit rounded duration-300`}
                         onClick={() => handleTab("project")}
                     >
                         <span className="text-md tracking-wider font-bold">Project</span>

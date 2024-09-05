@@ -53,7 +53,7 @@ const Profile = () => {
             </div>
 
             <div
-                className="flex flex-col h-fit tracking-wide py-5 pr-2 text-[15px] 2xl:text-[16px] text-zinc-700 space-y-5">
+                className="flex flex-col h-fit tracking-wide py-5 text-[15px] 2xl:text-[16px] text-zinc-700 space-y-5">
                 <div className="bg-secondary rounded p-5 leading-[25px] md:leading-7">
                     <div className="flex flex-shrink-0 items-start space-x-1 mb-2">
                         <FaChildReaching className="w-4 h-4 mt-1.5"/>
