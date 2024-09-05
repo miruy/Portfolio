@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         locale: 'ko_KR',
         images: [
             {
-                url: 'https://api.memocode.dev/memos/1ce6d122-d9a7-49db-9c16-037f61b2e7de/images/a475e935-09b8-4a55-96f6-209af49f086f.png',
+                url: 'https://api.memocode.dev/memos/1ce6d122-d9a7-49db-9c16-037f61b2e7de/images/3cbb4ef3-8aa6-4154-bc6f-ddd1c7b1eb12.png',
                 alt: 'portfolio_image',
             },
         ],
@@ -43,7 +43,7 @@ const jsonLd = {
     'url': 'https://yurim-portfolio.vercel.app',
     'image': {
         '@type': 'websiteImage',
-        'url': 'https://api.memocode.dev/memos/1ce6d122-d9a7-49db-9c16-037f61b2e7de/images/a475e935-09b8-4a55-96f6-209af49f086f.png',
+        'url': 'https://api.memocode.dev/memos/1ce6d122-d9a7-49db-9c16-037f61b2e7de/images/3cbb4ef3-8aa6-4154-bc6f-ddd1c7b1eb12.png',
         'alt': 'portfolio_image',
     },
 };
