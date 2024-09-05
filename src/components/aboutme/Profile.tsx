@@ -56,7 +56,7 @@ const Profile = () => {
             </div>
 
             <div
-                className="flex flex-col h-fit leading-5 2xl:leading-7 tracking-wide p-5 text-sm 2xl:text-[16px] text-secondary-foreground">
+                className="flex flex-col h-fit leading-5 2xl:leading-7 tracking-wide py-5 px-2 text-sm 2xl:text-[16px] text-secondary-foreground">
                 <div>안녕하세요.</div>
                 <div>
                     프론트엔드 개발자가 되고자<span className="text-foreground font-bold"> 끊임없는 공부</span>와
