@@ -82,7 +82,7 @@ const Profile = () => {
                     또한, 팀 프로젝트에서 <span className="text-foreground font-semibold">팀장 </span>
                     역할을 맡아 팀원들을 이끌며 동료들과의 협업과 원활한 커뮤니케이션의 중요성을 깊이 깨달았습니다.
                     이를 바탕으로 <span className="text-foreground font-semibold">효율적인 협업 방안을 모색</span>하고,
-                    <span className="text-foreground font-semibold">더 나은 성과를 도출하는 방법</span>에 대해 꾸준히 고민해왔습니다.
+                    <span className="text-foreground font-semibold"> 더 나은 성과를 도출하는 방법</span>에 대해 꾸준히 고민해왔습니다.
                 </div>
                 <div className="mb-3">
                     저는 프론트엔드 개발이 단순히 디자인 구현을 넘어
