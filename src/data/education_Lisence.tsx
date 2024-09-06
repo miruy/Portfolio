@@ -66,7 +66,7 @@ const education_experience = [
                 </div>
             </>,
         type: "경력",
-        date: "2024.01 ~ 2024.04 (3개월)"
+        date: "2024.01 ~ 2024.04 (4개월)"
     },
 ];
 
