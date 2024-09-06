@@ -79,33 +79,12 @@ const Profile = () => {
                 </div>
 
                 <div className="bg-secondary rounded p-5 leading-[25px] md:leading-7">
-                    <div className="flex flex-shrink-0 items-start space-x-1 mb-2">
-                        <PiShootingStarFill className="w-5 h-5 mt-1"/>
-                        <div className="text-[17px] font-bold">프론트엔드 개발에 도전하게 된 이유</div>
-                    </div>
-
-                    IT 학원에서 7개월간 백엔드 개발자 양성과정을 이수하며, 팀 프로젝트를 통해 백엔드와 프론트엔드 전반을 경험했습니다.
-                    <div>특히,{` `}
-                        <span
-                            className="bg-zinc-600 py-0.5 px-1.5 text-white rounded text-[13.5px] 2xl:text-[14.5px]">생동감 있는 디자인 요소와 사용자 경험을 중심으로 문제를 해결</span>하며,{` `}
-                        <span className="bg-zinc-600 py-0.5 px-1.5 text-white rounded text-[13.5px] 2xl:text-[14.5px]">받은 피드백을 즉각적으로 반영할 수 있다는 점</span>에서
-                        프론트엔드 개발에 큰 매력을 느꼈습니다.
-                    </div>
-
-                    <div>
-                        이러한 경험을 통해{` `}
-                        <span className="underline underline-offset-4 font-semibold text-foreground">사용자 중심의 인터페이스 설계 및 구축에 깊은 관심</span>을
-                        가지게 되었고, 그 결과 프론트엔드 개발에 도전하게 되었습니다.
-                    </div>
-                </div>
-
-                <div className="bg-secondary rounded p-5 leading-[25px] md:leading-7">
                     <div className="flex flex-shrink-0 items-start space-x-1.5 mb-2">
-                        <FaHandsClapping className="w-4 h-4 mt-1"/>
+                        <PiShootingStarFill className="w-5 h-5 mt-1"/>
                         <div className="text-[17px] font-bold">개발 역량을 강화하기 위한 노력</div>
                     </div>
 
-                    팀 프로젝트에서 팀장 역할을 맡아 팀원들과의 원활한 소통 및 협업을 이끌어냈습니다.
+                    IT 학원에서 7개월간 백엔드 개발자 양성과정을 이수하며, 팀 프로젝트에서 팀장 역할을 맡아 팀원들과의 원활한 소통 및 협업을 이끌어냈습니다.
                     <div>
                         이를 통해{` `}
                         <span className="bg-zinc-600 py-0.5 px-1.5 text-white rounded text-[13.5px] 2xl:text-[14.5px]">
