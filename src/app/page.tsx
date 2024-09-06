@@ -130,9 +130,9 @@ const Home = () => {
                                         <figcaption
                                             className="bg-white bg-opacity-20 w-[120%] h-[120%] shadow-md rounded-full absolute flex flex-col justify-center items-center">
                                             <div className="flex items-center text-zinc-600 space-x-1.5">
-                                                <TbHandClick className="stroke-[1.5px] w-7 h-7"/>
+                                                <TbHandClick className="stroke-[1.5px] w-6 h-6"/>
                                                 <Separator orientation="vertical" className="p-[1px] h-[17px] bg-zinc-400 rounded"/>
-                                                <BsMouse className="w-7 h-7"/>
+                                                <BsMouse className="w-6 h-6"/>
                                             </div>
                                         </figcaption>
                                     </figure>
