@@ -14,6 +14,7 @@ const Content = () => {
     const projectRef = useRef<HTMLDivElement>(null);
     const {activeTab, setActiveTab} = useTab()
     const [isScrollEqualToScreenHeight, setIsScrollEqualToScreenHeight] = useState<boolean>(false);
+    const [hovered, setHovered] = useState<boolean>(false)
 
     const handleTab = (path: string) => {
         setActiveTab(() => path)
@@ -101,7 +102,8 @@ const Content = () => {
                         </Button>
                     </div>
 
-                    <div className="flex flex-1 flex-col mt-[100px] mx-4 sm:mx-10 lg:ml-[260px] lg:mr-[50px] 2xl:ml-[310px] 2xl:mr-[70px]">
+                    <div
+                        className="flex flex-1 flex-col mt-[100px] mx-4 sm:mx-10 lg:ml-[260px] lg:mr-[50px] 2xl:ml-[310px] 2xl:mr-[70px]">
                         <div id="about" ref={aboutRef}>
                             <ContentAbout/>
                         </div>
@@ -116,6 +118,22 @@ const Content = () => {
                         className={`${isScrollEqualToScreenHeight ? 'fixed' : 'absolute'} hidden lg:flex items-center space-x-1.5 bottom-5 left-5 z-50 text-zinc-500`}>
                         <TbClockEdit className="w-5 h-5"/>
                         <div className="tracking-wide text-[15px]">2024.09.06</div>
+                    </div>
+
+                    <div
+                        className={`${isScrollEqualToScreenHeight ? 'fixed' : 'absolute'} flex lg:hidden bottom-5 right-5 z-50 text-zinc-400`}>
+                        {hovered &&
+                            <div className="fixed flex lg:hidden bottom-5 right-16 z-50 bg-zinc-50 rounded p-2 shadow-md
+                            animate-in fade-in-0 zoom-in-95 slide-in-from-right-2">
+                                <div className="tracking-wide text-[14px] text-foreground">2024.09.06</div>
+                            </div>
+                        }
+                        <div
+                            onMouseOver={() => setHovered(true)}
+                            onMouseLeave={() => setHovered(false)}
+                            className="flex justify-center items-center bg-zinc-500 w-9 h-9 p-1.5 rounded shadow-md">
+                            <TbClockEdit className="text-zinc-50 w-full h-full"/>
+                        </div>
                     </div>
                 </div>
             </div>
