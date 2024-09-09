@@ -34,7 +34,7 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
                         </TableCell>
                     </TableRow>
                 </TableBody>
-            </Table>(약 30page 분량)
+            </Table>
 
             <div className="flex space-x-2">
                 <Table className="mx-auto flex-1">
