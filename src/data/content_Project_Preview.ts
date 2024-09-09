@@ -10,7 +10,7 @@ const projectPreview = [
     {
         title: "MEMOCODE - 메모코드",
         description: "메모 작성, 블로그 관리, 코딩 관련 질의응답을 한 곳에서 이용할 수 있는 블로그 서비스",
-        src: "/image/memㄴocode/memocode_preview.mp4",
+        src: "/image/memocode/memocode_preview.mp4",
         git: "https://github.com/memocode-dev/memocode_web",
         url: "https://memocode.dev/",
         tags: ["개인 프로젝트", "프론트엔드 개발", "반응형"]
