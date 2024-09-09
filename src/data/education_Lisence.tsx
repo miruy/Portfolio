@@ -44,13 +44,13 @@ const education_experience = [
         organization: "CAiTORY",
         title: "UNO CARE CMS 프론트엔드 웹 개발 참여(외주 프로젝트)",
         description:
-            <>
+            <div className="space-y-2">
                 <div>
-                    의료 관련 기관에서 사용자 정보, 사용자의 의료 기록 및 설문 기록, 예약 시스템 등 의료 분야에서 사용되는 다양한 콘텐츠를 효율적으로 관리하는 시스템입니다.
+                    안드로이드 앱 UNOCARE을 통해 측정된 사용자의 심리 상태, 스트레스 등을 분석하고 관리하는 웹 시스템 (백 오피스)
                 </div>
 
-                <div className="pt-2">
-                    <div>주요 업무</div>
+                <div>
+                    <div>개발(3개월)</div>
                     <div className="flex flex-shrink-0 items-start space-x-1">
                         <GoDotFill className="mt-1"/>
                         <div>제공받은 요구 사항 및 디자인 시안에 맞추어 사용자 인터페이스(UI) 구현</div>
@@ -59,14 +59,18 @@ const education_experience = [
                         <GoDotFill className="mt-1"/>
                         <div>백엔드와의 API 연동을 통해 사용자 인터페이스에 데이터 표시</div>
                     </div>
+                </div>
+
+                <div>
+                    <div>유지보수(2개월)</div>
                     <div className="flex flex-shrink-0 items-start space-x-1">
                         <GoDotFill className="mt-1"/>
-                        <div>지속적인 코드 개선 및 오류 발생 문제 해결(유지보수)</div>
+                        <div>지속적인 코드 개선 및 오류 발생 문제 해결</div>
                     </div>
                 </div>
-            </>,
+            </div>,
         type: "경력",
-        date: "2024.01 ~ 2024.04 (4개월)"
+        date: "2024.01 ~ 2024.05 (5개월)"
     },
 ];
 

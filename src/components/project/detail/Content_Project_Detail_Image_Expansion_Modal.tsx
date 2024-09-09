@@ -8,6 +8,7 @@ import {VisuallyHidden} from "@radix-ui/react-visually-hidden";
 import MemocodeImages from "@/components/project/detail/memocode/Memocode_Images";
 import FarmfarmImages from "@/components/project/detail/farmfarm/Farmfarm_Images";
 import Portfolio_Images from "@/components/project/detail/portfolio/Portfolio_Images";
+import Uno_Images from "@/components/project/detail/uno/Uno_Images";
 
 const Content_Project_Detail_Image_Expansion_Modal = () => {
 
@@ -47,6 +48,7 @@ const Content_Project_Detail_Image_Expansion_Modal = () => {
                     }}
                     className="flex sm:hidden h-[350px]">
                     <CarouselContent className="h-[330px]">
+                        {key === "uno" && <Uno_Images images={images}/>}
                         {key === "memocode" && <MemocodeImages images={images}/>}
                         {key === "farmfarm" && <FarmfarmImages images={images}/>}
                         {key === "portfolio" && <Portfolio_Images images={images}/>}
@@ -65,6 +67,7 @@ const Content_Project_Detail_Image_Expansion_Modal = () => {
                     }}
                     className="hidden sm:flex w-full h-full">
                     <CarouselContent>
+                        {key === "uno" && <Uno_Images images={images}/>}
                         {key === "memocode" && <MemocodeImages images={images}/>}
                         {key === "farmfarm" && <FarmfarmImages images={images}/>}
                         {key === "portfolio" && <Portfolio_Images images={images}/>}

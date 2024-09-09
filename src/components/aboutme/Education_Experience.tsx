@@ -33,7 +33,7 @@ const EducationExperience = ({width}: EducationExperienceProps) => {
                                     </div>
 
                                     {data.description &&
-                                        <div className="text-[13px] text-zinc-600 py-3">{data.description}</div>
+                                        <div className="text-[13px] text-zinc-600">{data.description}</div>
                                     }
 
                                     <div className="flex items-center space-x-1.5">

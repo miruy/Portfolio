@@ -117,7 +117,7 @@ const Content = () => {
                     <div
                         className={`${isScrollEqualToScreenHeight ? 'fixed' : 'absolute'} hidden lg:flex items-center space-x-1.5 bottom-5 left-5 z-50 text-zinc-500`}>
                         <TbClockEdit className="w-5 h-5"/>
-                        <div className="tracking-wide text-[15px]">2024.09.06</div>
+                        <div className="tracking-wide text-[15px]">2024.09.09</div>
                     </div>
 
                     <div
@@ -125,7 +125,7 @@ const Content = () => {
                         {hovered &&
                             <div className="fixed flex lg:hidden bottom-5 right-16 z-50 bg-zinc-50 rounded p-2 shadow-md
                             animate-in fade-in-0 zoom-in-95 slide-in-from-right-2">
-                                <div className="tracking-wide text-[14px] text-foreground">2024.09.06</div>
+                                <div className="tracking-wide text-[14px] text-foreground">2024.09.09</div>
                             </div>
                         }
                         <div
