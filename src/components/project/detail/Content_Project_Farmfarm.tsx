@@ -23,7 +23,7 @@ const Content_Project_Farmfarm = () => {
         <>
             <Content_Project_Detail_Info data={data}/>
 
-            <div className="flex flex-col w-full h-full py-5">
+            <div className="flex flex-col w-full h-full">
                 <div className="flex-1 flex flex-col space-y-10 items-center">
                     <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5 space-y-7">
                         <div className="space-y-2">

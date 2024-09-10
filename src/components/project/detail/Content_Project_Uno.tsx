@@ -3,13 +3,6 @@ import {ModalContext, ModalTypes} from "@/context/ModalContext";
 import {useContext} from "react";
 import Content_Project_Detail_Image_Expansion_Modal
     from "@/components/project/detail/Content_Project_Detail_Image_Expansion_Modal";
-import Content_Project_Memocode_DevReason
-    from "@/components/project/detail/memocode/Content_Project_Memocode_DevReason";
-import Content_Project_Memocode_KeyFeatures
-    from "@/components/project/detail/memocode/Content_Project_Memocode_KeyFeatures";
-import Content_Project_Memocode_Improvement
-    from "@/components/project/detail/memocode/Content_Project_Memocode_Improvement";
-import Content_Project_Memocode_Point from "@/components/project/detail/memocode/Content_Project_Memocode_Point";
 import uno from "@/data/uno";
 import uno_images from "@/data/uno_images";
 
@@ -22,7 +15,7 @@ const Content_Project_Uno = () => {
         <>
             <Content_Project_Detail_Info data={data}/>
 
-            <div className="flex flex-col w-full h-full py-5">
+            <div className="flex flex-col w-full h-full">
                 <div className="flex-1 flex flex-col space-y-10 items-center">
                     <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5">
                         <div className="border-b border-zinc-400 text-foreground font-semibold tracking-wider pb-2">
