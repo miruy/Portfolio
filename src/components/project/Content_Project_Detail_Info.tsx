@@ -36,7 +36,6 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
                 </TableBody>
             </Table>
 
-            {/*<div className="flex space-x-2">*/}
             <Table className="mx-auto w-full lg:w-[80%]">
                 <TableHeader className="bg-zinc-200">
                     <TableRow>
@@ -48,50 +47,16 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
                     <TableRow>
                         <TableCell
                             className="flex flex-wrap justify-center w-auto px-0 py-2 text-center tracking-wide">
-                            {data.librarys.map((library, index) => {
+                            {data.usedSkils.map((usedSkil, index) => {
                                 return (
                                     <Badge key={index}
-                                           className="text-[10px] sm:text-[12px] bg-zinc-600 hover:bg-zinc-600/80 rounded m-0.5 cursor-default">{library}</Badge>
+                                           className="text-[10px] sm:text-[12px] bg-zinc-600 hover:bg-zinc-600/80 rounded m-0.5 cursor-default">{usedSkil}</Badge>
                                 );
                             })}
                         </TableCell>
                     </TableRow>
                 </TableBody>
             </Table>
-
-
-            {/*<div className="flex flex-wrap">*/}
-            {/*    {data.librarys.map((library, index) => {*/}
-            {/*        return (*/}
-            {/*            <Badge key={index}*/}
-            {/*                   className="text-[10px] sm:text-[12px] bg-zinc-600 hover:bg-zinc-600/80 rounded m-0.5 cursor-default">{library}</Badge>*/}
-            {/*        );*/}
-            {/*    })}*/}
-            {/*</div>*/}
-
-            {/*<Table className="mx-auto flex-1">*/}
-            {/*    <TableHeader className="bg-zinc-200">*/}
-            {/*        <TableRow>*/}
-            {/*            <TableHead*/}
-            {/*                className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">Tools</TableHead>*/}
-            {/*        </TableRow>*/}
-            {/*    </TableHeader>*/}
-            {/*    <TableBody>*/}
-            {/*        <TableRow>*/}
-            {/*            <TableCell className="w-auto px-0 py-2 text-center tracking-wide">*/}
-            {/*                <div className="flex flex-wrap">*/}
-            {/*                    {data.tools.map((tool, index) => {*/}
-            {/*                        return (*/}
-            {/*                            <Badge key={index}*/}
-            {/*                                   className="text-[10px] sm:text-[12px] bg-zinc-600 hover:bg-zinc-600/80 rounded m-0.5 cursor-default">{tool}</Badge>*/}
-            {/*                        );*/}
-            {/*                    })}*/}
-            {/*                </div>*/}
-            {/*            </TableCell>*/}
-            {/*        </TableRow>*/}
-            {/*    </TableBody>*/}
-            {/*</Table>*/}
-            {/*</div>*/}
         </>
     )
 }

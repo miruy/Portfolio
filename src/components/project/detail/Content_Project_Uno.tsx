@@ -5,6 +5,7 @@ import Content_Project_Detail_Image_Expansion_Modal
     from "@/components/project/detail/Content_Project_Detail_Image_Expansion_Modal";
 import uno from "@/data/uno";
 import uno_images from "@/data/uno_images";
+import Content_Project_Uno_DevDirection from "@/components/project/detail/uno/Content_Project_Uno_DevDirection";
 
 const Content_Project_Uno = () => {
 
@@ -16,7 +17,11 @@ const Content_Project_Uno = () => {
             <Content_Project_Detail_Info data={data}/>
 
             <div className="flex flex-col w-full h-full">
-                <div className="flex-1 flex flex-col space-y-10 items-center">
+                <div className="flex-1 flex flex-col  items-center">
+
+                    {/* 구현 방향 */}
+                    <Content_Project_Uno_DevDirection/>
+
                     <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5">
                         <div className="border-b border-zinc-400 text-foreground font-semibold tracking-wider pb-2">
                             작업화면
@@ -46,11 +51,7 @@ const Content_Project_Uno = () => {
                                 )
                             })}
                         </div>
-
                     </div>
-
-                    {/*/!* 중점 요소  *!/*/}
-                    {/*<Content_Project_Memocode_Point/>*/}
 
                     {/*/!* 제작 동기 *!/*/}
                     {/*<Content_Project_Memocode_DevReason/>*/}
