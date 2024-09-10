@@ -69,7 +69,7 @@ const Content_Project_Detail_Modal = () => {
                                     className="flex items-start space-x-1.5 text-zinc-700 font-semibold text-[14px] md:text-[15px]">
                                     <FaAsterisk className="flex-shrink-0 mt-1.5 w-2.5 h-2.5"/>
                                     <div>
-                                        저작권 및 관련 정보 보호를 위해 프로젝트 전체가 아닌 일부만<span className="text-zinc-500 text-[13px]"> (예:이미지 블라인드 처리, 구현 기능 등) </span>게시하는
+                                        저작권 및 관련 정보 보호를 위해 프로젝트 전체가 아닌 일부만<span className="text-zinc-500 text-[13px]"> (예:이미지 블라인드 처리, 구현 기능, 작업 기술 및 도구 등) </span>게시하는
                                         점 양해 부탁드립니다.
                                     </div>
                                 </div>
