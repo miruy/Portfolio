@@ -8,11 +8,11 @@ const uno_images: Image[] = [
             <>
                 <div className="flex items-start text-[15px]">
                     <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-                    <span className="ml-1.5 text-[14px]">재사용성이 높은 드롭다운 기능, 캘린더를 커스텀 컴포넌트로 분리하여 사용</span>
+                    <span className="break-all ml-1.5 text-[14px]">재사용성이 높은 드롭다운 기능, 캘린더를 커스텀 컴포넌트로 분리하여 사용</span>
                 </div>
                 <div className="flex items-start text-[15px]">
                     <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-                    <span className="ml-1.5 text-[14px]">react-hook-form의 Controller 컴포넌트를 사용하여 여러 form 제어(드롭다운, 캘린더, 체크박스, 셀렉트 등)</span>
+                    <span className="break-all ml-1.5 text-[14px]">react-hook-form의 Controller 컴포넌트를 사용하여 여러 form 제어(드롭다운, 캘린더, 체크박스, 셀렉트 등)</span>
                 </div>
             </>
     },
@@ -23,7 +23,7 @@ const uno_images: Image[] = [
             <>
                 <div className="flex items-start text-[15px]">
                     <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-                    <span className="ml-1.5 text-[14px]">스트레스검사 탭 - 테이블 행에 `스트레스 검사 측정 이력`과 동일한 세부정보 표시</span>
+                    <span className="break-all ml-1.5 text-[14px]">스트레스검사 탭 - 테이블 행에 `스트레스 검사 측정 이력`과 동일한 세부정보 표시</span>
                 </div>
             </>
     },
@@ -33,11 +33,11 @@ const uno_images: Image[] = [
             <>
                 <div className="flex items-start text-[15px]">
                     <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-                    <span className="ml-1.5 text-[14px]">심리검사 탭 - 테이블 행에 `심리검사이력`과 동일한 세부정보 표시</span>
+                    <span className="break-all ml-1.5 text-[14px]">심리검사 탭 - 테이블 행에 `심리검사이력`과 동일한 세부정보 표시</span>
                 </div>
                 <div className="flex items-start text-[15px]">
                     <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-                    <span className="ml-1.5 text-[14px]">표시할 데이터가 없는 경우, `리스트가 비었습니다`라는 메시지를 표시</span>
+                    <span className="break-all ml-1.5 text-[14px]">표시할 데이터가 없는 경우, `리스트가 비었습니다`라는 메시지를 표시</span>
                 </div>
             </>
     },
@@ -48,11 +48,11 @@ const uno_images: Image[] = [
             <>
                 <div className="flex items-start text-[15px]">
                     <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-                    <span className="ml-1.5 text-[14px]">측정 바 - 여러곳에서 데이터만 다르게 받아 사용할 수 있도록 모듈화하여 작업</span>
+                    <span className="break-all ml-1.5 text-[14px]">측정 바 - 여러곳에서 데이터만 다르게 받아 사용할 수 있도록 모듈화하여 작업</span>
                 </div>
                 <div className="flex items-start text-[15px]">
                     <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-                    <span className="ml-1.5 text-[14px]">각 측정 항목의 props 데이터에 따라 라벨, 색상, 바 너비, 아이콘 등을 다르게 표시</span>
+                    <span className="break-all ml-1.5 text-[14px]">각 측정 항목의 props 데이터에 따라 라벨, 색상, 바 너비, 아이콘 등을 다르게 표시</span>
                 </div>
             </>
     },
@@ -70,7 +70,7 @@ const uno_images: Image[] = [
             <>
                 <div className="flex items-start text-[15px]">
                     <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-                    <span className="ml-1.5 text-[14px]">인쇄 기능 구현 시 해당 모달만 출력할 수 있도록 react-to-print 사용</span>
+                    <span className="break-all ml-1.5 text-[14px]">인쇄 기능 구현 시 해당 모달만 출력할 수 있도록 react-to-print 사용</span>
                 </div>
             </>
     },
@@ -88,7 +88,7 @@ const uno_images: Image[] = [
             <>
                 <div className="flex items-start text-[15px]">
                     <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-                    <span className="ml-1.5 text-[14px]">react-calendar를 커스텀하여 디자인 시안에 부합하는 캘린더 구현</span>
+                    <span className="break-all ml-1.5 text-[14px]">react-calendar를 커스텀하여 디자인 시안에 부합하는 캘린더 구현</span>
                 </div>
             </>
     },
@@ -101,12 +101,12 @@ const uno_images: Image[] = [
             <>
                 <div className="flex items-start text-[15px]">
                     <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-                    <span className="ml-1.5 text-[14px]">CKEditor 사용하여 텍스트 입력 기능 구현</span>
+                    <span className="break-all ml-1.5 text-[14px]">CKEditor 사용하여 텍스트 입력 기능 구현</span>
                 </div>
                 <div className="flex items-start text-[15px]">
                     <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
                     <span
-                        className="ml-1.5 text-[14px]">react-hook-form의 watch()를 사용하여 내용 데이터를 실시간으로 추적 및 초기 데이터로 설정</span>
+                        className="break-all ml-1.5 text-[14px]">react-hook-form의 watch()를 사용하여 내용 데이터를 실시간으로 추적 및 초기 데이터로 설정</span>
                 </div>
             </>
     },
