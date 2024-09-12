@@ -26,7 +26,7 @@ const UnoImages = ({ images }: UnoImagesProps) => {
                                 {/* 버튼 */}
                                 <div
                                     onClick={() => setToggled((prev) => !prev)}
-                                    className="flex items-center justify-between cursor-pointer rounded shadow-lg h-10 p-2 bg-zinc-900 bg-opacity-50"
+                                    className="flex items-center justify-between cursor-pointer rounded h-10 p-2 bg-zinc-900 bg-opacity-80 shadow-xl"
                                 >
                                     <div className="text-white text-[15px] tracking-wide">
                                         기능 설명
@@ -44,7 +44,7 @@ const UnoImages = ({ images }: UnoImagesProps) => {
                                         toggled
                                             ? "max-h-full opacity-100 transition-all duration-500 ease-in-out"
                                             : "max-h-0 opacity-0 transition-all duration-500 ease-in-out"
-                                    } overflow-y-auto rounded shadow-lg p-2 bg-zinc-900 bg-opacity-50`}
+                                    } overflow-y-auto rounded p-2 bg-zinc-900 bg-opacity-80 shadow-xl`}
                                 >
                                     <div className="text-white">
                                         {image.descriptions}
