@@ -6,13 +6,13 @@ import Content_Project_Detail_Image_Expansion_Modal
     from "@/components/project/detail/Content_Project_Detail_Image_Expansion_Modal";
 import Content_Project_Memocode_DevReason
     from "@/components/project/detail/memocode/Content_Project_Memocode_DevReason";
-import Content_Project_Memocode_KeyFeatures
-    from "@/components/project/detail/memocode/Content_Project_Memocode_KeyFeatures";
 import Content_Project_Memocode_Improvement
     from "@/components/project/detail/memocode/Content_Project_Memocode_Improvement";
 import Content_Project_Memocode_Point from "@/components/project/detail/memocode/Content_Project_Memocode_Point";
 import memocode_images from "@/data/memocode_images";
 import {BsJournalRichtext} from "react-icons/bs";
+import Content_Project_Memocode_DevDirection
+    from "@/components/project/detail/memocode/Content_Project_Memocode_DevDirection";
 
 const Content_Project_Memocode = () => {
 
@@ -25,7 +25,11 @@ const Content_Project_Memocode = () => {
             <Content_Project_Detail_Info data={data}/>
 
             <div className="flex flex-col w-full h-full">
-                <div className="flex-1 flex flex-col space-y-10 items-center">
+                <div className="flex-1 flex flex-col items-center">
+
+                    {/* 구현 방향 */}
+                    <Content_Project_Memocode_DevDirection/>
+
                     <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5">
                         <div className="border-b border-zinc-400 text-foreground font-semibold tracking-wider pb-2">
                             작업화면
@@ -73,17 +77,16 @@ const Content_Project_Memocode = () => {
 
                     </div>
 
-                    {/* 중점 요소  */}
-                    <Content_Project_Memocode_Point/>
+                    <div className="space-y-10">
+                        {/* 중점 요소  */}
+                        <Content_Project_Memocode_Point/>
 
-                    {/* 제작 동기 */}
-                    <Content_Project_Memocode_DevReason/>
+                        {/* 제작 동기 */}
+                        <Content_Project_Memocode_DevReason/>
 
-                    {/* 서비스 기능 및 특징 */}
-                    {/*<Content_Project_Memocode_KeyFeatures/>*/}
-
-                    {/* 이슈 및 해결방안 */}
-                    <Content_Project_Memocode_Improvement/>
+                        {/* 이슈 및 해결방안 */}
+                        <Content_Project_Memocode_Improvement/>
+                    </div>
                 </div>
             </div>
 

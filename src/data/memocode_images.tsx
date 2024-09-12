@@ -110,7 +110,7 @@ const memocode_images: Image[] = [
             <div className="space-y-3">
                 <div className="space-y-2">
                     <div className="flex items-start text-[15px]">
-                        <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
                         <span className="break-all ml-1.5 text-[14px]">메모 작성 / 수정</span>
                     </div>
 

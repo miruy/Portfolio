@@ -1,6 +1,6 @@
 import {GoDotFill} from "react-icons/go";
 
-const Content_Project_Uno_DevDirection = () => {
+const Content_Project_Memocode_DevDirection = () => {
     return (
         <div className="flex flex-col w-full h-fit rounded p-3 sm:p-5">
             <div className="border-b border-zinc-400 text-foreground font-semibold tracking-wider pb-2">
@@ -20,16 +20,16 @@ const Content_Project_Uno_DevDirection = () => {
                 <div className="flex items-start text-[15px] leading-7 mx-5 text-zinc-500">
                     <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                     <span
-                        className="ml-1.5 text-foreground">백엔드 API 연동 전 Mock 데이터를 활용하여 개발 프로세스를 가속화하고 기능 및 UI 테스트 진행하기</span>
+                        className="ml-1.5 text-foreground">Visual Studio Code와 동일한 엔진을 사용하는 MonacoEditor를 주 에디터로 적용하여 개발 블로그로서의 사용자 편의성 높히기</span>
                 </div>
                 <div className="flex items-start text-[15px] leading-7 mx-5 text-zinc-500">
                     <GoDotFill className="flex-shrink-0 mt-2 w-3 h-3 mx-0.5"/>
                     <span
-                        className="ml-1.5 text-foreground">백오피스 시스템의 특성을 고려하여 데스크탑 환경에 최적화된 방식으로 개발하기</span>
+                        className="ml-1.5 text-foreground">react-query의 mutateAsync와 mutate를 구현 상황에 맞게 사용하여, 비동기 요청 결과를 처리할 때 유연성 확보하기</span>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Content_Project_Uno_DevDirection;
+export default Content_Project_Memocode_DevDirection;
