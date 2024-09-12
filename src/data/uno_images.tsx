@@ -1,10 +1,33 @@
 import {Image} from "@/model/image";
+import {GoDotFill} from "react-icons/go";
 
 const uno_images: Image[] = [
     {id: 1, src: "/image/uno/user_list.png", title: "회원관리"},
     {id: 2, src: "/image/uno/user_detail1.png", title: "회원관리_회원상세정보"},
-    {id: 3, src: "/image/uno/user_detail2.png", title: "회원관리_스트레스 검사 이력"},
-    {id: 4, src: "/image/uno/user_detail3.png", title: "회원관리_심리 검사 이력"},
+    {
+        id: 3, src: "/image/uno/user_detail2.png", title: "회원관리_스트레스 검사 이력",
+        descriptions:
+            <>
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span className="ml-1.5 text-[14px]">스트레스검사 탭 - 테이블 행에 `스트레스 검사 측정 이력`과 동일한 세부정보 표시</span>
+                </div>
+            </>
+    },
+    {
+        id: 4, src: "/image/uno/user_detail3.png", title: "회원관리_심리 검사 이력",
+        descriptions:
+            <>
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span className="ml-1.5 text-[14px]">심리검사 탭 - 테이블 행에 `심리검사이력`과 동일한 세부정보 표시</span>
+                </div>
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span className="ml-1.5 text-[14px]">표시할 데이터가 없는 경우, `리스트가 비었습니다`라는 메시지를 표시</span>
+                </div>
+            </>
+    },
     {id: 5, src: "/image/uno/stress_list.png", title: "스트레스 검사 측정 이력"},
     {id: 6, src: "/image/uno/stress_detail1.png", title: "측정상세정보_불안지수"},
     {id: 7, src: "/image/uno/stress_detail2.png", title: "측정상세정보_무기력지수"},
