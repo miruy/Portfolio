@@ -64,7 +64,16 @@ const uno_images: Image[] = [
     {id: 12, src: "/image/uno/stress_detail7.png", title: "측정상세정보_혈관건강"},
     {id: 13, src: "/image/uno/stress_detail8.png", title: "측정상세정보_심박수"},
     {id: 14, src: "/image/uno/stress_detail9.png", title: "스트레스 검사 측정 이력_사전설문"},
-    {id: 15, src: "/image/uno/stress_detail10.png", title: "스트레스 검사 측정 이력_결과지 출력1"},
+    {
+        id: 15, src: "/image/uno/stress_detail10.png", title: "스트레스 검사 측정 이력_결과지 출력1",
+        descriptions:
+            <>
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span className="ml-1.5 text-[14px]">인쇄 기능 구현 시 해당 모달만 출력할 수 있도록 react-to-print 사용</span>
+                </div>
+            </>
+    },
     {id: 16, src: "/image/uno/stress_detail11.png", title: "스트레스 검사 측정 이력_결과지 출력2"},
     {id: 17, src: "/image/uno/test_email.png", title: "결과지 이메일 보내기"},
     {id: 18, src: "/image/uno/testhistory_list.png", title: "심리검사이력"},
