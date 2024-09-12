@@ -1,7 +1,7 @@
 import memocode from "@/data/memocode";
 import Content_Project_Detail_Info from "@/components/project/Content_Project_Detail_Info";
 import {ModalContext, ModalTypes} from "@/context/ModalContext";
-import {useContext} from "react";
+import {useContext, useState} from "react";
 import Content_Project_Detail_Image_Expansion_Modal
     from "@/components/project/detail/Content_Project_Detail_Image_Expansion_Modal";
 import Content_Project_Memocode_DevReason
@@ -12,11 +12,13 @@ import Content_Project_Memocode_Improvement
     from "@/components/project/detail/memocode/Content_Project_Memocode_Improvement";
 import Content_Project_Memocode_Point from "@/components/project/detail/memocode/Content_Project_Memocode_Point";
 import memocode_images from "@/data/memocode_images";
+import {BsJournalRichtext} from "react-icons/bs";
 
 const Content_Project_Memocode = () => {
 
     const data = memocode;
     const {openModal} = useContext(ModalContext)
+    const [hoveredId, setHoveredId] = useState<number | null>(null)
 
     return (
         <>
@@ -34,8 +36,12 @@ const Content_Project_Memocode = () => {
                             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5 pt-5">
                             {memocode_images.map((data, index) => {
                                 return (
-                                    <div key={index} className="flex flex-col">
-                                        <img onClick={() => {
+                                    <div
+                                        key={index}
+                                        className="flex flex-col relative cursor-pointer"
+                                        onMouseOver={() => setHoveredId(data.id)}
+                                        onMouseLeave={() => setHoveredId(null)}
+                                        onClick={() => {
                                             openModal({
                                                 name: ModalTypes.CONTENT_PROJECT_IMAGE_EXPANSION,
                                                 data: {
@@ -45,10 +51,21 @@ const Content_Project_Memocode = () => {
                                                 }
                                             })
                                         }}
-                                             src={data.src}
-                                             alt={`memocode_image_${data.id}`}/>
-                                        <div
-                                            className="flex justify-center py-1 text-[14px] text-zinc-500">{data.title}</div>
+                                    >
+                                        <img
+                                            src={data.src}
+                                            alt={`memocode_image_${data.id}`}
+                                            className={`${hoveredId === data.id ? `scale-105` : `scale-100`} duration-300`}
+                                        />
+                                        {data.descriptions &&
+                                            <div
+                                                className="absolute top-1.5 left-1.5 bg-zinc-500 bg-opacity-80 rounded p-1.5">
+                                                <BsJournalRichtext className="text-white w-5 h-5"/>
+                                            </div>
+                                        }
+                                        <div className="flex justify-center py-1 text-[14px] text-zinc-500">
+                                            {data.title}
+                                        </div>
                                     </div>
                                 )
                             })}
@@ -63,7 +80,7 @@ const Content_Project_Memocode = () => {
                     <Content_Project_Memocode_DevReason/>
 
                     {/* 서비스 기능 및 특징 */}
-                    <Content_Project_Memocode_KeyFeatures/>
+                    {/*<Content_Project_Memocode_KeyFeatures/>*/}
 
                     {/* 이슈 및 해결방안 */}
                     <Content_Project_Memocode_Improvement/>

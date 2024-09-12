@@ -8,6 +8,7 @@ interface UnoImagesProps {
 }
 
 const UnoImages = ({ images }: UnoImagesProps) => {
+
     const [toggled, setToggled] = useState<boolean>(true);
 
     return (
