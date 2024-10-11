@@ -1,5 +1,5 @@
 import {ModalContext, ModalTypes} from "@/context/ModalContext";
-import {useContext} from "react";
+import React, {useContext} from "react";
 import {
     Dialog, DialogClose,
     DialogContent,
@@ -15,12 +15,14 @@ import {Separator} from "@/components/ui/separator";
 import Content_Project_Memocode from "@/components/project/detail/Content_Project_Memocode";
 import Content_Project_Farmfarm from "@/components/project/detail/Content_Project_Farmfarm";
 import Content_Project_Portfolio from "@/components/project/detail/Content_Project_Portfolio";
+import Content_Project_Frety from "@/components/project/detail/Content_Project_Frety";
 import Content_Project_Uno from "@/components/project/detail/Content_Project_Uno";
+import {PiPresentationChartBold} from "react-icons/pi";
 
 const Content_Project_Detail_Modal = () => {
 
     const {modalState, closeModal} = useContext(ModalContext)
-    const {title, description, git, url} = modalState[ModalTypes.CONTENT_PROJECT_DETAIL].data
+    const {title, description, git, url, srs} = modalState[ModalTypes.CONTENT_PROJECT_DETAIL].data
 
     return (
         <Dialog open={modalState[ModalTypes.CONTENT_PROJECT_DETAIL].isVisible}>
@@ -99,12 +101,26 @@ const Content_Project_Detail_Modal = () => {
                                         <FaGithub className="w-6 h-6 mt-1 fill-zinc-500 hover:fill-zinc-900"/>
                                     </Link>
                                 </div>
+                                {srs &&
+                                    <div className="flex flex-col items-center">
+                                        <div className="text-[11px] sm:text-[13px]">요구사항 및 시스템 설계</div>
+                                        <Separator className="my-2 w-32 bg-zinc-400"/>
+                                        <Link
+                                            href={srs}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <PiPresentationChartBold className="w-6 h-6 mt-1 fill-zinc-500 hover:fill-zinc-900"/>
+                                        </Link>
+                                    </div>
+                                }
                             </>
                         }
                     </div>
 
                     <div className="absolute w-full h-full">
                         {title && title === "UNO CARE CMS" && <Content_Project_Uno/>}
+                        {title && title === "Frety - 프렛티" && <Content_Project_Frety/>}
                         {title && title === "MEMOCODE - 메모코드" && <Content_Project_Memocode/>}
                         {title && title === "FARMFARM - 팜팜" && <Content_Project_Farmfarm/>}
                         {title && title === "포트폴리오_김유림" && <Content_Project_Portfolio/>}

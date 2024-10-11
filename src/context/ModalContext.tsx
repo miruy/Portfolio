@@ -27,6 +27,7 @@ type IModal = {
             description: string,
             git: string,
             url: string,
+            srs: string,
         },
     },
 
@@ -49,7 +50,8 @@ const initialModalState: IModal = {
             title: "",
             description: "",
             git: "",
-            url: ""
+            url: "",
+            srs: "",
         },
     },
 

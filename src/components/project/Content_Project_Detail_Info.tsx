@@ -14,8 +14,9 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
                     <TableRow>
                         <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">개발기간</TableHead>
                         <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">개발인원</TableHead>
-                        <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">프론트엔드
-                            기여도</TableHead>
+                        <TableHead className="w-auto px-5 text-[10px] sm:text-[12px] tracking-wide">
+                            {data.id === "frety" ? "기여도" : "프론트엔드 기여도"}
+                        </TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody className="h-[50px]">

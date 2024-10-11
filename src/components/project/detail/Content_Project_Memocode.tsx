@@ -74,7 +74,6 @@ const Content_Project_Memocode = () => {
                                 )
                             })}
                         </div>
-
                     </div>
 
                     <div className="space-y-10">

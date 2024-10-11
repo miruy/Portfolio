@@ -65,7 +65,8 @@ const ContentProject = () => {
                                                     title: data.title,
                                                     description: data.description,
                                                     git: data.git,
-                                                    url: data.url
+                                                    url: data.url,
+                                                    srs: data.srs,
                                                 }
                                             })
                                         }}>

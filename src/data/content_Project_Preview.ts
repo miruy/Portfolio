@@ -5,7 +5,17 @@ const projectPreview = [
         src: "/image/uno/uno_preview.mp4",
         git: "",
         url: "",
+        srs: "",
         tags: ["회사 프로젝트", "외주", "프론트엔드 개발"]
+    },
+    {
+        title: "Frety - 프렛티",
+        description: "기타연주자를 위한 기타 악보 제작 서비스",
+        src: "",
+        git: "https://github.com/miruy/Frety",
+        url: "https://frety.me",
+        srs: "https://www.figma.com/deck/v76VeO3DwQggoJY3oJBfVs/Chordric?node-id=1-26&node-type=slide&t=OhcFRTYreZLhs4GH-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1", // 요구사항 정의서 링크
+        tags: ["개인 프로젝트", "백엔드 개발", "프론트엔드 개발"]
     },
     {
         title: "MEMOCODE - 메모코드",
@@ -13,7 +23,8 @@ const projectPreview = [
         src: "/image/memocode/memocode_preview.mp4",
         git: "https://github.com/memocode-dev/memocode_web",
         url: "https://memocode.dev/",
-        tags: ["개인 프로젝트", "프론트엔드 개발", "반응형"]
+        srs: "",
+        tags: ["팀 프로젝트", "프론트엔드 개발"]
     },
     {
         title: "FARMFARM - 팜팜",
@@ -21,7 +32,8 @@ const projectPreview = [
         src: "/image/farmfarm/farmfarm_preview.mp4",
         git: "https://github.com/memocode-dev/farmfarm_web",
         url: "https://farmfarm.me/",
-        tags: ["개인 프로젝트", "프론트엔드 개발", "반응형"]
+        srs: "",
+        tags: ["팀 프로젝트", "프론트엔드 개발"]
     },
     {
         title: "포트폴리오_김유림",
@@ -29,7 +41,8 @@ const projectPreview = [
         src: "/image/portfolio/portfolio_preview.mp4",
         git: "https://github.com/miruy/Portfolio",
         url: "https://yurim-portfolio.vercel.app",
-        tags: ["개인 프로젝트", "프론트엔드 개발", "반응형"]
+        srs: "",
+        tags: ["개인 프로젝트", "프론트엔드 개발"]
     }
 ]
 
