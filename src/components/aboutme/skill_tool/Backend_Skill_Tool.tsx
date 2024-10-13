@@ -46,12 +46,12 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                 </div>
             </div>
 
-            <div className="space-y-3">
+            <div className="flex-1 space-y-3">
                 <div
                     className="flex text-[14px] font-semibold text-zinc-600">
                     Infra
                 </div>
-                <div className="flex space-x-4 rounded">
+                <div className="grid grid-cols-5 gap-4 rounded">
                     {data.infras?.map((infra, index) => {
                         const name = infra.replace("/image/skill/", "").replace(/\.(svg|png)$/, "");
                         let color = "bg-orange-400"
@@ -86,12 +86,12 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                 </div>
             </div>
 
-            <div className="space-y-3">
+            <div className="flex-1 space-y-3">
                 <div
                     className="flex items-center text-[14px] font-semibold text-zinc-600">
                     DataBase
                 </div>
-                <div className="flex space-x-4 rounded">
+                <div className="grid grid-cols-5 gap-4 rounded">
                     {data.dbs?.map((db, index) => {
                         const name = db.replace("/image/skill/", "").replace(/\.(svg|png)$/, "");
                         let color = "bg-orange-400"

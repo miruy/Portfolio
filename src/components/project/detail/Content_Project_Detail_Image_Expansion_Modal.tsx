@@ -49,6 +49,7 @@ const Content_Project_Detail_Image_Expansion_Modal = () => {
                     className="flex sm:hidden h-[350px]">
                     <CarouselContent className="h-[330px]">
                         {key === "uno" && <Uno_Images images={images}/>}
+                        {key === "frety" && <Uno_Images images={images}/>}
                         {key === "memocode" && <MemocodeImages images={images}/>}
                         {key === "farmfarm" && <FarmfarmImages images={images}/>}
                         {key === "portfolio" && <Portfolio_Images images={images}/>}
@@ -68,6 +69,7 @@ const Content_Project_Detail_Image_Expansion_Modal = () => {
                     className="hidden sm:flex w-full h-full">
                     <CarouselContent>
                         {key === "uno" && <Uno_Images images={images}/>}
+                        {key === "frety" && <Uno_Images images={images}/>}
                         {key === "memocode" && <MemocodeImages images={images}/>}
                         {key === "farmfarm" && <FarmfarmImages images={images}/>}
                         {key === "portfolio" && <Portfolio_Images images={images}/>}

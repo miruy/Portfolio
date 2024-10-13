@@ -11,7 +11,7 @@ const projectPreview = [
     {
         title: "Frety - 프렛티",
         description: "기타연주자를 위한 기타 악보 제작 서비스",
-        src: "",
+        src: "/image/frety/frety_preview.mp4",
         git: "https://github.com/miruy/Frety",
         url: "https://frety.me",
         srs: "https://www.figma.com/deck/v76VeO3DwQggoJY3oJBfVs/Chordric?node-id=1-26&node-type=slide&t=OhcFRTYreZLhs4GH-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1", // 요구사항 정의서 링크
