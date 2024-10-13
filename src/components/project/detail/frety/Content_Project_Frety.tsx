@@ -1,16 +1,17 @@
+import frety from "@/data/frety";
 import Content_Project_Detail_Info from "@/components/project/Content_Project_Detail_Info";
+import React, {useContext, useState} from "react";
 import {ModalContext, ModalTypes} from "@/context/ModalContext";
-import {useContext, useState} from "react";
 import Content_Project_Detail_Image_Expansion_Modal
     from "@/components/project/detail/Content_Project_Detail_Image_Expansion_Modal";
-import uno from "@/data/uno";
-import Content_Project_Uno_DevDirection from "@/components/project/detail/uno/Content_Project_Uno_DevDirection";
+import Content_Project_Frety_Blog from "@/components/project/detail/frety/Content_Project_Frety_Blog";
+import frety_images from "@/data/frety_images";
 import {BsJournalRichtext} from "react-icons/bs";
-import uno_images from "@/data/uno_images";
+import Content_Project_TechStack from "@/components/project/detail/Content_Project_TechStack";
 
-const Content_Project_Uno = () => {
+const Content_Project_Frety = () => {
 
-    const data = uno;
+    const data = frety;
     const {openModal} = useContext(ModalContext)
     const [hoveredId, setHoveredId] = useState<number | null>(null)
 
@@ -19,10 +20,15 @@ const Content_Project_Uno = () => {
             <Content_Project_Detail_Info data={data}/>
 
             <div className="flex flex-col w-full h-full">
-                <div className="flex-1 flex flex-col items-center">
+                <div className="flex-1 flex flex-col items-center space-y-5">
+
+                    {/* 기술 스택 */}
+                    <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5">
+                        <Content_Project_TechStack data={data}/>
+                    </div>
 
                     {/* 구현 방향 */}
-                    <Content_Project_Uno_DevDirection/>
+                    {/*<Content_Project_Frety_DevDirection/>*/}
 
                     <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5">
                         <div className="border-b border-zinc-400 text-foreground font-semibold tracking-wider pb-2">
@@ -32,7 +38,7 @@ const Content_Project_Uno = () => {
                         </div>
                         <div
                             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5 pt-5">
-                            {uno_images.map((data, index) => {
+                            {frety_images.map((data, index) => {
                                 return (
                                     <div
                                         key={index}
@@ -43,8 +49,8 @@ const Content_Project_Uno = () => {
                                             openModal({
                                                 name: ModalTypes.CONTENT_PROJECT_IMAGE_EXPANSION,
                                                 data: {
-                                                    key: "uno",
-                                                    images: uno_images,
+                                                    key: "frety",
+                                                    images: frety_images,
                                                     targetId: data.id
                                                 }
                                             })
@@ -52,7 +58,7 @@ const Content_Project_Uno = () => {
                                     >
                                         <img
                                             src={data.src}
-                                            alt={`uno_image_${data.id}`}
+                                            alt={`frety_image_${data.id}`}
                                             className={`${hoveredId === data.id ? `scale-105` : `scale-100`} duration-300`}
                                         />
                                         {data.descriptions &&
@@ -69,6 +75,18 @@ const Content_Project_Uno = () => {
                             })}
                         </div>
                     </div>
+
+                    {/* 중점 요소  */}
+                    {/*<Content_Project_Portfolio_Point/>*/}
+
+                    {/* 제작 동기 */}
+                    {/*<Content_Project_Portfolio_DevReason/>*/}
+
+                    {/* 이슈 및 해결방안 */}
+                    {/*<Content_Project_Portfolio_Improvement/>*/}
+
+                    {/* 관련 블로그 게시글 */}
+                    <Content_Project_Frety_Blog/>
                 </div>
             </div>
 
@@ -77,4 +95,4 @@ const Content_Project_Uno = () => {
     )
 }
 
-export default Content_Project_Uno;
+export default Content_Project_Frety;

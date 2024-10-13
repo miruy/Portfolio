@@ -13,6 +13,7 @@ import memocode_images from "@/data/memocode_images";
 import {BsJournalRichtext} from "react-icons/bs";
 import Content_Project_Memocode_DevDirection
     from "@/components/project/detail/memocode/Content_Project_Memocode_DevDirection";
+import Content_Project_TechStack from "@/components/project/detail/Content_Project_TechStack";
 
 const Content_Project_Memocode = () => {
 
@@ -25,7 +26,12 @@ const Content_Project_Memocode = () => {
             <Content_Project_Detail_Info data={data}/>
 
             <div className="flex flex-col w-full h-full">
-                <div className="flex-1 flex flex-col items-center">
+                <div className="flex-1 flex flex-col items-cente space-y-5">
+
+                    {/* 기술 스택 */}
+                    <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5">
+                        <Content_Project_TechStack data={data}/>
+                    </div>
 
                     {/* 구현 방향 */}
                     <Content_Project_Memocode_DevDirection/>
@@ -76,7 +82,7 @@ const Content_Project_Memocode = () => {
                         </div>
                     </div>
 
-                    <div className="space-y-10">
+                    <div className="space-y-5">
                         {/* 중점 요소  */}
                         <Content_Project_Memocode_Point/>
 

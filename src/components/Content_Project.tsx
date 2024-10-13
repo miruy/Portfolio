@@ -40,7 +40,7 @@ const ContentProject = () => {
                                         return (
                                             <Badge key={index}
                                                    variant="default"
-                                                   className="text-[15px] 2xl:text-[13px] bg-zinc-600 rounded m-0.5">{tag}</Badge>
+                                                   className="text-[14px] 2xl:text-[12px] px-2 bg-zinc-600 rounded m-0.5">{tag}</Badge>
                                         );
                                     })}
                                 </div>

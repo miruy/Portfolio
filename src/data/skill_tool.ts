@@ -9,7 +9,7 @@ const skill_tool: skill_tool_model[] = [
     {
         title: "Back-End",
         skills: ["/image/skill/JAVA.svg", "/image/skill/SpringBoot.png", "/image/skill/JSP.png", "/image/skill/Thymeleaf.png"],
-        dbs: ["/image/skill/MySQL.png", "/image/skill/OracleSQLDeveloper.png", "/image/skill/H2.png"],
+        dbs: ["/image/skill/MySQL.png", "/image/skill/OracleSQLDeveloper.png"],
         tools: ["/image/tool/EclipseIDE.svg", "/image/tool/IntelliJ.png"],
         infras: ["/image/skill/Docker.png", "/image/skill/AWS.png", "/image/skill/NginxProxyManager.png", "/image/skill/GCP.png"]
     },

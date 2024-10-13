@@ -12,6 +12,7 @@ import Content_Project_Portfolio_KeyFeatures
     from "@/components/project/detail/portfolio/Content_Project_Portfolio_KeyFeatures";
 import Content_Project_Portfolio_Improvement
     from "@/components/project/detail/portfolio/Content_Project_Portfolio_Improvement";
+import Content_Project_TechStack from "@/components/project/detail/Content_Project_TechStack";
 
 const Content_Project_Portfolio = () => {
 
@@ -23,7 +24,13 @@ const Content_Project_Portfolio = () => {
             <Content_Project_Detail_Info data={data}/>
 
             <div className="flex flex-col w-full h-full">
-                <div className="flex-1 flex flex-col space-y-10 items-center">
+                <div className="flex-1 flex flex-col space-y-5 items-center">
+
+                    {/* 기술 스택 */}
+                    <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5">
+                        <Content_Project_TechStack data={data}/>
+                    </div>
+
                     <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5">
                         <div className="border-b border-zinc-400 text-foreground font-semibold tracking-wider pb-2">
                             작업화면
