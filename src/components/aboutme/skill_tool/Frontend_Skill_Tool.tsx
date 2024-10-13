@@ -46,6 +46,9 @@ const Frontend_Skill_Tool = ({data}: FrontendSkillToolProps) => {
                     {data.tools?.map((tool, index) => {
                         const name = tool.replace("/image/tool/", "").replace(/\.(svg|png)$/, "");
                         let color = "bg-green-500"
+                        if (name === "k8sLens") {
+                            color = "bg-orange-400"
+                        }
                         return (
                             <div key={index} className="flex flex-col items-center">
                                 <div

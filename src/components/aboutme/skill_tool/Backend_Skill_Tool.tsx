@@ -54,7 +54,7 @@ const Backend_Skill_Tool = ({data}: BackendSkillToolProps) => {
                 <div className="grid grid-cols-5 gap-4 rounded">
                     {data.infras?.map((infra, index) => {
                         const name = infra.replace("/image/skill/", "").replace(/\.(svg|png)$/, "");
-                        let color = "bg-orange-400"
+                        let color = "bg-green-500"
                         if (name === "GCP") {
                             color = "bg-yellow-400"
                         }

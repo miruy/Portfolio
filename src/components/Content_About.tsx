@@ -27,7 +27,7 @@ const ContentAbout = () => {
 
     return (
         <div className="flex flex-col flex-1 space-y-20" ref={divRef}>
-            <Profile/>
+            {/*<Profile/>*/}
 
             <EducationExperience width={width}/>
 
