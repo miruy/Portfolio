@@ -30,7 +30,6 @@ const blog_articles = {
         {title: "[MySQL] Cannot install under Rosetta 2 in ARM default prefix (/opt/homebrew)! 에러", srs: "https://memocode.dev/@dbflarla4966/memos/930de63c-28d7-4baf-8fab-b748729e8ea3"},
         {title: "[MySQL] The server quit without updating PID file 에러", srs: "https://memocode.dev/@dbflarla4966/memos/7dbfa892-4215-49d4-974a-a011712b27d6"},
         {title: "[AWS] RDS - Cannot create a publicly accessible DBInstance. The specified VPC does not support... 에러", srs: "https://memocode.dev/@dbflarla4966/memos/d4d3b581-349d-4813-98b9-46d3b61829b7"},
-        {title: "[AWS] RDS - Cannot create a publicly accessible DBInstance. The specified VPC does not support... 에러", srs: "https://memocode.dev/@dbflarla4966/memos/d4d3b581-349d-4813-98b9-46d3b61829b7"},
     ],
     "memocode": [
         {}
