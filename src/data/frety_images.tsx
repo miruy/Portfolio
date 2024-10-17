@@ -5,33 +5,26 @@ const frety_images: Image[] = [
     {
         id: 1, src: "/image/frety/frety_main1.png", title: "메인페이지",
         descriptions: null
-        // <div className="space-y-3">
-        //     <div className="flex items-start text-[15px]">
-        //         <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-        //         <span
-        //             className="break-all ml-1.5 text-[14px]">ThemeContext를 사용하여 테마(light/dark)와 색상(primaryColor) 설정을 관리</span>
-        //     </div>
-        //     <div className="flex items-start text-[15px]">
-        //         <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-        //         <span className="break-all ml-1.5 text-[14px]">localStorage를 통해 상태를 저장하여 재접속 시 선택한 테마를 그대로 적용</span>
-        //     </div>
-        //     <div className="flex items-start text-[15px]">
-        //         <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-        //         <span className="break-all ml-1.5 text-[14px]">ThemeContext를 기반으로 useTheme 훅을 구현하여, 사용편의성을 높힘</span>
-        //     </div>
-        //     <div className="flex items-start text-[15px]">
-        //         <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-        //         <span className="break-all ml-1.5 text-[14px]">서버 사이드 컴포넌트에서 SSR을 통해 전체 메모 리스트를 불러오는 함수를 호출하여 초기 데이터를 서버에서 미리 가져와 페이지 렌더링</span>
-        //     </div>
-        //     <div className="flex items-start text-[15px]">
-        //         <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
-        //         <span className="break-all ml-1.5 text-[14px]">클라이언트 사이드 컴포넌트에서 CSR을 통해 스크롤이 끝날 때마다 추가 데이터를 동적으로 가져오는 방식으로 구현(무한 스크롤)</span>
-        //     </div>
-        // </div>
     },
     {
         id: 2, src: "/image/frety/frety_signup1.png", title: "회원가입",
-        descriptions: null
+        descriptions:
+            <div className="space-y-3">
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span
+                        className="break-all ml-1.5 text-[14px]">SpringSecurity를 사용하여 비밀번호 해시 처리 및 보안 강황</span>
+                </div>
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span className="break-all ml-1.5 text-[14px]">비밀번호와 비밀번호 확인이 일치하는지 검증 후 회원가입 진행</span>
+                </div>
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span className="break-all ml-1.5 text-[14px]">SpringBoot Vaildation을 적용하여 유효성 검증</span>
+                </div>
+            </div>
+
         // <div className="space-y-3">
         //     <div className="space-y-2">
         //         <div className="flex items-start text-[15px]">
@@ -67,12 +60,20 @@ const frety_images: Image[] = [
         // </div>
     },
     {
-        id: 3, src: "/image/frety/frety_signup1.png", title: "회원가입_에러",
+        id: 3, src: "/image/frety/frety_signup2.png", title: "회원가입_에러",
         descriptions: null
     },
     {
         id: 4, src: "/image/frety/frety_login1.png", title: "로그인",
-        descriptions: null
+        descriptions:
+            <div className="space-y-3">
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span
+                        className="break-all ml-1.5 text-[14px]">DB에 저장된 회원인지 검증 후 로그인 진행
+                    </span>
+                </div>
+            </div>
     },
     {
         id: 5, src: "/image/frety/frety_login2.png", title: "로그인_에러",
@@ -84,27 +85,99 @@ const frety_images: Image[] = [
     },
     {
         id: 7, src: "/image/frety/frety_create2.png", title: "악보제작_2",
-        descriptions: null
+        descriptions:
+            <div className="space-y-3">
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span
+                        className="break-all ml-1.5 text-[14px]">사용자에게 가사 한 줄 또는 전체 가사를 입력 받은 후 Javascript함수를 통해 split()함수로 가사를 한 줄씩 및 공백 포함 한 음절씩 분리
+                    </span>
+                </div>
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span
+                        className="break-all ml-1.5 text-[14px]">분리한 각 음절에 기타코드를 지정할 수 있도록 음절-기타코드(Key-Value) 형식의 Map형태로 파싱하여 객체로 관리
+                    </span>
+                </div>
+            </div>
     },
     {
         id: 8, src: "/image/frety/frety_create3.png", title: "악보제작_업로드된 가사",
-        descriptions: null
+        descriptions:
+            <div className="space-y-3">
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span
+                        className="break-all ml-1.5 text-[14px]">가사를 한 줄씩 분리하여 사용자에게 표시(업로드)
+                    </span>
+                </div>
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span
+                        className="break-all ml-1.5 text-[14px]">삭제 버튼 클릭 시 가사 한 줄씩 삭제 가능
+                    </span>
+                </div>
+            </div>
     },
     {
         id: 9, src: "/image/frety/frety_create4.png", title: "악보제작_기타 코드 선택기",
-        descriptions: null
+        descriptions:
+            <div className="space-y-3">
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span
+                        className="break-all ml-1.5 text-[14px]">각 음절 클릭 시 기타 코드 선택기(셀렉트박스) 표시 및 기타 코드 지정 가능
+                    </span>
+                </div>
+            </div>
     },
     {
         id: 10, src: "/image/frety/frety_create5.png", title: "악보제작_기타 코드 선택 후",
-        descriptions: null
+        descriptions:
+            <div className="space-y-3">
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span
+                        className="break-all ml-1.5 text-[14px]">기타 코드 선택 후 해당 음절 위에 바로 표시
+                    </span>
+                </div>
+            </div>
     },
     {
         id: 11, src: "/image/frety/frety_detail1.png", title: "악보상세_1",
-        descriptions: null
+        descriptions:
+            <div className="space-y-3">
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span className="break-all ml-1.5 text-[14px]">가사 및 각 음절에 지정한 코드 표시</span>
+                </div>
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span className="break-all ml-1.5 text-[14px]">기타 코드 호버 시 카드 형식 툴팁으로 기타 코드 다이어그램 표시</span>
+                </div>
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span className="break-all ml-1.5 text-[14px]">svguitar 라이브러리를 사용하여 기타 코드 데이터 렌더링</span>
+                </div>
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span className="break-all ml-1.5 text-[14px]">기타 코드 데이터는 관련 파일별로 분리하여 유지보수 효율 극대화</span>
+                </div>
+            </div>
     },
     {
         id: 12, src: "/image/frety/frety_detail2.png", title: "악보상세_2",
-        descriptions: null
+        descriptions:
+            <div className="space-y-3">
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span className="break-all ml-1.5 text-[14px]">좋아요 클릭 후 새로고침 되었다가 해당 부분으로 화면 슬라이드하여 돌아오기</span>
+                </div>
+                <div className="flex items-start text-[15px]">
+                    <GoDotFill className="flex-shrink-0 mt-1 w-3 h-3"/>
+                    <span className="break-all ml-1.5 text-[14px]">로그아웃일 경우 댓글 입력 칸 disabled</span>
+                </div>
+            </div>
     },
     {
         id: 13, src: "/image/frety/frety_detail3.png", title: "악보상세_댓글 / 답글",

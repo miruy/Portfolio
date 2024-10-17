@@ -35,7 +35,7 @@ const Content_Project_Portfolio = () => {
                         <div className="border-b border-zinc-400 text-foreground font-semibold tracking-wider pb-2">
                             작업화면
 
-                            <div className="text-[12px] text-zinc-400 mt-1">클릭하면 이미지를 크게 볼 수 있습니다.</div>
+                            <div className="text-[12px] text-zinc-400 mt-1">클릭하면 큰 이미지와 기술 설명을 볼 수 있습니다.</div>
                         </div>
                         <div
                             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5 pt-5">

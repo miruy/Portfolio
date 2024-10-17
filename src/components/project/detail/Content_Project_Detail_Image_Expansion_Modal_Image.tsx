@@ -3,11 +3,11 @@ import { Image } from "@/model/image";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { useState } from "react";
 
-interface UnoImagesProps {
+interface Content_Project_Detail_Image_Expansion_Modal_ImageProps {
     images: Image[];
 }
 
-const UnoImages = ({ images }: UnoImagesProps) => {
+const Content_Project_Detail_Image_Expansion_Modal_Image = ({ images }: Content_Project_Detail_Image_Expansion_Modal_ImageProps) => {
 
     const [toggled, setToggled] = useState<boolean>(true);
 
@@ -60,4 +60,4 @@ const UnoImages = ({ images }: UnoImagesProps) => {
     );
 };
 
-export default UnoImages;
+export default Content_Project_Detail_Image_Expansion_Modal_Image;

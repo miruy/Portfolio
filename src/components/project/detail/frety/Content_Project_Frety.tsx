@@ -8,6 +8,7 @@ import Content_Project_Frety_Blog from "@/components/project/detail/frety/Conten
 import frety_images from "@/data/frety_images";
 import {BsJournalRichtext} from "react-icons/bs";
 import Content_Project_TechStack from "@/components/project/detail/Content_Project_TechStack";
+import Content_Project_Frety_DevDirection from "@/components/project/detail/frety/Content_Project_Frety_DevDirection";
 
 const Content_Project_Frety = () => {
 
@@ -28,13 +29,13 @@ const Content_Project_Frety = () => {
                     </div>
 
                     {/* 구현 방향 */}
-                    {/*<Content_Project_Frety_DevDirection/>*/}
+                    <Content_Project_Frety_DevDirection/>
 
                     <div className="flex flex-col w-full h-fit bg-transparent p-3 sm:p-5">
                         <div className="border-b border-zinc-400 text-foreground font-semibold tracking-wider pb-2">
                             작업화면
 
-                            <div className="text-[12px] text-zinc-400 mt-1">클릭하면 이미지를 크게 볼 수 있습니다.</div>
+                            <div className="text-[12px] text-zinc-400 mt-1">클릭하면 큰 이미지와 기술 설명을 볼 수 있습니다.</div>
                         </div>
                         <div
                             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5 pt-5">

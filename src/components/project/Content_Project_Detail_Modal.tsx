@@ -8,7 +8,7 @@ import {
     DialogTitle
 } from "@/components/ui/dialog";
 import {Button} from "@/components/ui/button";
-import {FaAsterisk, FaGithub, FaLink} from "react-icons/fa";
+import {FaGithub, FaLink} from "react-icons/fa";
 import Link from "next/link";
 import {IoClose} from "react-icons/io5";
 import {Separator} from "@/components/ui/separator";

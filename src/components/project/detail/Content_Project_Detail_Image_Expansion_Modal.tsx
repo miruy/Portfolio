@@ -5,10 +5,8 @@ import {useContext, useEffect, useRef} from "react";
 import {Dialog, DialogContent, DialogTitle} from "@/components/ui/dialog";
 import {Carousel, CarouselContent, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
 import {VisuallyHidden} from "@radix-ui/react-visually-hidden";
-import MemocodeImages from "@/components/project/detail/memocode/Memocode_Images";
-import FarmfarmImages from "@/components/project/detail/farmfarm/Farmfarm_Images";
-import Portfolio_Images from "@/components/project/detail/portfolio/Portfolio_Images";
-import Uno_Images from "@/components/project/detail/uno/Uno_Images";
+import Content_Project_Detail_Image_Expansion_Modal_Image
+    from "@/components/project/detail/Content_Project_Detail_Image_Expansion_Modal_Image";
 
 const Content_Project_Detail_Image_Expansion_Modal = () => {
 
@@ -48,11 +46,11 @@ const Content_Project_Detail_Image_Expansion_Modal = () => {
                     }}
                     className="flex sm:hidden h-[350px]">
                     <CarouselContent className="h-[330px]">
-                        {key === "uno" && <Uno_Images images={images}/>}
-                        {key === "frety" && <Uno_Images images={images}/>}
-                        {key === "memocode" && <MemocodeImages images={images}/>}
-                        {key === "farmfarm" && <FarmfarmImages images={images}/>}
-                        {key === "portfolio" && <Portfolio_Images images={images}/>}
+                        {key === "uno" && <Content_Project_Detail_Image_Expansion_Modal_Image images={images}/>}
+                        {key === "frety" && <Content_Project_Detail_Image_Expansion_Modal_Image images={images}/>}
+                        {key === "memocode" && <Content_Project_Detail_Image_Expansion_Modal_Image images={images}/>}
+                        {key === "farmfarm" && <Content_Project_Detail_Image_Expansion_Modal_Image images={images}/>}
+                        {key === "portfolio" && <Content_Project_Detail_Image_Expansion_Modal_Image images={images}/>}
                     </CarouselContent>
                     <CarouselPrevious className="w-9 h-9"/>
                     <CarouselNext className="w-9 h-9"/>
@@ -68,11 +66,11 @@ const Content_Project_Detail_Image_Expansion_Modal = () => {
                     }}
                     className="hidden sm:flex w-full h-full">
                     <CarouselContent>
-                        {key === "uno" && <Uno_Images images={images}/>}
-                        {key === "frety" && <Uno_Images images={images}/>}
-                        {key === "memocode" && <MemocodeImages images={images}/>}
-                        {key === "farmfarm" && <FarmfarmImages images={images}/>}
-                        {key === "portfolio" && <Portfolio_Images images={images}/>}
+                        {key === "uno" && <Content_Project_Detail_Image_Expansion_Modal_Image images={images}/>}
+                        {key === "frety" && <Content_Project_Detail_Image_Expansion_Modal_Image images={images}/>}
+                        {key === "memocode" && <Content_Project_Detail_Image_Expansion_Modal_Image images={images}/>}
+                        {key === "farmfarm" && <Content_Project_Detail_Image_Expansion_Modal_Image images={images}/>}
+                        {key === "portfolio" && <Content_Project_Detail_Image_Expansion_Modal_Image images={images}/>}
                     </CarouselContent>
                     <CarouselPrevious className="w-10 h-10"/>
                     <CarouselNext className="w-10 h-10"/>
