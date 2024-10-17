@@ -9,6 +9,8 @@ import frety_images from "@/data/frety_images";
 import {BsJournalRichtext} from "react-icons/bs";
 import Content_Project_TechStack from "@/components/project/detail/Content_Project_TechStack";
 import Content_Project_Frety_DevDirection from "@/components/project/detail/frety/Content_Project_Frety_DevDirection";
+import Content_Project_Frety_ERD from "@/components/project/detail/frety/Content_Project_Frety_ERD";
+import Content_Project_Frety_Architecture from "@/components/project/detail/frety/Content_Project_Frety_Architecture";
 
 const Content_Project_Frety = () => {
 
@@ -83,8 +85,11 @@ const Content_Project_Frety = () => {
                     {/* 제작 동기 */}
                     {/*<Content_Project_Portfolio_DevReason/>*/}
 
-                    {/* 이슈 및 해결방안 */}
-                    {/*<Content_Project_Portfolio_Improvement/>*/}
+                    {/* DataBase ERD */}
+                    <Content_Project_Frety_ERD/>
+
+                    {/* 아키텍쳐 (서버 구성도) */}
+                    <Content_Project_Frety_Architecture/>
 
                     {/* 관련 블로그 게시글 */}
                     <Content_Project_Frety_Blog/>

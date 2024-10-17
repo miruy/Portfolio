@@ -8,7 +8,7 @@ const frety =
                 "Language": "JAVA, Javascript, Thymeleaf, HTML",
                 "Library": "Daisy UI, TailwindCSS, svguitar",
                 "Framework": "SpringBoot, SpringSecurity",
-                "DB": "H2(in-memory)",
+                "DB": "MySQL, AWS RDS",
                 "Server": "AWS, Ubuntu 24.04",
                 "CI / CD": "Docker, NginxProxyManager, Github Actions, Github Container Registry",
                 "Tool": "Intelli J"
