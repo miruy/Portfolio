@@ -82,7 +82,7 @@ const config = {
                 'main-bg': "url('/image/main_bg.png')",
             },
             transitionDelay: {
-                '5000': '5000ms',
+                '1300': '1300ms',
                 '5300': '5300ms',
             }
         },

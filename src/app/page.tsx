@@ -17,7 +17,7 @@ const Home = () => {
         <>
             <div className="fixed z-10 top-0 bottom-0 right-0 left-0">
                 <div className="fixed z-10 bottom-20 right-20 left-20">
-                    <div className="relative swirl-in-fwd mx-[50%] pt-[750px]">
+                    <div className="relative animate__animated animate__fadeInUp delay-1300 mx-[50%] pt-[750px]">
                         <div onClick={handleDown} className="flex flex-col justify-center items-center cursor-pointer text-gray-400 hover:text-gray-700 hover:scale-105 duration-500">
                             <IoIosArrowDown className="w-[50px] h-[50px]"/>
                             <div className="absolute -bottom-5 w-[100px] text-[16px]">Scroll or Click</div>
