@@ -41,36 +41,25 @@ const education_experience = [
         date: "2023.11.15"
     },
     {
-        organization: "CAiTORY",
-        title: "UNO CARE CMS 프론트엔드 웹 개발 참여(외주 프로젝트)",
+        organization: "카이토리",
+        title: "개발팀 · 대리/팀원 · 프론트엔드",
         description:
-            <div className="space-y-2">
-                <div>
-                    안드로이드 앱 UNOCARE을 통해 측정된 사용자의 심리 상태, 스트레스 등을 분석하고 관리하는 웹 시스템 (백 오피스)
+            <div className="ml-1">
+                <div className="flex flex-shrink-0 items-start space-x-1">
+                    <GoDotFill className="mt-1"/>
+                    <div>React를 활용한 웹 애플리케이션 개발</div>
                 </div>
-
-                <div>
-                    <div>개발(3개월)</div>
-                    <div className="flex flex-shrink-0 items-start space-x-1">
-                        <GoDotFill className="mt-1"/>
-                        <div>제공받은 요구 사항 및 디자인 시안에 맞추어 사용자 인터페이스(UI) 구현</div>
-                    </div>
-                    <div className="flex flex-shrink-0 items-start space-x-1">
-                        <GoDotFill className="mt-1"/>
-                        <div>백엔드와의 API 연동을 통해 사용자 인터페이스에 데이터 표시</div>
-                    </div>
+                <div className="flex flex-shrink-0 items-start space-x-1">
+                    <GoDotFill className="mt-1"/>
+                    <div>REST API 연동 및 데이터 시각화 구현</div>
                 </div>
-
-                <div>
-                    <div>유지보수(2개월)</div>
-                    <div className="flex flex-shrink-0 items-start space-x-1">
-                        <GoDotFill className="mt-1"/>
-                        <div>지속적인 코드 개선 및 오류 발생 문제 해결</div>
-                    </div>
+                <div className="flex flex-shrink-0 items-start space-x-1">
+                    <GoDotFill className="mt-1"/>
+                    <div>웹 애플리케이션 성능 최적화 및 유지보수</div>
                 </div>
             </div>,
         type: "경력",
-        date: "2024.01 ~ 2024.05 (5개월)"
+        date: "2023.10.01 ~ 2024.11.01 (1년 1개월)"
     },
 ];
 

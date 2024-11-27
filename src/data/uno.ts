@@ -1,7 +1,7 @@
 const uno =
     {
         id: "uno",
-        workingAt: "2024.01 ~ 2024.05 (5개월)",
+        workingAt: "2023.12 ~ 2024.10 (약 11개월)",
         workers: "3인(프론트엔드)",
         usedSkils: [
             {

@@ -23,9 +23,6 @@ const Content_Project_Detail_Info = ({data}: ContentProjectDetailInfo) => {
                 <TableRow>
                     <TableCell className="w-auto px-5 text-[10px] sm:text-[12px] text-center tracking-wide">
                         <div>{data.workingAt}</div>
-                        {data.id === "uno" &&
-                            <div className="leading-3">(유지보수 포함)</div>
-                        }
                     </TableCell>
                     <TableCell
                         className="w-auto px-5 text-[10px] sm:text-[12px] text-center tracking-wide">{data.workers}</TableCell>

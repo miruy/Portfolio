@@ -27,7 +27,7 @@ const Content_Project_Uno = () => {
                             className="flex items-start space-x-1.5 text-zinc-700 font-semibold text-[14px] md:text-[15px]">
                             <FaAsterisk className="flex-shrink-0 mt-1.5 w-2.5 h-2.5"/>
                             <div>
-                                이 글의 목적은 상업적 이용이 아닌 개인 포트폴리오 제작을 위한 것이며, 모든 저작권은 해당 기업에 있음을 밝힙니다.
+                                이 글의 목적은 상업적 이용이 아닌 개인 포트폴리오 제작을 위한 것이며, 모든 저작권은 해당 기업(카이토리)에 있음을 밝힙니다.
                             </div>
                         </div>
                         <div

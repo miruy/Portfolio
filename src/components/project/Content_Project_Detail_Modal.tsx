@@ -92,11 +92,11 @@ const Content_Project_Detail_Modal = () => {
                     }
 
                     <div className="absolute w-full h-full">
-                        {title && title === "UNO CARE CMS" && <Content_Project_Uno/>}
-                        {title && title === "Frety - 프렛티" && <Content_Project_Frety/>}
-                        {title && title === "MEMOCODE - 메모코드" && <Content_Project_Memocode/>}
-                        {title && title === "FARMFARM - 팜팜" && <Content_Project_Farmfarm/>}
-                        {title && title === "포트폴리오_김유림" && <Content_Project_Portfolio/>}
+                        {title && title === "카이토리 - UNO CARE CMS" && <Content_Project_Uno/>}
+                        {title && title === "Frety" && <Content_Project_Frety/>}
+                        {title && title === "MEMOCODE" && <Content_Project_Memocode/>}
+                        {title && title === "FARMFARM" && <Content_Project_Farmfarm/>}
+                        {title && title === "포트폴리오 사이트" && <Content_Project_Portfolio/>}
                     </div>
                 </div>
             </DialogContent>
